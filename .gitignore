@@ -1,0 +1,44 @@
+# Ignore everything by default
+/*
+
+# Allow git files
+!.gitignore
+!README.md
+
+# Whitelist data directory and contents
+!data/
+!data/**
+
+# Specific excludes in data (if any temporary/secret files appear)
+data/**/.DS_Store
+data/**/Thumbs.db
+data/**/*.tmp
+data/**/*.log
+
+# Exclude all cache, credentials, session, logs, sockets, and chromium state
+/auth.json
+/chatgpt-credentials.json
+/Cookies
+/Cookies-journal
+/Preferences
+/Local State
+/Local Storage/
+/Session Storage/
+/Shared Dictionary/
+/Trust Tokens*
+/declarative_performance_observer.db*
+/DIPS
+/Network Persistent State
+/DevToolsActivePort
+/.updaterId
+/Singleton*
+/Cache/
+/Code Cache/
+/GPUCache/
+/GPUPersistentCache/
+/DawnGraphiteCache/
+/DawnWebGPUCache/
+/Crashpad/
+/Dictionaries/
+/blob_storage/
+/logs/
