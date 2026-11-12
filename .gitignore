@@ -15,6 +15,7 @@ data/**/Thumbs.db
 data/**/*.tmp
 data/**/*.log
 
+data/settings.json
 data/graph/render-settings.json
 data/graph/positions.json
 
