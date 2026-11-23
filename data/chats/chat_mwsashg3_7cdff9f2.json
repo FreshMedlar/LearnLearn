@@ -1,0 +1,1709 @@
+{
+	"id": "chat_mwsashg3_7cdff9f2",
+	"title": "insegnami tutto cio che sai su self touch, partendo dalle singole…",
+	"createdAt": "2026-11-22T20:37:02.931Z",
+	"updatedAt": "2026-11-22T20:42:36.285Z",
+	"messages": [
+		{
+			"id": "msg_mwsashm0_b166efb0",
+			"role": "user",
+			"content": "insegnami tutto cio che sai su self touch, partendo dalle singole componenti. informazione motoria, tattile e propriocezione, poi anche le applicazioni pratiche e gli esiti in pazienti con lesione unilaterale",
+			"timestamp": 1795379823144
+		},
+		{
+			"role": "assistant",
+			"content": [
+				{
+					"type": "thinking",
+					"thinking": "The learner asks in Italian: \"teach me everything you know about self-touch, starting from the individual components: motor information, tactile and proprioception, then also practical applications and outcomes in patients with unilateral lesion.\"\n\nThis is about self-touch (self-generated touch) research — sensory attenuation, reafference, efference copy, predictive coding, Aristotle illusion, crossed-finger illusion, tickling, force matching, bilateral matching tasks, and applications in stroke/hemiplegic patients (e.g., patients with unilateral lesions can't attenuate self-touch? Actually there's literature on self-touch in right-hemisphere stroke patients, anosognosia, etc.).\n\nFirst: check sessions/propositions for prior knowledge. Then ask clarifying question about goal. Then probe.\n\nLet me start with list_sessions and maybe ask a clarifying question.\n\nActually tool calls: list_sessions first. Then decide.\n\nLet me do list_sessions and ask_user_question in parallel? The clarifying question content doesn't depend on sessions. But better sequencing: check sessions first quickly, then ask. I can call both in one block since independent.\n\nLet me ask: what's the goal — deep mechanistic understanding for research/clinical, or applied clinical assessment? Also level: is he a student in neuroscience/medicine/physio?\n\nLet's call list_sessions + ask_user_question together."
+				},
+				{
+					"type": "toolCall",
+					"id": "chatcmpl-tool-bb79b94db2ddcf8f",
+					"name": "list_sessions",
+					"arguments": {}
+				},
+				{
+					"type": "toolCall",
+					"id": "chatcmpl-tool-89b282338c3d3d99",
+					"name": "ask_user_question",
+					"arguments": {
+						"question": "Prima di misurare cosa sai già: qual è lo scopo di questo studio su self-touch?",
+						"details": "Serve a decidere dove mettere il peso: meccanismi predittivi, misurazione sperimentale, o riabilitazione clinica.",
+						"options": [
+							{
+								"label": "Capire il fenomeno a fondo (meccanismi, efference copy, attenuazione sensoriale)",
+								"value": "mech"
+							},
+							{
+								"label": "Saperlo misurare/valutare (paradigmi sperimentali, compiti di matching, illusioni)",
+								"value": "measure"
+							},
+							{
+								"label": "Applicarlo clinicamente (riabilitazione, valutazione di pazienti con lesione unilaterale)",
+								"value": "clin"
+							},
+							{
+								"label": "Tutti e tre, in quest'ordine",
+								"value": "all"
+							}
+						]
+					}
+				}
+			],
+			"api": "mistral-conversations",
+			"provider": "mistral",
+			"model": "deepseek-v4-1-flash-1017",
+			"usage": {
+				"input": 99,
+				"output": 539,
+				"cacheRead": 6912,
+				"cacheWrite": 0,
+				"totalTokens": 7550,
+				"cost": {
+					"input": 0.0000297,
+					"output": 0.0006468,
+					"cacheRead": 0.000048383999999999996,
+					"cacheWrite": 0,
+					"total": 0.000724884,
+					"totalFromProvider": false
+				}
+			},
+			"stopReason": "toolUse",
+			"timestamp": 1795379823161,
+			"responseId": "5eac376988d54a61b77b659560c6958f",
+			"rawStopReason": "tool_calls",
+			"durationMs": 1969,
+			"thinkingLevel": "low",
+			"id": "msg_mwsasj5p_7be35e31"
+		},
+		{
+			"role": "toolResult",
+			"toolCallId": "chatcmpl-tool-bb79b94db2ddcf8f",
+			"toolName": "list_sessions",
+			"content": [
+				{
+					"type": "text",
+					"text": "4 session(s) in the knowledge graph, most recent first:\n1. Manifold Learning (chat, 41 propositions, born 2026-11-20T16:34:20.018Z, last active 2026-11-22T16:50:59.833Z) — id: chat_mwp78naq_74d46dd7\n2. The Weighted-Average Picture: Eigenvectors, the Laplacian, and Spectral JEPA (chat, 17 propositions, born 2026-11-19T17:35:24.115Z, last active 2026-11-20T16:26:10.041Z) — id: chat_mwntzbv7_e4ff71e6\n3. The Platonic Representation Hypotesis (chat, 15 propositions, born 2026-11-16T12:01:30.055Z, last active 2026-11-19T14:07:59.254Z) — id: chat_mwj7qdhj_adeebf31\n4. Linear Algebra (chat, 55 propositions, born 2026-11-12T12:32:19.634Z, last active 2026-11-16T10:49:19.720Z) — id: chat_mwdj2lyq_55bacbf2"
+				}
+			],
+			"details": "4 session(s) in the knowledge graph, most recent first:\n1. Manifold Learning (chat, 41 propositions, born 2026-11-20T16:34:20.018Z, last active 2026-11-22T16:50:59.833Z) — id: chat_mwp78naq_74d46dd7\n2. The Weighted-Average Picture: Eigenvectors, the Laplacian, and Spectral JEPA (chat, 17 propositions, born 2026-11-19T17:35:24.115Z, last active 2026-11-20T16:26:10.041Z) — id: chat_mwntzbv7_e4ff71e6\n3. The Platonic Representation Hypotesis (chat, 15 propositions, born 2026-11-16T12:01:30.055Z, last active 2026-11-19T14:07:59.254Z) — id: chat_mwj7qdhj_adeebf31\n4. Linear Algebra (chat, 55 propositions, born 2026-11-12T12:32:19.634Z, last active 2026-11-16T10:49:19.720Z) — id: chat_mwdj2lyq_55bacbf2",
+			"isError": false,
+			"durationMs": 19,
+			"timestamp": 1795379825149,
+			"id": "msg_mwsasj5p_2e0f6bb9"
+		},
+		{
+			"id": "msg_mwsatika_be679f6e",
+			"role": "toolResult",
+			"toolCallId": "chatcmpl-tool-89b282338c3d3d99",
+			"toolName": "ask_user_question",
+			"content": [
+				{
+					"type": "text",
+					"text": "{\"kind\":\"ask\",\"optionOrder\":{\"A\":1,\"B\":2,\"C\":3,\"D\":4},\"other\":\"capire come l=informazione motoria e tattile si integrano nella percezione dell estensione spaziale\"}"
+				}
+			],
+			"details": {
+				"kind": "ask",
+				"tool": "ask_user_question",
+				"questionText": "Prima di misurare cosa sai già: qual è lo scopo di questo studio su self-touch?",
+				"options": [
+					{
+						"index": 1,
+						"label": "Capire il fenomeno a fondo (meccanismi, efference copy, attenuazione sensoriale)"
+					},
+					{
+						"index": 2,
+						"label": "Saperlo misurare/valutare (paradigmi sperimentali, compiti di matching, illusioni)"
+					},
+					{
+						"index": 3,
+						"label": "Applicarlo clinicamente (riabilitazione, valutazione di pazienti con lesione unilaterale)"
+					},
+					{
+						"index": 4,
+						"label": "Tutti e tre, in quest'ordine"
+					}
+				],
+				"optionOrder": {
+					"A": 1,
+					"B": 2,
+					"C": 3,
+					"D": 4
+				},
+				"dontKnow": false,
+				"answers": [],
+				"answeredAt": "2026-11-22T20:37:51.026Z",
+				"other": "capire come l=informazione motoria e tattile si integrano nella percezione dell estensione spaziale"
+			},
+			"isError": false,
+			"timestamp": 1795379871034
+		},
+		{
+			"role": "assistant",
+			"content": [
+				{
+					"type": "thinking",
+					"thinking": "The learner's \"other\" answer: \"capire come l'informazione motoria e tattile si integrano nella percezione dell'estensione spaziale\" — understanding how motor and tactile information integrate in the perception of spatial extension. That's actually about the sense of the body's spatial extent — the \"self-touch\" paradigm (Ehrsson, Boehme, Olausson) where self-touch with a finger touching another finger reveals how the brain fuses tactile and proprioceptive info to create a body model. Also the \"self-touch illusion\" studies — e.g., the \"extended body\" illusion (Armel & Ramachandran), and the \"self-touch\" paradigm used to study body ownership.\n\nAlso his prior sessions are all ML/math: manifold learning, spectral methods, linear algebra, Platonic representation. So he's likely an ML person. Useful: he may reason well about latent variables, inference, generative models, prediction error. That changes what I can build on: predictive coding as Bayesian inference, optimal integration as inverse-variance weighting — he'll grasp these quickly.\n\nSo goal: understanding how motor and tactile signals integrate in the perception of spatial extent (of the body / of limbs). Let's probe. Start high-ish, given ML background: predictive coding / cue integration.\n\nStrands to probe:\n1. Efference copy / corollary discharge as a \"prediction\" — can he derive why self-touch feels weaker? Does he know sensory attenuation and can he distinguish it from mere predictability (external predictable touch is NOT attenuated — the classic finding).\n2. Cue integration as inverse-variance weighting (he'd know from ML); how tactile and proprioceptive cues combine to estimate limb position/extent.\n3. Spatial extent of the body: the sense that a finger's touch on your own body — how the brain builds a body model. The self-touch illusion of body extension.\n4. Clinical: unilateral lesion (right hemisphere stroke), anosognosia, misoplegia; also deafferented patients (G.L. — but that's bilateral); patients with hemiplegia can't self-touch and the \"self-touch\" role in recovery.\n\nLet me start with a question at the high end: something that distinguishes models. A good first probe: why is self-touch attenuated? Give options embodying different models: (a) prediction/efference copy cancels the sensory consequence; (b) attention is elsewhere / divided; (c) the touch is weaker because force is controlled; (d) receptor adaptation because the finger moves with the touched surface.\n\nActually the classic distinguishing experiment: the force-matching task, and the fact that a machine delivering the exact same force is felt as stronger than self-produced. Blakemore's finding that externally-generated tactile stimuli that are equally predictable are NOT attenuated (e.g., self-generated vs. externally generated with same predictability — the attenuation needs the motor command). That's a sharp discriminator.\n\nBetter opening question, given his stated goal (motor + tactile integration in spatial extent): use the self-touch paradigm where the index finger touches the other hand — Ehrsson/Blakemore? Actually the key one for \"spatial extent\": the \"self-touch illusion\" (Armel & Ramachandran 2003 \"Projecting sensations to external objects\") is about rubber hand. The relevant one for spatial extension: \"The sense of the body's spatial extent\" — there's work by Boehme? Better: Ehrsson's work on the \"sense of limb size\"? And \"Proske & Gandevia\" on proprioception and position sense.\n\nHmm — I should be careful not to invent literature. Let me consider what I'm confident about:\n\n- Sensory attenuation of self-generated touch (Blakemore, Wolpert, Frith 1998/2000): self-produced tactile stimulation feels less ticklish and is rated less intense; force-matching task shows people apply more force than they receive (Shergill et al. 2003, Am J Psychiatry — in schizophrenia, patients don't show this, they over-compensate).\n- Efference copy / corollary discharge, forward model.\n- Predictability alone doesn't attenuate: Blakemore et al. 1999/2000 — externally generated tactile stimulation that is as predictable as self-generated is not attenuated (they used a robot / experimenter's finger). Actually the specific study: Blakemore, Frith & Wolpert 1999 \"Spatio-temporal prediction modulates the perception of self-produced stimuli\" — externally produced but predictable stimuli were rated as intense as unpredictable ones? I recall: predictable external stimuli were NOT attenuated in the same way, supporting the role of the efference copy rather than pure predictability. And Shergill et al. 2005 \"Evidence for a disturbance of the body image in schizophrenia\"? Careful.\n- Bays, Wolpert, Flanagan 2005 — \"Perception of the consequences of self-action is temporally tuned and event driven\" — self-touch: when you touch an object with one hand while the other holds it, the two touches are perceived as simultaneous despite the delay; this reveals a temporal window/recalibration. This is very relevant: \"temporal binding of self-touch\" — the brain fuses the two tactile events.\n- Force matching: Shergill et al. 2003.\n- Cue integration: van Beers, Sittig, Denier van der Gon 1999 — proprioception vs vision weighting in hand position; Ernst & Banks for vision/haptic.\n- Body size/extent: \"Sense of body size\" — Ehrsson's work on the Pinocchio illusion (tendon vibration); the \"shrinking waist\" illusion; Ramachandran's \"phantom limbs\". The \"self-touch\" and spatial extent: Longo & Haggard on body size estimation (perceived finger length, \"body image\" distortions), and the \"internal body model.\" And \"tactile distance perception\" — spatial extent of touch across the skin (two-point discrimination, tactile acuity).\n- Unilateral lesion: right-hemisphere stroke → hemispatial neglect, personal neglect, anosognosia, somatoparaphrenia. Also \"self-touch\" in patients with hemiplegia: inability to use the affected hand means self-touch is asymmetric. There's literature on \"self-touch\" and body ownership in hemiplegic patients — e.g., studies of self-touch improving body ownership? Also the \"crossing-hand\" deficits.\n- Also mirror-box therapy relies on self-generated touch/prediction.\n- Also, key: patients with unilateral lesions and \"sensory attenuation\" — I'm not certain about specific studies. There's work on \"sensory attenuation in stroke\" — I'm not sure.\n- Another relevant one: the \"self-touch\" studies in patients with right hemisphere damage showing deficits in the \"self-other\" distinction.\n\nGiven the accuracy bar, I should probably dispatch research for the clinical/patient part later, and probe now.\n\nLet me now design the first probe question — high level, discriminating. Given his ML background, I could ask directly about model comparison.\n\nQ1 (graded, concept): \"Self-producing a touch on your own forearm feels weaker than an identical touch from another person. What is the leading explanation, and what evidence most directly supports it?\"\nOptions:\nA. The brain predicts the sensory consequence from the motor command and subtracts the predictable part.\nB. Self-touch is less intense because attention is split between the moving and the touched hand.\nC. Receptors adapt because the finger and skin move together.\nD. Self-touch uses less force, so the physical stimulus is weaker.\n\nBut that's too easy — he likely picks A. Better to make it discriminating: ask about the crucial experiment that distinguishes efference copy from pure predictability. Hmm, but if he doesn't know the literature, that becomes trivia.\n\nGiven his goal (motor + tactile integration in perception of spatial extent), a stronger first probe: predictive/forward-model reasoning applied to a new situation. E.g.:\n\n\"Two conditions: (1) you move your own finger to press on your other hand; (2) a motor moves your finger passively with the identical trajectory and then you press. Same tactile stimulus, same kinematics. Where would you predict a difference in perceived touch, and why?\" That reveals model.\n\nAlternatively, a cleaner test: a force-matching paradigm — a genuine quantitative probe that reveals whether he thinks of motor command as a predictive signal or only as a control signal.\n\nActually, let me use a question that also touches the spatial-extent aspect, since that's his stated goal. The self-touch / spatial extent link: When you touch your own left hand with your right hand, the perception of where your left hand is — and its size — depends on integrating the motor command (where the right hand should be), proprioception of the right arm, and touch on the left hand. Studies: \"self-touch\" and the perceived location of the touched body part.\n\nHmm, maybe better to first establish the foundational machinery, since components come first and he asked to start from components. So probe: (1) forward model/efference copy reasoning; (2) cue integration; (3) spatial representation of touch/proprioception.\n\nI'll do 4 probes roughly. Question 1: forward model / attenuation, but framed to reveal whether he sees the motor command as predictive inference vs. mere control. Let me use the \"predictable external stimulation\" discriminator as a graded question — it's genuinely discriminating and not trivia if I present it as a reasoning question:\n\nQ1: \"In a series of experiments, touch delivered by a robot with exactly the same timing/kinematics as self-generated touch is compared with self-generated touch. Predict the result and the implication.\"\nOptions:\nA. The robot touch feels as attenuated — the key is predictability.\nB. The robot touch feels stronger — attenuation requires the subject's own motor command.\nHmm, only two options, and B is right and sounds like the \"interesting\" answer — asymmetric. Need believable distractors of the opposite model.\n\nLet me make the question about a design issue rather than result: \"You want to test whether attenuation comes from the efference copy or from mere temporal predictability. Which design works?\" Options:\nA. Compare self-generated touch with machine-generated touch matched in force, timing and trajectory.\nB. Compare self-generated touch with a machine touch that is unpredictable in timing.\nC. Compare self-touch when the hand is visible vs. hidden.\nD. Compare force matching when the subject's arm is anaesthetized.\nHmm, C and D plausible. The key: A isolates the source of the signal while matching the stimulus exactly. That reveals whether he thinks like an experimentalist about confounds, which is a good signal but maybe more methodology than understanding.\n\nActually maybe do both: start with the mechanism question with realistic distractors, since I need to locate his floor.\n\nLet me write Q1 with 4 believable options about the mechanism, including a subtle one: \"the motor system's prediction cancels it\" vs \"the touch is attributed to the self, so it's tagged as less behaviourally relevant\" (attribution/relevance account — a real alternative framing that would predict different things). And \"receptor adaptation\" and \"attention\".\n\nDistractor quality: \"It is tagged as self-generated, so it is gated at a later stage of processing based on its source\" — a real model, plausible, and would predict different results (e.g., that the attenuation doesn't depend on prediction accuracy). That's a good discriminator.\n\nActually a stronger design: don't ask \"which is the explanation\" (essay-ish), ask a prediction that separates models.\n\nQ: \"People rate a self-produced tap on their own hand as weaker than an identical machine-produced tap. Now the machine's tap is made exactly as predictable as the self-tap (same force, same timing, learned). Which model predicts what?\"\nHmm, requires knowledge of the finding.\n\nSimplest robust approach: probe his model of the forward model/efference copy directly with a mechanistic question where a wrong model produces a distinct answer.\n\nQ1 (free recall? no, options): \"During a voluntary movement, the brain generates an internal prediction of the sensory consequences. Which statement best captures what this prediction signal is FOR?\"\nA. To cancel the predictable reafferent signal before it reaches awareness — \"you don't feel your own shirt\".  — plus comparison to detect external events.\nOptions must not be flagged. Let me instead phrase a scenario question:\n\nScenario: You rub your finger over a tabletop while a fly lands on the same tabletop. Both produce similar vibration. Prediction?\n\nBetter idea — a question about what happens when prediction and reality mismatch, e.g., delayed feedback (the classic: a 100-200ms delay in self-generated touch increases ticklishness / perceived intensity — Blakemore et al. 1998/2000 \"Central cancellation of self-produced tickle sensation\", and the delay-dependent increase). That's a clean discriminator between \"cancellation by prediction\" and \"gating by self-attribution\": under a pure gating-by-attribution account, lagging feedback is still self-generated, so no change. That's excellent — it separates the two models sharply and requires real mechanistic understanding.\n\nQ: \"You touch your own palm via a device that imposes a variable delay between your movement and the touch. What happens to the perceived intensity as the delay grows, under the prediction-based account, and why?\"\nOptions:\nA. Intensity rises with delay, because the actual signal no longer matches the predicted signal, so the cancellation fails.\nB. Intensity stays constant, because the touch is still self-generated, so it is gated the same way.\nC. Intensity falls, because the delayed signal arrives outside the attention window. — weak.\nD. Intensity rises, because longer delays give the receptors time to recover from adaptation.\nHmm, A and D both predict rise; the reasoning field distinguishes them. That's fine — actually good: two options predict rise, requiring him to choose the mechanism. But then the answer choice conflates prediction with result. Risky for grading.\n\nLet me simplify: make it a free-recall probe? The tool here is `probe` (options-only). \"Insegami\" — probing tool is options-only per the tool description. Okay, options only.\n\nLet me accept a moderately easy Q1 to locate the floor: he's clearly smart in ML; likely he knows sensory attenuation as a concept. So start higher: ask about the quantitative structure of cue integration in spatial extent (his actual interest), e.g., how tactile and proprioceptive estimates combine and what determines the weights.\n\nPlan of probes (each dependent):\n1. Mechanism of self-touch attenuation with the discriminative twist (delay / prediction error). Grade + read reasoning.\n2. Integration: how motor + tactile + proprioceptive estimates of position/extent are combined — inverse-variance weighting, and which cue dominates where (proprioception drifts, touch is local). Or: why does touching your own finger improve position sense (self-touch reduces proprioceptive drift / improves limb localization)? Actually there's a solid finding: touching one hand with the other improves localization of the touched hand (tactile input reduces drift). Also \"self-touch\" improves detection of the hand's position. Good application.\n3. Spatial extent: body size representation; the fact that perceived tactile distance varies across body parts and is modulated by... (tool use, illusions). And that the \"body model\" is not a fixed homunculus.\n4. Clinical: unilateral lesion — neglect, personal neglect, anosognosia; whether self-touch and prediction-based attenuation are affected; and practical application (self-touch as a therapeutic/rehab tool; mirror therapy; the \"self-touch\" in bimanual tasks). I should research this to be accurate before teaching; but for probing I just need questions with known answers. Better to research now, in parallel, since the lesson's clinical part hinges on facts I'm not fully sure of. But research is async... I can dispatch it early, keep probing, and it arrives later. Good: dispatch research now on the clinical evidence.\n\nLet me dispatch two research questions? One is enough maybe: \"evidence on self-touch / self-generated touch and sensory attenuation in patients with unilateral (hemispheric) lesions — neglect, hemiplegia, anosognosia; and clinical applications of self-touch in rehabilitation.\"\n\nYes, dispatch that now plus ask Q1.\n\nQ1 design, final. Question text in Italian. Use LaTeX where relevant (maybe minimal).\n\nQuestion: \"Un partecipante muove il dito indice e tocca il palmo dell'altra mano. Un dispositivo introduce un ritardo crescente tra il comando motorio e il contatto tattile effettivo. Secondo il modello del forward model / copia dell'efferenza, cosa succede all'intensità percepita del tocco al crescere del ritardo, e perché?\"\n\nOptions (bare claims, no reasoning):\nA. \"Aumenta: il segnale afferente si discosta dalla predizione e la cancellazione fallisce.\"\nB. \"Resta invariata: il tocco è comunque auto-generato, quindi viene attenuato allo stesso modo.\"\nC. \"Aumenta: i recettori cutanei hanno più tempo per recuperare l'adattamento.\"\nD. \"Diminuisce: il tocco cade fuori dalla finestra attentiva del movimento.\"\n\ncorrectAnswer A. Explanation reasoning: forward model predicts the specific spatiotemporal pattern; cancellation is a match-dependent subtraction, so mismatch → prediction error → the sensation reaches awareness. B is the self-attribution/gating model. C confuses adaptation; D is attention.\n\nHmm, does C really predict increase? Yes, \"recovers from adaptation\" → larger response → increase. But wait: a delay would allow more recovery... Actually fine. Both A and C predict increase so the answer depends on mechanism; his thinking field will disambiguate. But the graded verdict \"correct\" on C would be... he'd have picked an option that predicts the right direction but wrong mechanism — graded wrong, which is fine and informative.\n\nActually, is this too much \"do you know the literature\"? The direction (rises with delay) is the empirical finding. But the reasoning is derivable from the model. Since he asked about motor/tactile integration, and this is the core mechanism, it's apt. And if he gets it wrong I learn a lot.\n\nI'll go with it. Dispatch research in parallel.\n\nActually careful: is \"intensity rises with increasing delay of self-produced touch\" correct? Blakemore, Wolpert & Frith 1998 \"Central cancellation of self-produced tickle sensation\" (Nature Neuroscience) — self-produced tactile stimulation rated less tickly; when the tactile stimulus was delayed by 100–300 ms relative to the movement... I recall the finding that increasing the delay from 0 to 200ms increased tickliness, peaking. Yes: Bays et al. 2005 also — temporal tuning; and Blakemore et al. 1999 \"The perception of self-produced sensory stimuli in patients with auditory hallucinations and passivity experiences\" — delay. There's also a known finding of increased intensity with delay in force matching? I'm reasonably confident: delayed self-touch feels more ticklish/intense. Good.\n\nLet me dispatch research on clinical, and ask Q1."
+				},
+				{
+					"type": "toolCall",
+					"id": "chatcmpl-tool-9f2c49a825d7d59c",
+					"name": "research",
+					"arguments": {
+						"question": "What does the experimental and clinical literature actually show about self-touch / self-generated touch and sensory attenuation in patients with unilateral brain lesions — specifically: (1) whether the force-matching / sensory-attenuation paradigm has been tested in stroke patients with hemiplegia or hemisensory loss, (2) findings in right-hemisphere patients with hemispatial or personal neglect, anosognosia, somatoparaphrenia regarding self-touch, self-other attribution, or the ability to localise a body part touched by the intact hand, (3) evidence that self-touch (touching the affected limb with the intact hand) improves position sense, limb localisation, or body ownership in hemiplegic patients, and (4) any evidence on the crossed-finger / Aristotle illusion, the \"self-touch\" temporal-binding paradigm, or body-size/extent estimation in unilateral lesion patients.",
+						"context": "Preparing a lesson on self-touch: components (motor command/efference copy, tactile reafference, proprioception), their integration for perceiving the spatial extent of the body, and the clinical outcomes in patients with unilateral lesions. I need accurate, citable findings for the clinical part — including null results and contested claims."
+					}
+				},
+				{
+					"type": "toolCall",
+					"id": "chatcmpl-tool-b18ee714d83f8adf",
+					"name": "probe",
+					"arguments": {
+						"question": "Un partecipante muove l'indice e tocca il palmo dell'altra mano. Un dispositivo introduce un ritardo crescente tra il comando motorio e il contatto tattile effettivo. Secondo il modello del *forward model* / copia dell'efferenza, cosa succede all'intensità percepita del tocco al crescere del ritardo?",
+						"options": [
+							{
+								"label": "Aumenta: il segnale afferente si discosta dalla predizione e la cancellazione fallisce",
+								"value": "a"
+							},
+							{
+								"label": "Resta invariata: il tocco è pur sempre auto-generato, quindi viene attenuato allo stesso modo",
+								"value": "b"
+							},
+							{
+								"label": "Aumenta: i recettori cutanei hanno più tempo per recuperare dall'adattamento",
+								"value": "c"
+							},
+							{
+								"label": "Diminuisce: il tocco cade fuori dalla finestra attentiva aperta dal movimento",
+								"value": "d"
+							}
+						],
+						"explanation": "Il forward model genera una predizione **specifica** dello schema spazio-temporale delle conseguenze sensoriali del comando. La cancellazione è una sottrazione dipendente dal confronto: se il segnale reale non coincide con la predizione, resta un errore di predizione che raggiunge la coscienza. Per questo il tocco auto-prodotto ritardato (o alterato nella traiettoria) diventa **più** intenso/ticklish del tocco auto-prodotto sincrono, e tanto più quanto più il ritardo si allontana dalla finestra temporale attesa.\n\nL'opzione \"resta invariata\" corrisponde a un modello diverso — gating per **auto-attribuzione** (il tocco è mio, quindi lo smorzo) — che predice insensibilità al ritardo. L'opzione sull'adattamento dei recettori confonde l'adattamento periferico con la cancellazione centrale (nell'adattamento l'intensità *cala* con la stimolazione continua, non cresce col ritardo). L'ultima confonde la cancellazione con l'attenzione: l'attenzione modula l'ampiezza, non è il meccanismo che distingue self da external.",
+						"correctAnswer": "a"
+					}
+				}
+			],
+			"api": "mistral-conversations",
+			"provider": "mistral",
+			"model": "deepseek-v4-1-flash-1017",
+			"usage": {
+				"input": 493,
+				"output": 4953,
+				"cacheRead": 7424,
+				"cacheWrite": 0,
+				"totalTokens": 12870,
+				"cost": {
+					"input": 0.0001479,
+					"output": 0.005943599999999999,
+					"cacheRead": 0.000051968,
+					"cacheWrite": 0,
+					"total": 0.006143468,
+					"totalFromProvider": false
+				}
+			},
+			"stopReason": "toolUse",
+			"timestamp": 1795379871051,
+			"responseId": "280701a990314b06879675cb47a012b2",
+			"rawStopReason": "tool_calls",
+			"durationMs": 17355,
+			"thinkingLevel": "low",
+			"id": "msg_mwsatvzc_119e1a85"
+		},
+		{
+			"role": "toolResult",
+			"toolCallId": "chatcmpl-tool-9f2c49a825d7d59c",
+			"toolName": "research",
+			"content": [
+				{
+					"type": "text",
+					"text": "Dispatched (job job_mwsatvyy_f25a9d55). This call is fire-and-forget: continue your turn and keep teaching — do not wait, poll, or mention waiting. The researched brief arrives as a new message when ready and the lesson resumes from it; cite its sources when you use them."
+				}
+			],
+			"details": "Dispatched (job job_mwsatvyy_f25a9d55). This call is fire-and-forget: continue your turn and keep teaching — do not wait, poll, or mention waiting. The researched brief arrives as a new message when ready and the lesson resumes from it; cite its sources when you use them.",
+			"isError": false,
+			"durationMs": 16,
+			"timestamp": 1795379888423,
+			"id": "msg_mwsatvzd_eac5167e"
+		},
+		{
+			"id": "msg_mwsauxhb_eaf88c81",
+			"role": "toolResult",
+			"toolCallId": "chatcmpl-tool-b18ee714d83f8adf",
+			"toolName": "probe",
+			"content": [
+				{
+					"type": "text",
+					"text": "{\"kind\":\"quiz\",\"optionOrder\":{\"A\":3,\"B\":4,\"C\":1,\"D\":2},\"answers\":[{\"index\":2,\"label\":\"Diminuisce: il tocco cade fuori dalla finestra attentiva aperta dal movimento\",\"letter\":\"B\"}],\"correct\":false,\"confidence\":50}"
+				}
+			],
+			"details": {
+				"kind": "quiz",
+				"tool": "probe",
+				"questionText": "Un partecipante muove l'indice e tocca il palmo dell'altra mano. Un dispositivo introduce un ritardo crescente tra il comando motorio e il contatto tattile effettivo. Secondo il modello del *forward model* / copia dell'efferenza, cosa succede all'intensità percepita del tocco al crescere del ritardo?",
+				"options": [
+					{
+						"index": 1,
+						"label": "Aumenta: i recettori cutanei hanno più tempo per recuperare dall'adattamento"
+					},
+					{
+						"index": 2,
+						"label": "Diminuisce: il tocco cade fuori dalla finestra attentiva aperta dal movimento"
+					},
+					{
+						"index": 3,
+						"label": "Aumenta: il segnale afferente si discosta dalla predizione e la cancellazione fallisce"
+					},
+					{
+						"index": 4,
+						"label": "Resta invariata: il tocco è pur sempre auto-generato, quindi viene attenuato allo stesso modo"
+					}
+				],
+				"optionOrder": {
+					"A": 3,
+					"B": 4,
+					"C": 1,
+					"D": 2
+				},
+				"dontKnow": false,
+				"answers": [
+					{
+						"label": "Diminuisce: il tocco cade fuori dalla finestra attentiva aperta dal movimento",
+						"value": "d",
+						"index": 2
+					}
+				],
+				"answeredAt": "2026-11-22T20:38:57.014Z",
+				"correctIndices": [
+					3
+				],
+				"explanation": "Il forward model genera una predizione **specifica** dello schema spazio-temporale delle conseguenze sensoriali del comando. La cancellazione è una sottrazione dipendente dal confronto: se il segnale reale non coincide con la predizione, resta un errore di predizione che raggiunge la coscienza. Per questo il tocco auto-prodotto ritardato (o alterato nella traiettoria) diventa **più** intenso/ticklish del tocco auto-prodotto sincrono, e tanto più quanto più il ritardo si allontana dalla finestra temporale attesa.\n\nL'opzione \"resta invariata\" corrisponde a un modello diverso — gating per **auto-attribuzione** (il tocco è mio, quindi lo smorzo) — che predice insensibilità al ritardo. L'opzione sull'adattamento dei recettori confonde l'adattamento periferico con la cancellazione centrale (nell'adattamento l'intensità *cala* con la stimolazione continua, non cresce col ritardo). L'ultima confonde la cancellazione con l'attenzione: l'attenzione modula l'ampiezza, non è il meccanismo che distingue self da external.",
+				"correct": false,
+				"confidence": 50
+			},
+			"isError": false,
+			"timestamp": 1795379937023
+		},
+		{
+			"role": "assistant",
+			"content": [
+				{
+					"type": "thinking",
+					"thinking": "Wait — the learner picked option D (displayed as B): \"Diminuisce: il tocco cade fuori dalla finestra attentiva\". Confidence 50 (chance level). No thinking field provided.\n\nSo no reasoning field. Hmm. Wrong answer, at chance confidence, no thinking. This suggests he doesn't know the forward-model story, or distrusts the question. But he's an ML person with a stated interest in \"how motor and tactile info integrate in spatial extension perception\" — so he may have a hazy picture.\n\nBut careful: his answer might reflect a model where the motor action opens a temporal attention window (\"movement opens a window of attention/expectation\") — actually that's a semi-reasonable intuition: delay = outside the window, so the signal is not integrated → perceived as weaker/not attenuated? Actually outside the window the touch would be *more* intense, not less. So the intuition \"outside the window → dropped\" is a real model (temporal integration window) but wrong direction.\n\nWith only a wrong-at-chance answer and no reasoning, I need to go a step lower: establish whether he has the vocabulary/mechanism of efference copy at all. Let me ask a cleaner, more concrete question: perceptual phenomenon, no literature knowledge needed, derivable from experience.\n\nQ2: Concrete everyday scenario. \"You can't tickle yourself. Which account explains why a light stroke on your own ribs doesn't tickle while the same stroke from someone else does?\" Options reflecting models. Still same territory though — if he missed Q1 due to not-knowing-literature, this tests intuition. It's a reasonable next step: how does he *explain* the phenomenon.\n\nAlternatively test whether he has the basic pipeline: motor command → (a) muscles, (b) efference copy → forward model → predicted sensory consequence; compared with actual reafference. Ask: which signal is used to disambiguate \"the world moved\" vs \"I moved\"?\n\nQ2 idea (sharp, experiential, and diagnostic): \"Sit on a train and push your own hand against the seat vs. let the seat push your hand — or eye movements: why doesn't the world move when you move your eyes?\" That tests corollary discharge for a different modality — reveals whether the concept generalizes across systems (his likely ML instinct: it's a general principle). Good discriminator: if he has the general principle, he'll answer that the visual world stays stable because eye-movement commands are subtracted/predicted.\n\nBut better to stay on track. Perhaps most informative right now: does he distinguish *why self-touch is attenuated* mechanistically, and does he know that the attenuation is not about force/attention? Let's ask the tickle question with 4 believable options, one of which is the mismatch/prediction one, one being \"attention\", one \"you know where it comes from so it's non-threatening/irrelevant\", one \"force is lower\".\n\nActually I already covered prediction-vs-attribution in Q1's explanation, which he has now read. So Q2 should be a step lower and build: ask him to reason from scratch about a concrete case that isolates components.\n\nBetter plan: move to the *integration for spatial extent* strand — that's his actual goal, and it may be his strength. Probe: how does the brain know where the touched point on your own hand is, when the hand itself has drifted / when proprioception is noisy? And self-touch: does touching your hand with your other hand improve or corrupt localization?\n\nConcrete well-established fact I'm confident about: tactile localization of a body part is aided by seeing it; and proprioceptive drift. Confident classic: \"the felt position of the hand is a weighted average of vision and proprioception, weights by reliability (van Beers et al.)\". Also confident: self-touch/contact of the two hands improves the sense of where the limbs are — there's literature (e.g., \"bimanual touch improves proprioceptive localization\"), and the crossed-hands spatial remapping (tactile temporal-order judgement reversal) — a solid, famous finding.\n\nThe crossed-hands TOJ reversal is a great probe for \"how motor and tactile info integrate in spatial extension\": crossing the hands makes you judge temporal order erroneously, because touch is remapped into an external, body-centred spatial frame that depends on posture. That's a strong, derivable-ish phenomenon and it's about spatial representation of touch. And it links to parietal lesions (right parietal patients show... hmm, careful with lesion claims; research pending).\n\nLet me do Q2 on crossed hands / spatial remapping? That's a different sub-strand than motor-tactile cue integration. But his goal explicitly: \"how motor and tactile information integrate in the perception of spatial extension\". Crossed hands = the brain uses proprioceptive posture to map touch into external space. Very apt — motor/proprioceptive posture gating tactile spatial coding.\n\nBut first, given the Q1 miss at chance, maybe I should check something more basic and more central: does he hold the idea that the nervous system computes an *estimate* with uncertainty, combining cues? Test with a quantitative-flavoured question he'd likely find natural:\n\nQ2: \"You must judge where your fingertip is in space. Vision of your hand is available but blurred/flickering (unreliable); proprioception is intact. Optic ataxia patients... \" hmm, too clinical.\n\nAlternative Q2 (clean, no literature): \"Two cues estimate the same quantity — the position of your hand: proprioception, and vision. They disagree. What predicts the perceived position?\" Options: A weighted average with weights inversely proportional to each cue's variance; B whichever cue is more \"trusted a priori\" fixed hierarchy; C the more recent; D vision always wins for external space, proprio always for the body. That test: does he have the Bayesian/inverse-variance machinery? Given his ML background (manifold learning, spectral methods), he almost certainly will answer A. Then I confirm quickly and jump higher: what that means for self-touch and spatial extent (that the self-touch configuration improves the estimate, and why lesions that corrupt posture signals corrupt tactile space).\n\nI think the efficient path: Q2 = inverse-variance combination (fast to answer, locates the floor), Q3 = crossed-hands/personal space remapping or the delay-dependent prediction (already covered), Q4 = lesion/clinical. Given the research brief will arrive, my clinical questions need facts — maybe wait for the brief for those.\n\nBut is asking the inverse-variance question too easy/wasteful for an ML person? He's doing spectral methods, JEPA, predictions. Bayesian cue integration = inverse variance weighting is standard ML. Likely a quick confident correct answer → fast floor, then jump. But a wrong answer would be informative. It's cheap: one click. However, \"teaching what he already holds is wasted\" — the risk is spending a question on something obvious. Yet in probing, we need evidence, not assumptions. And there's a specific twist worth testing: whether he thinks the percept is the weighted average vs. one cue being fully recalibrated — and whether he knows *tactile* location is also cue-based.\n\nMake it slightly harder: ask about the *consequence* — what happens to the weight of proprioception when the hand is moved passively by a robot (no motor command), which connects to his motor/tactile question: active vs passive movement, and why the sense of position/extent is better with an efference copy available. That's directly the \"motor information\" component. And it also tests the inverse-variance idea.\n\nQ2: \"Judging the position/extent of your own hand is better when you move it actively than when a robot moves it along the same trajectory. Why?\" Options:\nA. The motor command provides an extra, independent estimate (via forward model) that can be combined with proprioception, lowering total variance.\nB. Active movement increases muscle spindle firing (fusimotor drive) so the same receptors give a cleaner signal — hmm this is actually partly true (alpha-gamma coactivation), which makes it a competing real mechanism! Good distractor but risky: both A and B are partially true. Not ideal for grading.\nC. Attention is higher during active movement.\nD. ... \n\nHmm. Risky. Let's avoid the ambiguity.\n\nGo with the crossed-hands one — cleaner, famous, diagnostic, and about spatial representation. Q2:\n\n\"You cross your hands. Two taps are delivered in quick succession, one to each index finger — left tap first, then right. With hands uncrossed you report correctly. With hands crossed you tend to report the reverse order. What does this show about how tactile spatial location is coded?\"\nOptions:\nA. Touch is remapped into an external, body-centred frame using current posture (proprioceptive/motor information), and the remapping is applied before temporal order is computed. \nB. Touch is coded in a pure somatotopic frame; the illusion is a response bias from confusion about which hand is which.\nC. Temporal order is computed from processing latency that changes because crossing the arms lengthens the neural path from one hand. — plausible-ish naive\nD. Crossing the hands increases the delay between the two taps. — weak\nBetter distractors: B (response confusion / labelling) is genuinely the main alternative explanation debated in the literature — good. C: \"the spatial frames are re-anchored to the head/body midline, so the left hand is now on the right side, and touch is ordered by external spatial position rather than by body part\" — that's actually the correct answer restated. Let me craft:\n\nA. \"Il tocco viene rimappato in un sistema di riferimento esterno centrato sul corpo usando la postura attuale, e l'ordine temporale viene poi letto su quella mappa\" — correct.\nB. \"Il tocco resta codificato somatotopicamente; l'errore è una confusione nel riferire quale mano ha ricevuto lo stimolo\" — alternative (response confusion/decision-level) — real debate.\nC. \"Le vie nervose dal braccio incrociato diventano più lunghe, ritardando uno dei due segnali\" — naive anatomy confusion.\nD. \"L'incrocio aumenta la soglia di rilevazione di uno dei due polpastrelli\" — poor.\n\nHmm, is A vs B solidly resolvable? The crossed-hands TOJ reversal: it's generally interpreted as remapping into external space (Yamamoto & Kitazawa 2001), though there is debate about whether it's due to spatial remapping vs. response labeling — I believe studies (e.g., controlling for response) support the spatial-conflict/remapping account, but there is genuine literature that it's a response-level effect. Making it a graded question with a definitely-correct answer when the literature debates it is risky. Given accuracy bar, I should pick something more solid, or acknowledge the debate in the explanation and frame the question as \"the standard/dominant interpretation\".\n\nAlternative safer question on spatial extent: the spatial coding of touch depends on posture — but a cleaner solid one: \"tactile distance perception\" — the Aristotle illusion: crossing two fingers around an object makes one object feel like two. That's solid and famous (Aristotle; Hayward 2008; Benedetti 1985). And it links directly to spatial extent perception! Great: the crossed-finger illusion is literally about the perception of *spatial extent*, and it's interpreted as arising from conflict between the somatotopic map and the change in receptive-field relations — an \"integration of touch with posture\".\n\nI'm confident: crossed fingers → one object feels like two (Benedetti 1985; Hayward 2008 investigated). Explanation: the two fingers' adjacent receptive fields are put in conflict with the new spatial relationship; the brain infers two objects. Solid.\n\nSo Q2: \"You cross your index and middle fingers and roll a small bead between their tips. You feel two beads. What's the standard explanation?\" Options:\nA. Le due dita hanno campi recettivi con riferimento spaziale vicino sul dito adiacente; incrociando le dita il quadro somatotopico entra in conflitto con la posizione reale, e il sistema conclude che ci sono due oggetti.\nB. Le dita incrociate comprimono i recettori di un dito, generando un secondo segnale tattile.\nC. Ruotando le dita si attivano recettori che normalmente rispondono solo a oggetti separati. (vague)\nD. L'incrocio interrompe l'integrazione tra i due emisferi, che ricevono ciascuno un oggetto separato. — plausible for a beginner? Eh, midline-crossing, decent distractor.\n\nOption A is long and detailed → giveaway asymmetry. Need even grain. Hmm. Options must be same length/grain, bare claims. Let me make all short-ish.\n\nGiven time, maybe I should now think about the overall efficient probe sequence. He gave a broad \"insegnami tutto\", and specified components + applications + outcomes in unilateral lesions. The stated refinement: motor+tactile integration in spatial extent.\n\n4 probes: (1) prediction/attenuation — missed at chance. (2) crossed fingers / spatial extent coding — posture-dependence. (3) inverse-variance/multisensory combination — quick floor check. (4) clinical: unilateral lesion → maybe ask what he expects (e.g., in a patient with hemiplegia who cannot use the left hand, what aspect of self-touch/spatial representation collapses). That can be asked without knowing the literature, based on reasoning from mechanism.\n\nLet me do Q2 now (crossed fingers), then Q3 (inverse variance, quick), then Q4 (clinical prediction). And the research brief may arrive.\n\nWait — one more consideration. His Q1 miss may also be a linguistic/question-format issue: the question asked \"secondo il modello del forward model\" — he picked the option about the attention window. At 50 confidence, it's basically \"I don't have this\". So teach-wise, the components need building from scratch, but his ML background means predictive coding framing will land fast. Good to note in assessment.\n\nNow Q2: frame it as predicting an outcome from a model rather than naming the explanation, so a wrong model yields a distinct answer.\n\nQ2 text: \"Incroci le dita indice e medio e fai scorrere un piccolo oggetto sferico tra i polpastrelli. Senti — cosa, e perché secondo la teoria standard?\"\n\nLet me write options:\nA. \"Due oggetti: il conflitto tra la mappa somatotopica e la disposizione reale delle dita produce una stima errata dell'estensione\" — correct but long-ish.\n\nBetter keep options ≤ ~12 words each.\nA. \"Due oggetti — la mappa somatotopica e la postura reale delle dita mandano informazioni spaziali in conflitto\"\nB. \"Un oggetto — le dita incrociate sono troppo vicine perché i campi recettivi li separino\"\nC. \"Due oggetti — l'incrocio comprime meccanicamente i recettori del dito superiore\"\nD. \"Un oggetto — l'integrazione visuo-tattile corregge l'illusione se gli occhi sono aperti\"\n\nHmm D is odd (illusion persists with eyes closed/open). Let me make D: \"Un oggetto — il cervello dà priorità al tatto rispetto alla propriocezione nell'incrocio\" — eh.\n\nAlternative D: \"Due oggetti — l'incrocio somma le informazioni dei due emisferi, che codificano indipendentemente\" (midline-hemisphere confound). Good.\n\nAnd a distractor reflecting a plausible-but-wrong mechanical account: \"L'incrocio esercita pressione sui polpastrelli e crea una seconda sorgente di segnale\" = C. Fine.\n\nActually — is the standard explanation \"conflict between somatotopic organization and actual finger arrangement\"? Benedetti's account: the crossed-finger illusion is due to the mismatch between the somatotopic map (the two fingers' fields are not adjacent normally) — hmm, precise account: The two fingers' cortices are adjacent; when crossed, a single object stimulates two non-adjacent skin regions whose cortical representations... Let me recall: normal touch of one object on two adjacent fingers generally feels like one object because the fingers' representations are adjacent and the inputs converge (the \"funneling\"/perceptual fusion). When crossed, one object touches the \"outer\" sides of the two fingers — regions that are not adjacent in the somatotopic map — so no fusion occurs → two objects. Yes, that's the standard account: it's the discontinuity in the somatotopic map (the two touching surfaces are far apart in the body's map), so the system concludes two objects. That's essentially my option A but stated more precisely: not \"conflict with posture\" but \"the stimulated skin regions that are adjacent in external space are far apart in the somatotopic map, so fusion fails\".\n\nHmm. Which is \"standard\"? Hayward (2008) \"A template for the Aristotle illusion\" — argued it's a conflict between the somatotopic map and the body's spatial layout... I'm not certain enough. This risks a wrong conditional truth. Better: frame the question so it doesn't require adjudicating the theory, but tests the phenomenon + its implication. E.g.:\n\n\"Percepisci due oggetti. Cosa dimostra questo sull'informazione tattile di estensione spaziale?\" — too essay-like.\n\nSafer: skip the crossed-finger theory question. Choose the inverse-variance one as Q2 instead, and use the *motor* strand (active vs. passive) later. Hmm, but then I lose the spatial-extent probe.\n\nAlternative spatial probe that's theoretically clean and solid: **localization of a touched point on your own body uses a body model that is distorted** — e.g., people systematically misjudge tactile distances across body parts (tactile distance is larger on the arm than the... ), or the \"perceived hand size\" distortions. Also \"touching your own hand with the other hand improves localization\"? I'm not certain.\n\nWhat about the temporal-binding self-touch finding (Bays, Wolpert, Flanagan 2005): when you tap one hand with the other, the two tactile events are perceived as simultaneous even though the afferent arrival times differ by tens of ms — because the brain uses the motor prediction to bind them. That's a clean, well-known finding, directly about motor-tactile integration, and supports: \"the predicted consequence is used to bind/align the two signals into a single percept\". And it's a nice question: \"which yields a wrong model answer like 'the conduction delays are equal'\". Hmm, but do I trust it? Bays et al. 2005 Current Biology \"Perception of the consequences of self-action is temporally tuned and event driven\": tapping one hand with the other — participants perceived simultaneity despite ~ tens of ms difference in conduction; they found a temporal window / event-driven prediction. I'm moderately confident. There's also \"self-touch improves temporal order judgement\" (Bays). Risky to grade specifically.\n\nGiven the accuracy bar, safest strong probe: inverse-variance cue combination for hand position, where I'm certain (van Beers et al. 1999; Ernst & Banks 2002 for vision-haptics). And I can frame it with a quantitative twist that tests whether he can reason, not recall:\n\nQ2: \"Devi stimare la posizione della tua mano nello spazio. Hai due stime indipendenti: propriocettiva (σ = 2 cm) e visiva (σ = 1 cm). Secondo il modello di integrazione ottimale, quanto pesano?\"\nOptions with numbers: 2/3 vision... weights ∝ 1/σ²: vision 1/1=1, proprio 1/4=0.25 → weights 0.8/0.2. Options: \"0.8 visiva / 0.2 propriocettiva\", \"0.5/0.5\", \"0.67/0.33\", \"0.9/0.1\". Graded, quantitative, and reveals whether he uses inverse-variance or a linear/other heuristic. This is a good discriminator for an ML person and cheap. But it's \"easy\" for him likely. Still, evidence is evidence, and it takes 5 seconds.\n\nHmm, but is it the best use? His goal: how motor and tactile info integrate in spatial extent. The inverse-variance machinery is exactly the engine. If he nails it confidently (likely), I can jump straight to the harder question of *what* cues exist and how the motor command enters as a cue, plus the clinical consequence.\n\nI'll do Q2 = inverse variance quantitative. Then Q3 = the specific self-touch/limb-extent question. Then Q4 clinical prediction.\n\nActually, to save round trips and cover the clinical strand too: I could combine, but one question at a time per instructions.\n\nLet me write Q2 carefully with LaTeX.\n\nQuestion: \"Stimi la posizione della tua mano combinando due stime indipendenti: propriocettiva con $\\sigma_p = 2$ cm e visiva con $\\sigma_v = 1$ cm. Secondo l'integrazione bayesiana ottimale, che pesi hanno le due stime nella posizione percepita?\"\n\nOptions:\nA \"$w_v = 0{,}8$, $w_p = 0{,}2$\"\nB \"$w_v = 0{,}5$, $w_p = 0{,}5$\"\nC \"$w_v = 0{,}67$, $w_p = 0{,}33$\"\nD \"$w_v = 0{,}9$, $w_p = 0{,}1$\"\n\nCorrect A (0.8/0.2). Explanation: weights ∝ 1/σ², normalized. 1/1=1, 1/4=0.25 → 0.8, 0.2. C would be weighting proportional to inverse σ (linear), B equal, D over-trust.\n\nGood: genuinely diagnostic (C is the classic wrong scaling).\n\nLet me ask it."
+				},
+				{
+					"type": "toolCall",
+					"id": "chatcmpl-tool-bb93f8470c68cf9c",
+					"name": "probe",
+					"arguments": {
+						"correctAnswer": "a",
+						"explanation": "Il peso ottimale di una stima è proporzionale alla sua **precisione** (inverso della varianza), non alla sua deviazione standard. Con $\\sigma_v^2 = 1$ e $\\sigma_p^2 = 4$: $1/1 = 1$ contro $1/4 = 0{,}25$, quindi normalizzando $w_v = 1/1{,}25 = 0{,}8$ e $w_p = 0{,}25/1{,}25 = 0{,}2$.\n\nLa variante $0{,}67/0{,}33$ pesa gli inversi delle $\\sigma$ invece degli inversi delle **varianze** — l'errore più comune, e sbagliato perché la varianza dell'estimatore combinato si riduce della quantità giusta solo con i pesi in precisione: $\\sigma_{comb}^2 = 1/(1/1 + 1/4) = 0{,}8$ cm, cioè **meno** della migliore delle due singole. Questo è il senso dell'integrazione: non una media di compromesso, ma una stima più affidabile di entrambe le sorgenti.",
+						"options": [
+							{
+								"label": "$w_v = 0{,}8$, $w_p = 0{,}2$",
+								"value": "a"
+							},
+							{
+								"label": "$w_v = 0{,}5$, $w_p = 0{,}5$",
+								"value": "b"
+							},
+							{
+								"label": "$w_v = 0{,}67$, $w_p = 0{,}33$",
+								"value": "c"
+							},
+							{
+								"label": "$w_v = 0{,}9$, $w_p = 0{,}1$",
+								"value": "d"
+							}
+						],
+						"question": "Stimi la posizione della tua mano nello spazio combinando due stime indipendenti: quella **propriocettiva**, con $\\sigma_p = 2$ cm, e quella **visiva**, con $\\sigma_v = 1$ cm. Che pesi hanno le due stime nella posizione percepita, secondo l'integrazione ottimale?"
+					}
+				}
+			],
+			"api": "mistral-conversations",
+			"provider": "mistral",
+			"model": "deepseek-v4-1-flash-1017",
+			"usage": {
+				"input": 222,
+				"output": 5344,
+				"cacheRead": 12800,
+				"cacheWrite": 0,
+				"totalTokens": 18366,
+				"cost": {
+					"input": 0.00006659999999999999,
+					"output": 0.0064128,
+					"cacheRead": 0.0000896,
+					"cacheWrite": 0,
+					"total": 0.006568999999999999,
+					"totalFromProvider": false
+				}
+			},
+			"stopReason": "toolUse",
+			"timestamp": 1795379937058,
+			"responseId": "aeceb3e2e5dc48ffa7dc4efee5d32106",
+			"rawStopReason": "tool_calls",
+			"durationMs": 19827,
+			"thinkingLevel": "low",
+			"id": "msg_mwsavct3_f2337d2e"
+		},
+		{
+			"id": "msg_mwsavqzd_f1da2ffa",
+			"role": "toolResult",
+			"toolCallId": "chatcmpl-tool-bb93f8470c68cf9c",
+			"toolName": "probe",
+			"content": [
+				{
+					"type": "text",
+					"text": "{\"kind\":\"quiz\",\"dontKnow\":true,\"optionOrder\":{\"A\":2,\"B\":4,\"C\":1,\"D\":3},\"thinking\":\"non mi parlare MAI di fromule matematiche\\\\\"}"
+				}
+			],
+			"details": {
+				"kind": "quiz",
+				"tool": "probe",
+				"questionText": "Stimi la posizione della tua mano nello spazio combinando due stime indipendenti: quella **propriocettiva**, con $\\sigma_p = 2$ cm, e quella **visiva**, con $\\sigma_v = 1$ cm. Che pesi hanno le due stime nella posizione percepita, secondo l'integrazione ottimale?",
+				"options": [
+					{
+						"index": 1,
+						"label": "$w_v = 0{,}5$, $w_p = 0{,}5$"
+					},
+					{
+						"index": 2,
+						"label": "$w_v = 0{,}9$, $w_p = 0{,}1$"
+					},
+					{
+						"index": 3,
+						"label": "$w_v = 0{,}8$, $w_p = 0{,}2$"
+					},
+					{
+						"index": 4,
+						"label": "$w_v = 0{,}67$, $w_p = 0{,}33$"
+					}
+				],
+				"optionOrder": {
+					"A": 2,
+					"B": 4,
+					"C": 1,
+					"D": 3
+				},
+				"dontKnow": true,
+				"answers": [],
+				"thinking": "non mi parlare MAI di fromule matematiche\\",
+				"answeredAt": "2026-11-22T20:39:35.248Z",
+				"correctIndices": [
+					3
+				],
+				"explanation": "Il peso ottimale di una stima è proporzionale alla sua **precisione** (inverso della varianza), non alla sua deviazione standard. Con $\\sigma_v^2 = 1$ e $\\sigma_p^2 = 4$: $1/1 = 1$ contro $1/4 = 0{,}25$, quindi normalizzando $w_v = 1/1{,}25 = 0{,}8$ e $w_p = 0{,}25/1{,}25 = 0{,}2$.\n\nLa variante $0{,}67/0{,}33$ pesa gli inversi delle $\\sigma$ invece degli inversi delle **varianze** — l'errore più comune, e sbagliato perché la varianza dell'estimatore combinato si riduce della quantità giusta solo con i pesi in precisione: $\\sigma_{comb}^2 = 1/(1/1 + 1/4) = 0{,}8$ cm, cioè **meno** della migliore delle due singole. Questo è il senso dell'integrazione: non una media di compromesso, ma una stima più affidabile di entrambe le sorgenti.",
+				"correct": false
+			},
+			"isError": false,
+			"timestamp": 1795379975257
+		},
+		{
+			"role": "assistant",
+			"content": [
+				{
+					"type": "thinking",
+					"thinking": "He said: \"non mi parlare MAI di formule matematiche\" (never talk to me about mathematical formulas). And chose \"I don't know\".\n\nImportant preference: no formulas. So drop the Bayesian formalism as a formal apparatus. But the concept (reliability weighting) can be conveyed qualitatively... though he explicitly doesn't want formulas. Hmm — \"non mi parlare MAI di formule matematiche\" — must respect. So the lesson should be conceptual/verbal, concrete, experiential, clinical. This is a strong constraint on the teaching phase — must record it in the assessment.\n\nBut how does he think then? He couldn't answer the weighting question — possibly because he refuses the formal frame, not because he lacks the concept. I should re-probe the same idea qualitatively, no formulas, and see.\n\nAlso reconsider: his Q1 miss at chance — maybe also a dislike of formal framing? No, Q1 was verbal. But it did mention \"forward model\" which might be fine.\n\nSo: new approach — verbal, concrete, no equations, no symbols. Ask about cue weighting verbally: \"Quando vedi la tua mano e la senti, e la vista è offuscata/poco affiidabile mentre la propriocezione è netta, dove percepisci la mano?\" with options in words, not weights.\n\nAlso I need to re-probe the forward model more gently, since Q1 might have been a vocabulary issue. Let me use a fully concrete everyday scenario.\n\nQ3 (verbal, concrete, integrative): \"Ti guardi la mano in penombra: la vedi male, ma la senti con chiarezza. Muovi il dito. Dove percepisci che sia il dito?\" Options: \"verso la posizione propriocettiva\", \"verso quella visiva\", \"a metà\", \"non lo percepisci affatto\". This tests precision weighting verbally.\n\nMaybe better to test his actual question (spatial extent) with a qualitative phenomenon. Let me think about what's most informative given two data points: (1) doesn't have the forward-model/attenuation mechanism; (2) refuses/doesn't use the weighting formalism. Both point to: he has little mechanistic machinery for self-touch, and he wants a non-mathematical treatment.\n\nSo teaching will need to build: motor command → prediction → comparison; contingency; and perceptual consequences. And it must be verbal and concrete.\n\nFor probing, remaining priorities:\n- Does he have ANY model of why self-touch differs? (a concrete everyday question, verbal)\n- Does he know the components: what proprioception is, what it tells you (position? force? movement?), and its role in spatial extent.\n- Clinical expectation: what he'd expect in a hemiplegic patient.\n\nLet me ask the concrete \"why can't you tickle yourself\" question, verbal, with model-bearing distractors. Even if easy, it tells me whether the intuition exists — and if he answers confidently correct, the Q1 miss was about delay/mismatch specifics rather than the whole mechanism.\n\nOptions (bare, verbal, similar grain):\nA. \"Il cervello anticipa le conseguenze sensoriali del proprio movimento e ne annulla la parte prevista\"\nB. \"Il movimento volontario abbassa l'attenzione sul tatto prodotto\"\nC. \"Il tocco auto-prodotto è meccanicamente più leggero di quello altrui\"\nD. \"Il contatto con se stessi non attiva i recettori del solletico\" — hmm weak/cold-eliminable.\n\nMake D: \"Il cervello sa che la fonte è il proprio corpo, quindi etichetta il segnale come irrilevante\" — that's the attribution model, a genuine alternative. Good.\n\nSo options: A prediction/cancellation; B attention; C mechanical force; D self-attribution gating. C is a bit cold-eliminable but it's a real naive model; keep grain similar.\n\nThen depending, next: clinical.\n\nLet me ask Q3 now."
+				},
+				{
+					"type": "toolCall",
+					"id": "chatcmpl-tool-82a93726b1069cdd",
+					"name": "probe",
+					"arguments": {
+						"correctAnswer": "a",
+						"explanation": "Il sistema motorio, quando emette il comando, ne genera anche una **copia interna** e la usa per calcolare in anticipo quali conseguenze sensoriali quel comando produrrà (dove, quando, con che intensità). Il segnale tattile che poi arriva davvero viene confrontato con questa attesa: la parte che coincide è già \"spiegata\" e non ha bisogno di emergere alla coscienza. Non si può solleticare se stessi perché il solletico vive proprio su quell'imprevedibilità.\n\nL'opzione sull'attenzione descrive un effetto reale ma diverso: l'attenzione modula quanto un segnale conta, non è ciò che distingue \"prodotto da me\" da \"prodotto dal mondo\". L'opzione sulla forza sbaglia il dato di fatto: l'attenuazione si misura anche a forza **identica**. L'opzione sull'etichettatura (\"so che è mio, quindi lo ignoro\") è il modello alternativo serio: predice che l'attenuazione dipenda solo dalla **fonte**, non dalla bontà della previsione — e l'esperimento con ritardo o traiettoria alterata la falsifica, perché il tocco resta auto-prodotto ma smette di essere attenuato.",
+						"options": [
+							{
+								"label": "Il cervello anticipa le conseguenze sensoriali del proprio movimento e ne annulla la parte prevista",
+								"value": "a"
+							},
+							{
+								"label": "Il movimento volontario tiene l'attenzione altrove, quindi il tatto che ne deriva passa in secondo piano",
+								"value": "b"
+							},
+							{
+								"label": "Il tocco che ci diamo da soli è meccanicamente più leggero di quello che ci dà un altro",
+								"value": "c"
+							},
+							{
+								"label": "Il cervello sa che la fonte è il proprio corpo e archivia il segnale come irrilevante",
+								"value": "d"
+							}
+						],
+						"question": "Perché non riesci a farti il solletico da solo, mentre la stessa carezza fatta da un'altra persona ti fa contorcere?"
+					}
+				}
+			],
+			"api": "mistral-conversations",
+			"provider": "mistral",
+			"model": "deepseek-v4-1-flash-1017",
+			"usage": {
+				"input": 2167,
+				"output": 1397,
+				"cacheRead": 16256,
+				"cacheWrite": 0,
+				"totalTokens": 19820,
+				"cost": {
+					"input": 0.0006500999999999999,
+					"output": 0.0016764,
+					"cacheRead": 0.000113792,
+					"cacheWrite": 0,
+					"total": 0.002440292,
+					"totalFromProvider": false
+				}
+			},
+			"stopReason": "toolUse",
+			"timestamp": 1795379975277,
+			"responseId": "b2af0c72053348459ff94cfecc1f05af",
+			"rawStopReason": "tool_calls",
+			"durationMs": 5112,
+			"thinkingLevel": "low",
+			"id": "msg_mwsavuxy_4c50ed6e"
+		},
+		{
+			"id": "msg_mwsaw9a3_0f831023",
+			"role": "toolResult",
+			"toolCallId": "chatcmpl-tool-82a93726b1069cdd",
+			"toolName": "probe",
+			"content": [
+				{
+					"type": "text",
+					"text": "{\"kind\":\"quiz\",\"optionOrder\":{\"A\":3,\"B\":2,\"C\":1,\"D\":4},\"answers\":[{\"index\":3,\"label\":\"Il cervello anticipa le conseguenze sensoriali del proprio movimento e ne annulla la parte prevista\",\"letter\":\"C\"}],\"correct\":true,\"confidence\":50}"
+				}
+			],
+			"details": {
+				"kind": "quiz",
+				"tool": "probe",
+				"questionText": "Perché non riesci a farti il solletico da solo, mentre la stessa carezza fatta da un'altra persona ti fa contorcere?",
+				"options": [
+					{
+						"index": 1,
+						"label": "Il tocco che ci diamo da soli è meccanicamente più leggero di quello che ci dà un altro"
+					},
+					{
+						"index": 2,
+						"label": "Il movimento volontario tiene l'attenzione altrove, quindi il tatto che ne deriva passa in secondo piano"
+					},
+					{
+						"index": 3,
+						"label": "Il cervello anticipa le conseguenze sensoriali del proprio movimento e ne annulla la parte prevista"
+					},
+					{
+						"index": 4,
+						"label": "Il cervello sa che la fonte è il proprio corpo e archivia il segnale come irrilevante"
+					}
+				],
+				"optionOrder": {
+					"A": 3,
+					"B": 2,
+					"C": 1,
+					"D": 4
+				},
+				"dontKnow": false,
+				"answers": [
+					{
+						"label": "Il cervello anticipa le conseguenze sensoriali del proprio movimento e ne annulla la parte prevista",
+						"value": "a",
+						"index": 3
+					}
+				],
+				"answeredAt": "2026-11-22T20:39:58.960Z",
+				"correctIndices": [
+					3
+				],
+				"explanation": "Il sistema motorio, quando emette il comando, ne genera anche una **copia interna** e la usa per calcolare in anticipo quali conseguenze sensoriali quel comando produrrà (dove, quando, con che intensità). Il segnale tattile che poi arriva davvero viene confrontato con questa attesa: la parte che coincide è già \"spiegata\" e non ha bisogno di emergere alla coscienza. Non si può solleticare se stessi perché il solletico vive proprio su quell'imprevedibilità.\n\nL'opzione sull'attenzione descrive un effetto reale ma diverso: l'attenzione modula quanto un segnale conta, non è ciò che distingue \"prodotto da me\" da \"prodotto dal mondo\". L'opzione sulla forza sbaglia il dato di fatto: l'attenuazione si misura anche a forza **identica**. L'opzione sull'etichettatura (\"so che è mio, quindi lo ignoro\") è il modello alternativo serio: predice che l'attenuazione dipenda solo dalla **fonte**, non dalla bontà della previsione — e l'esperimento con ritardo o traiettoria alterata la falsifica, perché il tocco resta auto-prodotto ma smette di essere attenuato.",
+				"correct": true,
+				"confidence": 50
+			},
+			"isError": false,
+			"timestamp": 1795379998971
+		},
+		{
+			"role": "assistant",
+			"content": [
+				{
+					"type": "thinking",
+					"thinking": "Correct, at chance confidence (50, no thinking). So the intuition is there but not held firmly. Given chance confidence, treat as available-but-fragile: he can recognize the answer, not necessarily derive it.\n\nNote: he got it right but with 50 confidence = coin flip; he may have eliminated. So the floor: recognizes the prediction idea when stated in plain words; does not have the delay/mismatch consequence; refuses formulas.\n\nNow what's most valuable to probe? His goal: motor+tactile integration in spatial extent, plus clinic in unilateral lesions.\n\nKey strands for the lesson:\nS1. Efference copy / forward model → prediction → attenuation and its failures (delay, trajectory) — partially present (recognition), specific consequences absent.\nS2. Tactile reafference vs exafference; the difference between \"I moved and felt\" vs \"something touched me\".\nS3. Proprioception: what it encodes (position, movement, force), and that it's itself a computed estimate integrating spindle/force/efference info — plus its role in giving touch a location in space (somatotopic vs external frames).\nS4. Spatial extent: body model / body schema; tactile extent perception; the crossed-finger illusion; whether extent of the body is itself a constructed estimate.\nS5. Clinical: unilateral lesion — hemiplegia/hemisensory loss, neglect, anosognosia; practical applications (self-touch as probe and as therapy).\n\nNext probe: spatial extent combined with proprioceptive dependence, verbal only, no math. Something with a definite answer.\n\nGood candidate: the \"tactile location depends on posture\" demonstration with realistic wrong models. Or the crossed fingers phenomenon — I'd need to be sure of the standard explanation; risky. \n\nAlternative solid and highly relevant: **proprioceptive drift / the felt position of the hand is not read off receptors directly but computed** — e.g., patients with deafferentation (G.L., I.W.) can't point to their own limbs but can still move; I'm reasonably confident about this (Rothwell et al. 1982: deafferented patient could not report limb position but could move accurately). That's a nice dissociation: motor command alone ≠ knowledge of position (without feedback), but visual information could substitute. Solid enough? G.L. (Rothwell 1982) — deafferented, could make accurate movements to visual targets but had no position sense; used vision. Yes, well-known. But it's bilateral deafferentation, and he asked about unilateral lesions — but as a component fact it's fine for probing... but it's literature trivia.\n\nBetter: ask a question whose answer is derivable from mechanism and which reveals his model of *what proprioception is for*. \n\nQ4 idea (verbal, concrete, no formulas): \"Al buio, un altro ti prende la mano e la sposta lentamente di lato. Poi ti chiede: dov'è la tua mano? La tua stima di dove si trova si basa su cosa?\" — too essay.\n\nGraded option version: \"Al buio, prova a toccare con l'indice destro la punta del naso. Cosa rende possibile il colpo al primo tentativo?\" Options:\nA. La propriocezione fornisce la posizione delle due parti e la loro relazione in un unico spazio\nB. Il tatto della punta del dito sul naso guida la correzione durante il movimento\nC. Una mappa innata fissa delle distanze tra le parti del corpo\nD. Il comando motorio da solo codifica la posizione finale raggiunta\nD is a genuine misconception (that efference copy alone tells position — false, per deafferented patients). A correct. C is the \"fixed body map\" misconception — genuinely relevant to spatial extent (many believe body extent = fixed hardwired map). B is a real mechanism that matters (touch can correct) but isn't what explains \"at first attempt in the dark\".\n\nThis is a decent probe: C and D are real models with real consequences, and the answer reveals whether he thinks of body space as computed from current signals.\n\nLet me use it. Options grain roughly equal.\n\nThen Q5 clinical: \"Un paziente con lesione dell'emisfero destro non riesce a sentire/toccare... \" I need to wait for research? I can design a question on something I'm confident about: hemispatial neglect patients neglect the contralesional side — including their own body (personal neglect), and they may fail to notice their own left arm, and their self-touch behaviour is asymmetric. Safe enough: standard clinical knowledge. And there's the practical point: the intact hand must reach across to the neglected side; patients may not do spontaneous self-touch on the affected side.\n\nAlternatively, a reasoning question: \"In un paziente emiplegico sinistro... perché è clinicamente rilevante il self-touch?\" \n\nLet me hold the clinical question until the brief arrives (it should arrive as a new message). Meanwhile, ask Q4 on proprioception/body space.\n\nActually the tool call flow: I can ask Q4 now; the brief may arrive in between. Fine."
+				},
+				{
+					"type": "toolCall",
+					"id": "chatcmpl-tool-b2c4999e8ed1eda1",
+					"name": "probe",
+					"arguments": {
+						"correctAnswer": "a",
+						"explanation": "La propriocezione è un **canale in più**, e la sua funzione specifica è fornire la posizione delle parti del corpo *le une rispetto alle altre*, in uno spazio comune. Il tocco del dito sul naso è la conferma che il bersaglio è stato raggiunto, non il mezzo con cui lo si trova al buio: i pazienti che hanno perso la propriocezione degli arti falliscono proprio qui (senza vista non sanno dove sia la mano, pur potendola muovere), mentre i comandi motori restano intatti. È la dissociazione che mostra come il comando motorio da solo **non** contenga la posizione raggiunta: dice cosa fare, non dove sei finito.\n\nLa mappa delle distanze corporee non è una tabella fissa: la estensione del corpo di cui abbiamo esperienza è una stima costruita di volta in volta da questi segnali — ed è per questo che si può alterare con illusioni, e per questo è fragile quando uno dei canali si rompe.",
+						"options": [
+							{
+								"label": "La propriocezione fornisce la posizione delle parti del corpo in uno spazio comune",
+								"value": "a"
+							},
+							{
+								"label": "Il tatto del dito che tocca il naso corregge la traiettoria mentre il movimento avviene",
+								"value": "b"
+							},
+							{
+								"label": "Una mappa corporea innata e fissa stabilisce le distanze tra le parti del corpo",
+								"value": "c"
+							},
+							{
+								"label": "Il comando motorio in sé codifica sempre la posizione finale che l'arto raggiungerà",
+								"value": "d"
+							}
+						],
+						"question": "Al buio, ti tocchi la punta del naso con l'indice al primo tentativo. Cosa rende possibile il colpo a segno?"
+					}
+				}
+			],
+			"api": "mistral-conversations",
+			"provider": "mistral",
+			"model": "deepseek-v4-1-flash-1017",
+			"usage": {
+				"input": 188,
+				"output": 1573,
+				"cacheRead": 19712,
+				"cacheWrite": 0,
+				"totalTokens": 21473,
+				"cost": {
+					"input": 0.000056399999999999995,
+					"output": 0.0018876,
+					"cacheRead": 0.00013798399999999999,
+					"cacheWrite": 0,
+					"total": 0.002081984,
+					"totalFromProvider": false
+				}
+			},
+			"stopReason": "toolUse",
+			"timestamp": 1795379998987,
+			"responseId": "9be9fe1974c248f6bc38f2c050951b5b",
+			"rawStopReason": "tool_calls",
+			"durationMs": 7352,
+			"thinkingLevel": "low",
+			"id": "msg_mwsaweys_5fa8168c"
+		},
+		{
+			"id": "msg_mwsawkcl_367a4495",
+			"role": "toolResult",
+			"toolCallId": "chatcmpl-tool-b2c4999e8ed1eda1",
+			"toolName": "probe",
+			"content": [
+				{
+					"type": "text",
+					"text": "{\"kind\":\"quiz\",\"optionOrder\":{\"A\":1,\"B\":2,\"C\":3,\"D\":4},\"answers\":[{\"index\":1,\"label\":\"La propriocezione fornisce la posizione delle parti del corpo in uno spazio comune\",\"letter\":\"A\"}],\"correct\":true,\"confidence\":50}"
+				}
+			],
+			"details": {
+				"kind": "quiz",
+				"tool": "probe",
+				"questionText": "Al buio, ti tocchi la punta del naso con l'indice al primo tentativo. Cosa rende possibile il colpo a segno?",
+				"options": [
+					{
+						"index": 1,
+						"label": "La propriocezione fornisce la posizione delle parti del corpo in uno spazio comune"
+					},
+					{
+						"index": 2,
+						"label": "Il tatto del dito che tocca il naso corregge la traiettoria mentre il movimento avviene"
+					},
+					{
+						"index": 3,
+						"label": "Una mappa corporea innata e fissa stabilisce le distanze tra le parti del corpo"
+					},
+					{
+						"index": 4,
+						"label": "Il comando motorio in sé codifica sempre la posizione finale che l'arto raggiungerà"
+					}
+				],
+				"optionOrder": {
+					"A": 1,
+					"B": 2,
+					"C": 3,
+					"D": 4
+				},
+				"dontKnow": false,
+				"answers": [
+					{
+						"label": "La propriocezione fornisce la posizione delle parti del corpo in uno spazio comune",
+						"value": "a",
+						"index": 1
+					}
+				],
+				"answeredAt": "2026-11-22T20:40:13.307Z",
+				"correctIndices": [
+					1
+				],
+				"explanation": "La propriocezione è un **canale in più**, e la sua funzione specifica è fornire la posizione delle parti del corpo *le une rispetto alle altre*, in uno spazio comune. Il tocco del dito sul naso è la conferma che il bersaglio è stato raggiunto, non il mezzo con cui lo si trova al buio: i pazienti che hanno perso la propriocezione degli arti falliscono proprio qui (senza vista non sanno dove sia la mano, pur potendola muovere), mentre i comandi motori restano intatti. È la dissociazione che mostra come il comando motorio da solo **non** contenga la posizione raggiunta: dice cosa fare, non dove sei finito.\n\nLa mappa delle distanze corporee non è una tabella fissa: la estensione del corpo di cui abbiamo esperienza è una stima costruita di volta in volta da questi segnali — ed è per questo che si può alterare con illusioni, e per questo è fragile quando uno dei canali si rompe.",
+				"correct": true,
+				"confidence": 50
+			},
+			"isError": false,
+			"timestamp": 1795380013317
+		},
+		{
+			"role": "assistant",
+			"content": [
+				{
+					"type": "thinking",
+					"thinking": "Again correct at 50 confidence. He's answering at chance confidence consistently — maybe he's habitually unconfident, or he distrusts the format. Two correct at 50. So his knowledge is recognizable but he doesn't feel he knows.\n\nSo: he can pick the mainstream correct claim among distractors when stated plainly, but does not have derivational grip (missed the delay consequence; declined the weighting; no reasoning fields at all provided except the \"no formulas\" comment).\n\nNote: no thinking fields at all except the formula comment. So I have little reasoning evidence. I should try to get him to reason out loud — ask a question where the answer requires a derivation and explicitly invite reasoning. Maybe use ask_user_question (free-form) once to get his own words? But ask_user_question is non-graded; the guidance says use the quiz tool for measurement. However, getting his reasoning in his own words is valuable. A free-form ask could be: \"In your own words, how does the brain know that the touch on your hand came from your own other hand?\" That's an open question — but the tool description says use ask_user_question for open-ended responses. It's fine and probably the highest-yield next move, since everything else has been 50-confidence picks with no reasoning.\n\nBut careful about \"one question at a time\" — yes, one.\n\nAlternative: a graded question with a case-based prediction that requires combining components, plus explicitly asking him to think out loud in the thinking field. He may ignore it.\n\nI think a free-form elaborative question is best now: it gives evidence about his model and it's cheap. Something like:\n\n\"Con parole tue: quando ti tocchi la mano sinistra con la destra, il cervello riceve due flussi tattili e un comando motorio. Cosa fa con questi dati per arrivare a un'unica percezione? (2-3 frasi, anche in modo grezzo)\"\n\nBut there's a risk he gives a blank. Combined with options: could offer options as scaffolding. Hmm, ask_user_question allows options + Other. Options like \"non saprei da dove partire\" is not great.\n\nLet me instead do a graded scenario question that requires integration and has a definite answer, and where the wrong options embody distinct models. Good candidate: the classic force-matching result — no, that's literature.\n\nIntegrative scenario idea: \"Stai per afferrare una tazza. Sbagli la presa: la tua mano tocca la tazza più in basso del previsto. Che cos'è che ti fa percepire lo scarto come 'ho sbagliato' anziché come 'la tazza è più in basso'?\" That's a beautiful probe of the inference problem (agency/attribution vs world change) and it's derivable, and central to his question (motor-tactile integration). Options:\nA. \"La discrepanza tra posizione prevista e posizione reale del contatto, attribuita al proprio movimento perché le altre conseguenze coincidevano\" — correct-ish (contingency + discrepancy → attribution to self).\nB. \"Il tatto è più intenso del previsto, e questo basta a segnalare l'errore\" — hmm.\nC. \"La vista della tazza...\"\nD. \"Il sistema confronta la forza applicata con quella ricevuta\"\n\nThis might be too slippery to grade crisply. \n\nGiven diminishing returns and my principle \"stop when you have enough\", consider: what do I actually need for the teacher to plan? I know:\n- Goal: self-touch, components (motor command, tactile, proprioception), practical applications, unilateral lesion outcomes; specifically how motor+tactile integrate for spatial extent.\n- Floor: recognizes mainstream claims when presented in plain verbal form; no formal machinery and explicitly rejects formulas — so the lesson must be verbal, concrete, case-based.\n- Ceiling observed: missed the delay/mismatch prediction (the diagnostic core of prediction-based cancellation) at chance; declined the precision-weighting question.\n- Not tested: whether he knows clinical presentations (neglect, anosognosia), and whether he can reason from mechanism to a patient case.\n\nI should probe the clinical strand at least once, because that's a big part of the request and the teacher needs to know whether to build basic neuro (what neglect/hemiplegia look like) or go straight to mechanism. I can do that with standard clinical knowledge I'm confident about — hemispatial neglect in right-hemisphere lesions, personal neglect, anosognosia.\n\nQ: \"Un paziente con lesione destra non riesce più a usare la mano sinistra...\" Hmm, want something where the answer is definitely correct and the distractors are real models.\n\nConfident facts:\n- Right-hemisphere (typically right parietal, MCA) lesions → contralesional (left) hemispatial neglect, including personal neglect: patients may not dress/wash the left side, may not acknowledge the left arm as theirs (somatoparaphrenia), sometimes deny the deficit (anosognosia).\n- Left-hemisphere lesions → aphasia, right hemiplegia; neglect is rarer and milder.\nThat's textbook-solid.\n\nGraded question: \"Due pazienti, uno con lesione destra e uno con lesione sinistra, entrambi emiplegici. Quale quadro clinico corrisponde al paziente con lesione destra, e perché conta per il self-touch?\" Options:\nA. \"Trascura la metà sinistra del corpo e dello spazio, e può non riconoscere l'arto come proprio\"\nB. \"Non può muovere l'arto destro, ma lo localizza e lo riconosce normalmente\"\nC. \"Ha perso la sensibilità tattile del lato destro con conservata la motricità\"\nD. \"Ha un deficit del campo visivo destro con neglect dello spazio sinistro\"\n\nHmm D is confusing. Better distractors: C (\"perdita della sensibilità tattile controlaterale con motricità conservata\") — a real possible lesion but not the right-hemisphere neglect picture... though right-hemisphere lesions can cause left hemisensory loss too. As a \"which picture corresponds\" question it's mushy.\n\nMaybe simpler and more diagnostic: test whether he knows that in these patients the *self-touch* itself is asymmetric/unavailable — i.e., can his model predict consequences? Ask prediction: \"In a patient with severe left personal neglect, what would you expect about spontaneous self-touch with the intact right hand?\" Requires reasoning, and there is a defensible answer (reduced/absent spontaneous self-touch of the left side; when asked to touch their own left arm they may fail or search). I'm fairly confident clinically: patients with personal neglect fail to touch their own contralesional body part on command.\n\nLet me make that the question — it tests both clinical knowledge and mechanistic thinking, and the answer is standard: they fail to reach/touch their own left hand on command even though they can reach external targets on the left... that's the personal vs extrapersonal dissociation (Confirmed: personal neglect can double-dissociate from extrapersonal neglect). Good, solid.\n\nOptions:\nA. \"Può non riuscire a toccarsi la mano sinistra su richiesta, pur raggiungendo oggetti a sinistra nello spazio\"\nB. \"Tocca normalmente la mano sinistra, ma non riesce a raggiungere oggetti nello spazio sinistro\" — the double dissociation alternative, real competing pattern.\nC. \"Non riesce a toccarsi la mano sinistra perché ha perso la sensibilità tattile di quel lato\" — conflation distractor.\nD. \"Tocca la mano sinistra ma la sente come appartenente a un'altra persona\" — somatoparaphrenia, which is a different (real) phenomenon.\n\nHmm, B and D are both real phenomena; the question asks what you'd expect in *personal neglect* specifically, so A. Then I can teach the distinctions. Good — this probes whether he separates neglect/sensory loss/somatoparaphrenia.\n\nWait, careful with the phrasing \"può non riuscire\" — with the given diagnosis of personal neglect, the answer is essentially tautological if he knows what personal neglect means. Fine — that's the point: distinguishes knowing the term vs not.\n\nThen I'd have covered: mechanism (partial), proprioception/body space (recognized), clinical (test). Then hand off.\n\nShould I also probe \"practical applications\"? The applications (mirror therapy, self-touch-based assessment) will come from the brief. Probing his expectations there: could ask \"what would you predict about a patient who cannot move the left hand: is self-touch training useful?\" — risky to grade.\n\nLet me do the clinical question now, then likely one more probe only if needed, then probe_done. Also I should give a brief corrective note in the message text? The system says messages are documents; in probing I mostly ask questions. I've given explanations via the quiz tool. Keep it minimal.\n\nActually — should I be concerned that I'm burning his patience with lettered quizzes at 50 confidence? Three questions is reasonable.\n\nLet me ask the clinical one."
+				},
+				{
+					"type": "toolCall",
+					"id": "chatcmpl-tool-9f42a476f5602114",
+					"name": "probe",
+					"arguments": {
+						"correctAnswer": "a",
+						"explanation": "Il neglect personale e quello extrapersonale si dissociano: ci sono pazienti che raggiungono oggetti nello spazio sinistro ma non riescono a toccarsi la mano sinistra su richiesta, e pazienti col quadro opposto. Il deficit non è né motorio né sensitivo elementare — è la rappresentazione della metà sinistra **del corpo come oggetto da esplorare** che non viene attivata.\n\nL'opzione sulla perdita di sensibilità descrive un deficit elementare, che è un problema diverso (il paziente sente meno, ma cerca e tocca). L'opzione sulla mano che \"sembra di un altro\" è la somatoparafrenia, fenomeno reale ma distinto, ed è la prova che l'arto può essere rappresentato e al tempo stesso disconosciuto. Tenere separati questi tre livelli — sensibilità, rappresentazione dello spazio corporeo, senso di appartenenza — è ciò che rende il self-touch un test clinico interessante: l'atto di toccarsi mette in gioco tutti e tre insieme.",
+						"options": [
+							{
+								"label": "Può non riuscire a toccarsi la mano sinistra su richiesta, pur raggiungendo oggetti a sinistra nello spazio",
+								"value": "a"
+							},
+							{
+								"label": "Si tocca normalmente la mano sinistra, ma non raggiunge oggetti nello spazio sinistro",
+								"value": "b"
+							},
+							{
+								"label": "Non si tocca la mano sinistra perché ha perso la sensibilità tattile di quel lato",
+								"value": "c"
+							},
+							{
+								"label": "Si tocca la mano sinistra, ma la sente come se appartenesse a un'altra persona",
+								"value": "d"
+							}
+						],
+						"question": "Un paziente con lesione destra e **neglect personale** marcato. Cosa prevedi del suo comportamento quando gli chiedi di toccarsi la mano sinistra?"
+					}
+				}
+			],
+			"api": "mistral-conversations",
+			"provider": "mistral",
+			"model": "deepseek-v4-1-flash-1017",
+			"usage": {
+				"input": 173,
+				"output": 2485,
+				"cacheRead": 21376,
+				"cacheWrite": 0,
+				"totalTokens": 24034,
+				"cost": {
+					"input": 0.000051899999999999994,
+					"output": 0.002982,
+					"cacheRead": 0.000149632,
+					"cacheWrite": 0,
+					"total": 0.0031835319999999998,
+					"totalFromProvider": false
+				}
+			},
+			"stopReason": "toolUse",
+			"timestamp": 1795380013338,
+			"responseId": "fe59d16be8be464f9575777cc2ba6fbe",
+			"rawStopReason": "tool_calls",
+			"durationMs": 10206,
+			"thinkingLevel": "low",
+			"id": "msg_mwsaws8q_6b076b21"
+		},
+		{
+			"id": "msg_mwsax78f_8ff126c3",
+			"role": "toolResult",
+			"toolCallId": "chatcmpl-tool-9f42a476f5602114",
+			"toolName": "probe",
+			"content": [
+				{
+					"type": "text",
+					"text": "{\"kind\":\"quiz\",\"optionOrder\":{\"A\":1,\"B\":4,\"C\":3,\"D\":2},\"answers\":[{\"index\":1,\"label\":\"Può non riuscire a toccarsi la mano sinistra su richiesta, pur raggiungendo oggetti a sinistra nello spazio\",\"letter\":\"A\"}],\"correct\":true,\"confidence\":50}"
+				}
+			],
+			"details": {
+				"kind": "quiz",
+				"tool": "probe",
+				"questionText": "Un paziente con lesione destra e **neglect personale** marcato. Cosa prevedi del suo comportamento quando gli chiedi di toccarsi la mano sinistra?",
+				"options": [
+					{
+						"index": 1,
+						"label": "Può non riuscire a toccarsi la mano sinistra su richiesta, pur raggiungendo oggetti a sinistra nello spazio"
+					},
+					{
+						"index": 2,
+						"label": "Si tocca la mano sinistra, ma la sente come se appartenesse a un'altra persona"
+					},
+					{
+						"index": 3,
+						"label": "Non si tocca la mano sinistra perché ha perso la sensibilità tattile di quel lato"
+					},
+					{
+						"index": 4,
+						"label": "Si tocca normalmente la mano sinistra, ma non raggiunge oggetti nello spazio sinistro"
+					}
+				],
+				"optionOrder": {
+					"A": 1,
+					"B": 4,
+					"C": 3,
+					"D": 2
+				},
+				"dontKnow": false,
+				"answers": [
+					{
+						"label": "Può non riuscire a toccarsi la mano sinistra su richiesta, pur raggiungendo oggetti a sinistra nello spazio",
+						"value": "a",
+						"index": 1
+					}
+				],
+				"answeredAt": "2026-11-22T20:40:42.965Z",
+				"correctIndices": [
+					1
+				],
+				"explanation": "Il neglect personale e quello extrapersonale si dissociano: ci sono pazienti che raggiungono oggetti nello spazio sinistro ma non riescono a toccarsi la mano sinistra su richiesta, e pazienti col quadro opposto. Il deficit non è né motorio né sensitivo elementare — è la rappresentazione della metà sinistra **del corpo come oggetto da esplorare** che non viene attivata.\n\nL'opzione sulla perdita di sensibilità descrive un deficit elementare, che è un problema diverso (il paziente sente meno, ma cerca e tocca). L'opzione sulla mano che \"sembra di un altro\" è la somatoparafrenia, fenomeno reale ma distinto, ed è la prova che l'arto può essere rappresentato e al tempo stesso disconosciuto. Tenere separati questi tre livelli — sensibilità, rappresentazione dello spazio corporeo, senso di appartenenza — è ciò che rende il self-touch un test clinico interessante: l'atto di toccarsi mette in gioco tutti e tre insieme.",
+				"correct": true,
+				"confidence": 50
+			},
+			"isError": false,
+			"timestamp": 1795380042975
+		},
+		{
+			"id": "steer_job_mwsatvyy_f25a9d55",
+			"role": "custom",
+			"customType": "subagent-steer",
+			"content": "Research complete — the researcher's full brief follows. Weave it into the lesson and cite its sources when you use its findings:\n\n## Summary\n\nSelf-touch has been studied in unilateral-lesion patients, but the evidence is thin, unevenly distributed across the four sub-questions, and dominated by single-case reports. The best-replicated clinical finding is **self-touch enhancement of tactile *detection*** in stroke patients with primary sensory loss (first reported by Weiskrantz & Zhang; 22/39 patients in a later series, mostly right-hemisphere). By contrast, the force-matching/sensory-attenuation paradigm itself appears **never to have been applied to hemiplegic or hemisensory stroke patients**, self-touch has **not** been shown to improve position sense, the Aristotle/crossed-finger illusion has **no** published unilateral-lesion study, and the one adequately powered test of self-touch on limb ownership in right-hemisphere stroke found the benefit came from *experimenter*-administered touch, not self-touch.\n\n## Findings\n\n**Facet 1 — force-matching / sensory attenuation in stroke**\n\n1. **The canonical paradigm is self-generated vs. externally-generated force.** Shergill, Bays, Frith & Wolpert showed that people perceive a force produced by their own other hand as weaker than an identical externally applied force, so they over-compensate and force escalates (\"two eyes for an eye\"). This is the reference paradigm your lesson's \"motor command/efference copy\" component rests on. [Shergill et al. 2003, *Science* 301:187](https://pubmed.ncbi.nlm.nih.gov/12855800/)\n\n2. **This paradigm does not appear to have been tested in hemiplegic or hemisensory-loss stroke.** Systematic querying of Europe PMC (queries combining \"sensory attenuation\"/\"self-generated force\"/\"force matching\" with stroke, hemiplegia, hemiparesis, parietal lesion) returned 100+ hits but none applying the self-vs-other attenuation contrast to a stroke sample. The sensory-attenuation patient literature is concentrated in schizophrenia/psychosis, functional neurological disorder, tics, ADHD and eating disorders — not focal lesions. [e.g. Rossi et al. 2025, scoping review of sensory attenuation in symptomatic and healthy individuals](https://pubmed.ncbi.nlm.nih.gov/40625349/)\n\n3. **What *has* been done in stroke is force-matching as a motor/precision task, not as an attenuation index.** Hemispheric stroke survivors show impaired joint-torque matching attributable to proprioceptive deficit — a statement about kinaesthetic acuity, not about attenuation of self-generated signals. [Oh, Rymer & Oh 2026, *Biomed Eng Lett*](https://pubmed.ncbi.nlm.nih.gov/42080035/) Similarly, force-matching in subacute stroke has been used to index muscle activation/co-activation rather than sensory attenuation. [Chow & Stokic 2021, *Exp Brain Res*](https://pubmed.ncbi.nlm.nih.gov/34213633/)\n\n4. **The closest lesion analogue is a dissociation result, not an attenuation result.** In 20 left-hemisphere stroke patients, apraxic patients had a *prolonged* time window for sensorimotor integration (delay-detection threshold) but *preserved* explicit sense of agency — i.e., altered low-level prediction/feedback comparison with intact explicit self-attribution. [Nobusako et al. 2025, *Front Hum Neurosci*](https://pmc.ncbi.nlm.nih.gov/articles/PMC12202472/)\n\n5. **The neural substrate of attenuation is cerebellar–somatosensory, established only in healthy participants.** Attenuation of self-generated touch tracks cerebellum–somatosensory functional connectivity, and brief temporal perturbations of somatosensory reafference abolish both perceptual and neural attenuation while increasing SMA–cerebellar coupling. [Kilteni & Ehrsson 2020, *J Neurosci*](https://pubmed.ncbi.nlm.nih.gov/31811029/); [Kilteni, Houborg & Ehrsson 2023, *J Neurosci*](https://pubmed.ncbi.nlm.nih.gov/37339879/) This gives you a mechanistic scaffold, but it is not lesion evidence.\n\n**Facet 2 — right-hemisphere patients: neglect, anosognosia, somatoparaphrenia, self–other attribution**\n\n6. **\"Touching the affected limb with the intact hand\" is literally the diagnostic task for personal neglect — and RHD patients fail it.** Personal neglect is operationalised as failure to explore/touch one's own contralesional body with the intact hand (e.g., the Fluff test: patients must detach stickers from their own body). [Caggiano & Jehkonen 2018, *Neuropsychol Rev*](https://pubmed.ncbi.nlm.nih.gov/30547412/); [Cocchini & Beschin 2022, *Neuropsychol Rehabil*](https://pubmed.ncbi.nlm.nih.gov/32723030/) This is the cleanest \"self-touch as a clinical probe\" finding in the literature.\n\n7. **Key negative result: in right-hemisphere stroke, *other*-administered touch — not self-touch — increased limb ownership.** In 26 right-hemisphere patients, a significant increase in limb ownership followed **experimenter-administered** C-tactile-optimal (3 cm/s) touch; the self-generated condition did not produce the effect. Voxel-based lesion-symptom mapping associated failure to benefit with right insula and, more substantially, right **corpus callosum** damage. [Jenkinson et al. 2020, *Brain Commun*](https://pmc.ncbi.nlm.nih.gov/articles/PMC7425337/) This is the strongest controlled evidence and it cuts against a simple \"self-touch restores ownership\" story.\n\n8. **Single-case evidence does support self-touch in somatoparaphrenia — with an explicit/implicit dissociation.** In one somatoparaphrenic patient, self-administered touch increased *explicit* recognition of the disowned left hand, while implicitly both the patient's hand and the experimenter's hand were rated as more belonging — i.e., explicit and implicit ownership recovered differently. [Salvato, Crivelli, Gandola & Bottini 2023, *Neurocase* 29:133–140](https://pubmed.ncbi.nlm.nih.gov/38650434/)\n\n9. **The classic case (GE) shows self-touch reinstating ownership and affect — but also shows the effect is not limb-specific.** A patient with left hemiplegia, hemianaesthesia, neglect and anosognosia who spontaneously stroked her affected arm \"with care and affection\" regained ownership and positive affect when she touched her own arm; yet stroking four *foreign* arms (including a right rubber arm in an implausible position) also eventually produced ownership, and stroking a foreign arm transiently *disowned* her real arm until she touched it again. [van Stralen, van Zandvoort & Dijkerman 2011, *Phil Trans R Soc B* 366:3142–3152](https://pmc.ncbi.nlm.nih.gov/articles/PMC3172603/) Treat this as a demonstration of a general body-representation effect, not proof of a self-specific mechanism.\n\n10. **Covert disownership is common and is missed by verbal interview.** In 105 stroke patients (55 controls), ~30% showed \"covert disownership\" of contralateral hand/arm/leg/face, revealed by non-verbal response; right insula and basal ganglia were implicated for upper-limb ownership, with large-scale bilateral temporo-parietal and fronto-occipital disconnections. [Cataldo E et al. 2025, *Brain Commun*](https://pmc.ncbi.nlm.nih.gov/articles/PMC12204195/) This means incidence estimates based on interview alone understate the phenomenon.\n\n11. **Anosognosia for hemiplegia has a partly separable substrate from somatoparaphrenia, and implicit knowledge is often preserved.** AHP occurs in ~18% of first-ever stroke and ~32% of right-hemisphere stroke patients, is associated with right insular damage, and patients show slowed processing of deficit-related sentences despite denying the deficit — implicit knowledge without explicit awareness. [van Stralen et al. 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3172603/); for the lesion dissociations see [Moro et al. 2016, *Cortex*](https://pubmed.ncbi.nlm.nih.gov/27494375/) and the tripartite disconnection account in [Pacella et al. 2019, *eLife*](https://pubmed.ncbi.nlm.nih.gov/31383259/)\n\n12. **Self-observation can restore motor awareness in AHP — a useful parallel for the \"self-generated\" theme.** Video self-observation improved motor awareness in anosognosic patients, indicating that re-presenting the patient's own action can partially correct the faulty comparison. [Besharati et al. 2015, *Neuropsychol Rehabil*](https://pubmed.ncbi.nlm.nih.gov/24958030/)\n\n**Facet 3 — does self-touch improve detection, localisation, position sense, ownership?**\n\n13. **Best-replicated clinical effect: self-touch enhances tactile *detection* in the affected hand.** First reported in a right-hemisphere stroke patient who could not detect examiner-administered touch but felt it when touched by her own unaffected hand or by a probe held in it; replicated in a larger series in which **22 of 39** stroke patients showed self-touch enhancement, **17 of 22** with right-hemisphere lesions. [Weiskrantz & Zhang; Valentini et al. — both reviewed in van Stralen et al. 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3172603/)\n\n14. **The mechanism appears to be temporal expectation, not proprioception or spatial attention.** When the affected hand was interdigitated with the examiner's so that proprioceptive input was uninformative, enhancement occurred only when the patient's *own* hand was touched; and introducing a temporal delay between the administering movement and the tactile stimulus **abolished** the enhancement. This is direct evidence against a proprioceptive explanation and for a prediction/timing account. [White et al., reviewed in van Stralen et al. 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3172603/)\n\n15. **The effect extends to the lower limb, using a self-touch rubber-hand proxy.** Patient NG, the first reported lower-limb case, could not reach her foot; using a prosthetic limb she administered stimulation herself while the examiner synchronously stimulated her affected left foot. She detected **all** self-administered stimulation but missed **one-third** of examiner-administered stimulation. [White & Aimola Davies 2013, *Perception* 42:473–476](https://pubmed.ncbi.nlm.nih.gov/23866560/)\n\n16. **Limb *localisation* improved under self-touch in one reported case — the single most on-point result for your question, but n=1.** A right-hemisphere stroke patient who could detect but not localise touch on the left hand improved localisation when reaching with the right hand to the left of the affected hand while experiencing an illusion of self-touch; the authors inferred that self-touch altered the representation of the affected hand. [White et al., reviewed in van Stralen et al. 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3172603/)\n\n17. **There is no evidence that self-touch improves *position sense* (proprioception) in hemiplegic patients.** No study measuring position sense as an outcome of self-touch was found; the review literature explicitly concludes proprioceptive information is *not* the primary contributor to the self-touch effect. What exists instead is body-*size* distortion (see 20–21) and general proprioceptive awareness work. Report this as a genuine null/gap rather than as a negative finding.\n\n18. **In healthy participants, active self-touch causally restores proprioceptive spatial awareness when it has been experimentally disrupted** — the strongest causal support for the lesson's integration claim. Active self-touch restored bodily proprioceptive spatial awareness after disruption by the rubber hand illusion. [Cataldo, Crivelli, Bottini, Gomi & Haggard 2024, *Proc R Soc B*](https://pubmed.ncbi.nlm.nih.gov/38228504/)\n\n19. **Bimanual self-touch depends on interhemispheric transfer — mechanistically linking self-touch to callosal integrity.** In a two-robot self-touch design, tactile events were transferred interhemispherically, but the *sign* of the tactile information was not respected (both increases and decreases in pressure enhanced the perceived bump), and randomising (rather than blocking) stimulus order abolished the effect — implying a stable model of temporally synchronised events is required. [Kong et al. 2022, *Proc R Soc B*](https://pmc.ncbi.nlm.nih.gov/articles/PMC9727658/) Combined with finding 7 (right callosal damage predicting failure to benefit from touch), this is a strong, teachable bridge between mechanism and lesion.\n\n**Facet 4 — Aristotle illusion, self-touch temporal binding, body-size/extent estimation**\n\n20. **Body-size estimation in unilateral lesions points in *opposite* directions depending on the syndrome — a genuinely contested literature.** In 11 right-hemisphere hemiplegic patients, patients with personal neglect *underestimated* left-hand width, whereas hemiplegic patients *without* personal neglect tended to perceive the affected hand as **larger** than the ipsilesional one. [Caggiano et al. 2020, *J Clin Exp Neuropsychol*](https://pubmed.ncbi.nlm.nih.gov/33203298/)\n\n21. **A larger study found transient *overestimation* of the paretic arm, which resolved.** In 32 right-hemisphere stroke patients (13 paresis alone, 10 paresis + neglect, 9 neither), measured by explicit visual, explicit tactile/proprioceptive, and implicit reaching estimates, the contralesional paretic arm was transiently **overestimated**; 19 patients re-examined ~5 months later showed resolution. [Shahvaroughi-Farahani et al. 2021, *PLoS One*](https://pmc.ncbi.nlm.nih.gov/articles/PMC8177542/)\n\n22. **Personal neglect produces a *labile*, not simply shrunken, body representation.** In 9 right-brain-damaged patients, PN+ patients showed a wider distorted representational range for both hands *and* face; PN− patients also misrepresented the left hand, linked to impaired motor performance. [Mora, Gonzalez Alted & Cocchini 2023, *Neuropsychologia*](https://pubmed.ncbi.nlm.nih.gov/36863608/) So the \"downsized hand\" and \"enlarged paretic arm\" findings coexist — present this as unresolved heterogeneity (small samples, different tasks, different syndromes).\n\n23. **The self-touch paradigm has been used to show motor signals dominate perceived spatial extent — with a caveat.** Using two coupled master–slave robots to decouple motor from tactile extent, perceived *tactile* extent was strongly biased by movement amplitude, and touch also biased perceived *movement* extent; the movement→touch effect was stronger for active than passive movement, but motor dominance was **not total**. [Cataldo, Dupin, Gomi & Haggard 2021, *Neuropsychologia*](https://pubmed.ncbi.nlm.nih.gov/33346045/) This is the direct experimental basis for \"integration for perceiving the spatial extent of the body\" — but in healthy adults.\n\n24. **Self-touch temporal binding is an active, contested research front — and the direction of the effect is disputed.** The bimanual self-touch paradigm shows that predictions of self-touch determine the temporal tuning of somatosensory perception, including temporal binding windows. [Cemeljic, Job & Kilteni 2025, *iScience*](https://pubmed.ncbi.nlm.nih.gov/39898028/); [Cemeljic & Kilteni 2026, *Eur J Neurosci*](https://pubmed.ncbi.nlm.nih.gov/41725123) Crucially, two recent papers reach **opposite conclusions**: \"action does not enhance but attenuates predicted touch\" [Job & Kilteni 2023, *eLife*](https://pubmed.ncbi.nlm.nih.gov/38099521/) versus \"movement enhances tactile sensitivity through prediction\" [D'Onofrio Pacheco & Zimmermann 2026, *J Neurophysiol*](https://pubmed.ncbi.nlm.nih.gov/41824129/). A divisive-normalisation account reconciles some of this by invoking noisy sensorimotor predictions. [Valè et al. 2025, *J Neurophysiol*](https://pubmed.ncbi.nlm.nih.gov/40531356/) Also note attenuation is not the same phenomenon as movement-related tactile gating. [Kilteni & Ehrsson 2022, *iScience*](https://pubmed.ncbi.nlm.nih.gov/35372807/)\n\n25. **No published study tests the Aristotle (crossed-finger) illusion in unilateral-lesion patients.** Europe PMC returns only 14 items for \"Aristotle illusion,\" none a stroke/lesion study: work exists in Parkinson's disease (where interdigit tactile perception was **normal**) [Fiorio et al. 2014, *PLoS One*](https://pmc.ncbi.nlm.nih.gov/articles/PMC3921216/), in healthy somatotopic/directional-judgement paradigms [de Haan, Anema & Dijkerman 2012, *PLoS One*](https://pmc.ncbi.nlm.nih.gov/articles/PMC3454417/), on hand posture and perceived tactile distance [Longo 2017, *Sci Rep*](https://pubmed.ncbi.nlm.nih.gov/28851889/), and fMRI decoding [Lee et al. 2025, *Front Neurosci*](https://pubmed.ncbi.nlm.nih.gov/40613086/). If you want to teach crossed-finger effects in lesions, you must flag it as an untested extrapolation.\n\n## Sources\n\n**Kept**\n- van Stralen, van Zandvoort & Dijkerman (2011), *Phil Trans R Soc B* — https://pmc.ncbi.nlm.nih.gov/articles/PMC3172603/ — the single most important source: a review *plus* primary case (GE) dedicated exactly to self-touch in post-stroke somatosensory and body-representation disorders. Source of findings 8, 11, 13, 14, 16.\n- Jenkinson et al. (2020), *Brain Commun* — https://pmc.ncbi.nlm.nih.gov/articles/PMC7425337/ — the only adequately powered (n=26) self- vs other-generated touch test in right-hemisphere stroke; supplies the key null result and callosal VLSM.\n- Cataldo E et al. (2025), *Brain Commun* — https://pmc.ncbi.nlm.nih.gov/articles/PMC12204195/ — large (n=105) modern incidence and lesion-network data on disownership.\n- Salvato et al. (2023), *Neurocase* — https://pubmed.ncbi.nlm.nih.gov/38650434/ — most recent self-touch-in-somatoparaphrenia case, with explicit/implicit dissociation.\n- White & Aimola Davies (2013), *Perception* — https://pubmed.ncbi.nlm.nih.gov/23866560/ — lower-limb self-touch enhancement; practical paradigm for mobility-limited patients.\n- Shahvaroughi-Farahani et al. (2021), *PLoS One* — https://pmc.ncbi.nlm.nih.gov/articles/PMC8177542/ — best-controlled body-size data in paretic stroke, with follow-up.\n- Caggiano et al. (2020) — https://pubmed.ncbi.nlm.nih.gov/33203298/; Mora et al. (2023) — https://pubmed.ncbi.nlm.nih.gov/36863608/ — the contradicting body-size results; essential for the \"contested\" framing.\n- Cataldo A et al. (2021), *Neuropsychologia* — https://pubmed.ncbi.nlm.nih.gov/33346045/; and (2024), *Proc R Soc B* — https://pubmed.ncbi.nlm.nih.gov/38228504/ — the robot self-touch spatial-extent paradigm and the causal restoration result.\n- Kong et al. (2022), *Proc R Soc B* — https://pmc.ncbi.nlm.nih.gov/articles/PMC9727658/ — interhemispheric transfer in bimanual self-touch; the mechanistic hinge for lesion interpretation.\n- Cemeljic/Job/Kilteni (2025) — https://pubmed.ncbi.nlm.nih.gov/39898028/; Job & Kilteni (2023) — https://pubmed.ncbi.nlm.nih.gov/38099521/; D'Onofrio Pacheco & Zimmermann (2026) — https://pubmed.ncbi.nlm.nih.gov/41824129/; Valè et al. (2025) — https://pubmed.ncbi.nlm.nih.gov/40531356/ — the temporal-binding paradigm and its live contradiction.\n- Shergill et al. (2003), *Science* — https://pubmed.ncbi.nlm.nih.gov/12855800/ — the force-matching paradigm's origin; needed to state precisely what was *not* done in stroke.\n- Oh, Rymer & Oh (2026) — https://pubmed.ncbi.nlm.nih.gov/42080035/ — documents that force matching in stroke indexes proprioceptive acuity, not attenuation.\n- Nobusako et al. (2025), *Front Hum Neurosci* — https://pmc.ncbi.nlm.nih.gov/articles/PMC12202472/ — stroke lesion study of sensorimotor integration window vs explicit agency.\n- Fiorio et al. (2014) — https://pmc.ncbi.nlm.nih.gov/articles/PMC3921216/; de Haan et al. (2012) — https://pmc.ncbi.nlm.nih.gov/articles/PMC3454417/ — establish the Aristotle-illusion literature base and its non-lesion scope.\n- Pacella et al. (2019), *eLife* — https://pubmed.ncbi.nlm.nih.gov/31383259/; Moro et al. (2016), *Cortex* — https://pubmed.ncbi.nlm.nih.gov/27494375/; Besharati et al. (2015) — https://pubmed.ncbi.nlm.nih.gov/24958030/ — anosognosia substrate and self-observation effects.\n- Caggiano & Jehkonen (2018) — https://pubmed.ncbi.nlm.nih.gov/30547412/; Cocchini & Beschin (2022) — https://pubmed.ncbi.nlm.nih.gov/32723030/ — personal neglect as a self-touch-to-own-body task; the Fluff test.\n- Kilteni & Ehrsson (2020) — https://pubmed.ncbi.nlm.nih.gov/31811029/; Kilteni, Houborg & Ehrsson (2023) — https://pubmed.ncbi.nlm.nih.gov/37339879/ — cerebellar substrate of attenuation (healthy).\n\n**Dropped**\n- Large numbers of tangential Europe PMC hits (post-stroke fatigue, gait/biomechanics, robotic rehabilitation, neuroimaging methods, sensor technology, COVID/fatigue commentary) — retrieved because broad Boolean terms matched, but irrelevant to self-touch or attribution.\n- Schizophrenia/psychosis, ADHD, autism, anorexia and dissociation self-touch papers — mechanistically informative but not lesion evidence; would dilute the clinical section. (Retained only the general scoping review as a scope statement.)\n- Preprints duplicating published versions (e.g., the bioRxiv divisive-attenuation and Research Square anorexia preprints) — superseded by peer-reviewed versions.\n- Paywalled items for which only abstracts were available and whose abstracts did not yield a distinct citable claim.\n\n## Gaps\n\n1. **Facet 1 is essentially unanswered in the literature, not by me.** No study applies the self-vs-external force-matching (or equivalent) attenuation contrast to hemiplegic/hemisensory stroke patients. I searched ~10 query formulations across Europe PMC; the absence is consistent across them. If a study exists, it is likely titled around \"sense of effort,\" \"force perception,\" or \"agency\" rather than \"sensory attenuation\" — worth a targeted search by author (e.g., the Sirigu/Lafargue sense-of-effort line, or Gandevia/McCloskey lineage) which I could not pursue without a working search engine.\n2. **Position sense as an outcome of self-touch is untested** in hemiplegia. Anyone claiming self-touch improves position sense in stroke is extrapolating from healthy samples and from *detection*/localisation data.\n3. **Aristotle/crossed-finger illusion in unilateral lesions: no published study.** Do not present as established.\n4. **Evidence quality is weak across facets 2–3**: single cases (GE, NG, the Salvato patient), small groups (n=9–39), heterogeneous tasks, one dominant research group/era (1990s–2010s) for self-touch enhancement. Likely publication bias toward positive cases.\n5. **Full texts I could not read** (403/paywall): Salvato 2023 *Neurocase*, White & Aimola Davies 2013, Mora 2023, Caggiano 2020, Moro 2016, Shergill 2003 (abstract + secondary descriptions only). Claims from these rest on abstracts or on van Stralen et al.'s summary; the specific parameters of Valentini et al. and White et al.'s localisation experiment are second-hand via that review and should be checked against the originals before publication.\n6. **Web search was unavailable** (no search API key configured — Tavily/Brave/Exa/Firecrawl/Ollama). I worked around it by querying the Europe PMC REST API and PMC directly, which covers indexed biomedical literature well but misses theses, conference abstracts, non-indexed journals and grey literature. A configured search key would strengthen coverage, particularly for any negative or unpublished stroke force-matching work.\n\n## Tools\n- `web_search` — unavailable (no engine configured); not retried after the initial failure, per protocol.\n- `web_fetch` — used against the Europe PMC REST API (`/search`, `resultType=lite` and `core`) and `pmc.ncbi.nlm.nih.gov` for full text; several endpoints returned HTTP 403/500 (Europe PMC article pages, `fullTextXML`), handled by switching to the PMC HTML route.\n- `web_fetch_pdf`, `pdf_info`, `pdf_extract`, `pdf_search` — not needed; no PDF sources were reached.",
+			"display": true,
+			"details": {
+				"jobId": "job_mwsatvyy_f25a9d55",
+				"kind": "research",
+				"toolCallId": "chatcmpl-tool-9f2c49a825d7d59c",
+				"result": {
+					"brief": "## Summary\n\nSelf-touch has been studied in unilateral-lesion patients, but the evidence is thin, unevenly distributed across the four sub-questions, and dominated by single-case reports. The best-replicated clinical finding is **self-touch enhancement of tactile *detection*** in stroke patients with primary sensory loss (first reported by Weiskrantz & Zhang; 22/39 patients in a later series, mostly right-hemisphere). By contrast, the force-matching/sensory-attenuation paradigm itself appears **never to have been applied to hemiplegic or hemisensory stroke patients**, self-touch has **not** been shown to improve position sense, the Aristotle/crossed-finger illusion has **no** published unilateral-lesion study, and the one adequately powered test of self-touch on limb ownership in right-hemisphere stroke found the benefit came from *experimenter*-administered touch, not self-touch.\n\n## Findings\n\n**Facet 1 — force-matching / sensory attenuation in stroke**\n\n1. **The canonical paradigm is self-generated vs. externally-generated force.** Shergill, Bays, Frith & Wolpert showed that people perceive a force produced by their own other hand as weaker than an identical externally applied force, so they over-compensate and force escalates (\"two eyes for an eye\"). This is the reference paradigm your lesson's \"motor command/efference copy\" component rests on. [Shergill et al. 2003, *Science* 301:187](https://pubmed.ncbi.nlm.nih.gov/12855800/)\n\n2. **This paradigm does not appear to have been tested in hemiplegic or hemisensory-loss stroke.** Systematic querying of Europe PMC (queries combining \"sensory attenuation\"/\"self-generated force\"/\"force matching\" with stroke, hemiplegia, hemiparesis, parietal lesion) returned 100+ hits but none applying the self-vs-other attenuation contrast to a stroke sample. The sensory-attenuation patient literature is concentrated in schizophrenia/psychosis, functional neurological disorder, tics, ADHD and eating disorders — not focal lesions. [e.g. Rossi et al. 2025, scoping review of sensory attenuation in symptomatic and healthy individuals](https://pubmed.ncbi.nlm.nih.gov/40625349/)\n\n3. **What *has* been done in stroke is force-matching as a motor/precision task, not as an attenuation index.** Hemispheric stroke survivors show impaired joint-torque matching attributable to proprioceptive deficit — a statement about kinaesthetic acuity, not about attenuation of self-generated signals. [Oh, Rymer & Oh 2026, *Biomed Eng Lett*](https://pubmed.ncbi.nlm.nih.gov/42080035/) Similarly, force-matching in subacute stroke has been used to index muscle activation/co-activation rather than sensory attenuation. [Chow & Stokic 2021, *Exp Brain Res*](https://pubmed.ncbi.nlm.nih.gov/34213633/)\n\n4. **The closest lesion analogue is a dissociation result, not an attenuation result.** In 20 left-hemisphere stroke patients, apraxic patients had a *prolonged* time window for sensorimotor integration (delay-detection threshold) but *preserved* explicit sense of agency — i.e., altered low-level prediction/feedback comparison with intact explicit self-attribution. [Nobusako et al. 2025, *Front Hum Neurosci*](https://pmc.ncbi.nlm.nih.gov/articles/PMC12202472/)\n\n5. **The neural substrate of attenuation is cerebellar–somatosensory, established only in healthy participants.** Attenuation of self-generated touch tracks cerebellum–somatosensory functional connectivity, and brief temporal perturbations of somatosensory reafference abolish both perceptual and neural attenuation while increasing SMA–cerebellar coupling. [Kilteni & Ehrsson 2020, *J Neurosci*](https://pubmed.ncbi.nlm.nih.gov/31811029/); [Kilteni, Houborg & Ehrsson 2023, *J Neurosci*](https://pubmed.ncbi.nlm.nih.gov/37339879/) This gives you a mechanistic scaffold, but it is not lesion evidence.\n\n**Facet 2 — right-hemisphere patients: neglect, anosognosia, somatoparaphrenia, self–other attribution**\n\n6. **\"Touching the affected limb with the intact hand\" is literally the diagnostic task for personal neglect — and RHD patients fail it.** Personal neglect is operationalised as failure to explore/touch one's own contralesional body with the intact hand (e.g., the Fluff test: patients must detach stickers from their own body). [Caggiano & Jehkonen 2018, *Neuropsychol Rev*](https://pubmed.ncbi.nlm.nih.gov/30547412/); [Cocchini & Beschin 2022, *Neuropsychol Rehabil*](https://pubmed.ncbi.nlm.nih.gov/32723030/) This is the cleanest \"self-touch as a clinical probe\" finding in the literature.\n\n7. **Key negative result: in right-hemisphere stroke, *other*-administered touch — not self-touch — increased limb ownership.** In 26 right-hemisphere patients, a significant increase in limb ownership followed **experimenter-administered** C-tactile-optimal (3 cm/s) touch; the self-generated condition did not produce the effect. Voxel-based lesion-symptom mapping associated failure to benefit with right insula and, more substantially, right **corpus callosum** damage. [Jenkinson et al. 2020, *Brain Commun*](https://pmc.ncbi.nlm.nih.gov/articles/PMC7425337/) This is the strongest controlled evidence and it cuts against a simple \"self-touch restores ownership\" story.\n\n8. **Single-case evidence does support self-touch in somatoparaphrenia — with an explicit/implicit dissociation.** In one somatoparaphrenic patient, self-administered touch increased *explicit* recognition of the disowned left hand, while implicitly both the patient's hand and the experimenter's hand were rated as more belonging — i.e., explicit and implicit ownership recovered differently. [Salvato, Crivelli, Gandola & Bottini 2023, *Neurocase* 29:133–140](https://pubmed.ncbi.nlm.nih.gov/38650434/)\n\n9. **The classic case (GE) shows self-touch reinstating ownership and affect — but also shows the effect is not limb-specific.** A patient with left hemiplegia, hemianaesthesia, neglect and anosognosia who spontaneously stroked her affected arm \"with care and affection\" regained ownership and positive affect when she touched her own arm; yet stroking four *foreign* arms (including a right rubber arm in an implausible position) also eventually produced ownership, and stroking a foreign arm transiently *disowned* her real arm until she touched it again. [van Stralen, van Zandvoort & Dijkerman 2011, *Phil Trans R Soc B* 366:3142–3152](https://pmc.ncbi.nlm.nih.gov/articles/PMC3172603/) Treat this as a demonstration of a general body-representation effect, not proof of a self-specific mechanism.\n\n10. **Covert disownership is common and is missed by verbal interview.** In 105 stroke patients (55 controls), ~30% showed \"covert disownership\" of contralateral hand/arm/leg/face, revealed by non-verbal response; right insula and basal ganglia were implicated for upper-limb ownership, with large-scale bilateral temporo-parietal and fronto-occipital disconnections. [Cataldo E et al. 2025, *Brain Commun*](https://pmc.ncbi.nlm.nih.gov/articles/PMC12204195/) This means incidence estimates based on interview alone understate the phenomenon.\n\n11. **Anosognosia for hemiplegia has a partly separable substrate from somatoparaphrenia, and implicit knowledge is often preserved.** AHP occurs in ~18% of first-ever stroke and ~32% of right-hemisphere stroke patients, is associated with right insular damage, and patients show slowed processing of deficit-related sentences despite denying the deficit — implicit knowledge without explicit awareness. [van Stralen et al. 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3172603/); for the lesion dissociations see [Moro et al. 2016, *Cortex*](https://pubmed.ncbi.nlm.nih.gov/27494375/) and the tripartite disconnection account in [Pacella et al. 2019, *eLife*](https://pubmed.ncbi.nlm.nih.gov/31383259/)\n\n12. **Self-observation can restore motor awareness in AHP — a useful parallel for the \"self-generated\" theme.** Video self-observation improved motor awareness in anosognosic patients, indicating that re-presenting the patient's own action can partially correct the faulty comparison. [Besharati et al. 2015, *Neuropsychol Rehabil*](https://pubmed.ncbi.nlm.nih.gov/24958030/)\n\n**Facet 3 — does self-touch improve detection, localisation, position sense, ownership?**\n\n13. **Best-replicated clinical effect: self-touch enhances tactile *detection* in the affected hand.** First reported in a right-hemisphere stroke patient who could not detect examiner-administered touch but felt it when touched by her own unaffected hand or by a probe held in it; replicated in a larger series in which **22 of 39** stroke patients showed self-touch enhancement, **17 of 22** with right-hemisphere lesions. [Weiskrantz & Zhang; Valentini et al. — both reviewed in van Stralen et al. 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3172603/)\n\n14. **The mechanism appears to be temporal expectation, not proprioception or spatial attention.** When the affected hand was interdigitated with the examiner's so that proprioceptive input was uninformative, enhancement occurred only when the patient's *own* hand was touched; and introducing a temporal delay between the administering movement and the tactile stimulus **abolished** the enhancement. This is direct evidence against a proprioceptive explanation and for a prediction/timing account. [White et al., reviewed in van Stralen et al. 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3172603/)\n\n15. **The effect extends to the lower limb, using a self-touch rubber-hand proxy.** Patient NG, the first reported lower-limb case, could not reach her foot; using a prosthetic limb she administered stimulation herself while the examiner synchronously stimulated her affected left foot. She detected **all** self-administered stimulation but missed **one-third** of examiner-administered stimulation. [White & Aimola Davies 2013, *Perception* 42:473–476](https://pubmed.ncbi.nlm.nih.gov/23866560/)\n\n16. **Limb *localisation* improved under self-touch in one reported case — the single most on-point result for your question, but n=1.** A right-hemisphere stroke patient who could detect but not localise touch on the left hand improved localisation when reaching with the right hand to the left of the affected hand while experiencing an illusion of self-touch; the authors inferred that self-touch altered the representation of the affected hand. [White et al., reviewed in van Stralen et al. 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3172603/)\n\n17. **There is no evidence that self-touch improves *position sense* (proprioception) in hemiplegic patients.** No study measuring position sense as an outcome of self-touch was found; the review literature explicitly concludes proprioceptive information is *not* the primary contributor to the self-touch effect. What exists instead is body-*size* distortion (see 20–21) and general proprioceptive awareness work. Report this as a genuine null/gap rather than as a negative finding.\n\n18. **In healthy participants, active self-touch causally restores proprioceptive spatial awareness when it has been experimentally disrupted** — the strongest causal support for the lesson's integration claim. Active self-touch restored bodily proprioceptive spatial awareness after disruption by the rubber hand illusion. [Cataldo, Crivelli, Bottini, Gomi & Haggard 2024, *Proc R Soc B*](https://pubmed.ncbi.nlm.nih.gov/38228504/)\n\n19. **Bimanual self-touch depends on interhemispheric transfer — mechanistically linking self-touch to callosal integrity.** In a two-robot self-touch design, tactile events were transferred interhemispherically, but the *sign* of the tactile information was not respected (both increases and decreases in pressure enhanced the perceived bump), and randomising (rather than blocking) stimulus order abolished the effect — implying a stable model of temporally synchronised events is required. [Kong et al. 2022, *Proc R Soc B*](https://pmc.ncbi.nlm.nih.gov/articles/PMC9727658/) Combined with finding 7 (right callosal damage predicting failure to benefit from touch), this is a strong, teachable bridge between mechanism and lesion.\n\n**Facet 4 — Aristotle illusion, self-touch temporal binding, body-size/extent estimation**\n\n20. **Body-size estimation in unilateral lesions points in *opposite* directions depending on the syndrome — a genuinely contested literature.** In 11 right-hemisphere hemiplegic patients, patients with personal neglect *underestimated* left-hand width, whereas hemiplegic patients *without* personal neglect tended to perceive the affected hand as **larger** than the ipsilesional one. [Caggiano et al. 2020, *J Clin Exp Neuropsychol*](https://pubmed.ncbi.nlm.nih.gov/33203298/)\n\n21. **A larger study found transient *overestimation* of the paretic arm, which resolved.** In 32 right-hemisphere stroke patients (13 paresis alone, 10 paresis + neglect, 9 neither), measured by explicit visual, explicit tactile/proprioceptive, and implicit reaching estimates, the contralesional paretic arm was transiently **overestimated**; 19 patients re-examined ~5 months later showed resolution. [Shahvaroughi-Farahani et al. 2021, *PLoS One*](https://pmc.ncbi.nlm.nih.gov/articles/PMC8177542/)\n\n22. **Personal neglect produces a *labile*, not simply shrunken, body representation.** In 9 right-brain-damaged patients, PN+ patients showed a wider distorted representational range for both hands *and* face; PN− patients also misrepresented the left hand, linked to impaired motor performance. [Mora, Gonzalez Alted & Cocchini 2023, *Neuropsychologia*](https://pubmed.ncbi.nlm.nih.gov/36863608/) So the \"downsized hand\" and \"enlarged paretic arm\" findings coexist — present this as unresolved heterogeneity (small samples, different tasks, different syndromes).\n\n23. **The self-touch paradigm has been used to show motor signals dominate perceived spatial extent — with a caveat.** Using two coupled master–slave robots to decouple motor from tactile extent, perceived *tactile* extent was strongly biased by movement amplitude, and touch also biased perceived *movement* extent; the movement→touch effect was stronger for active than passive movement, but motor dominance was **not total**. [Cataldo, Dupin, Gomi & Haggard 2021, *Neuropsychologia*](https://pubmed.ncbi.nlm.nih.gov/33346045/) This is the direct experimental basis for \"integration for perceiving the spatial extent of the body\" — but in healthy adults.\n\n24. **Self-touch temporal binding is an active, contested research front — and the direction of the effect is disputed.** The bimanual self-touch paradigm shows that predictions of self-touch determine the temporal tuning of somatosensory perception, including temporal binding windows. [Cemeljic, Job & Kilteni 2025, *iScience*](https://pubmed.ncbi.nlm.nih.gov/39898028/); [Cemeljic & Kilteni 2026, *Eur J Neurosci*](https://pubmed.ncbi.nlm.nih.gov/41725123) Crucially, two recent papers reach **opposite conclusions**: \"action does not enhance but attenuates predicted touch\" [Job & Kilteni 2023, *eLife*](https://pubmed.ncbi.nlm.nih.gov/38099521/) versus \"movement enhances tactile sensitivity through prediction\" [D'Onofrio Pacheco & Zimmermann 2026, *J Neurophysiol*](https://pubmed.ncbi.nlm.nih.gov/41824129/). A divisive-normalisation account reconciles some of this by invoking noisy sensorimotor predictions. [Valè et al. 2025, *J Neurophysiol*](https://pubmed.ncbi.nlm.nih.gov/40531356/) Also note attenuation is not the same phenomenon as movement-related tactile gating. [Kilteni & Ehrsson 2022, *iScience*](https://pubmed.ncbi.nlm.nih.gov/35372807/)\n\n25. **No published study tests the Aristotle (crossed-finger) illusion in unilateral-lesion patients.** Europe PMC returns only 14 items for \"Aristotle illusion,\" none a stroke/lesion study: work exists in Parkinson's disease (where interdigit tactile perception was **normal**) [Fiorio et al. 2014, *PLoS One*](https://pmc.ncbi.nlm.nih.gov/articles/PMC3921216/), in healthy somatotopic/directional-judgement paradigms [de Haan, Anema & Dijkerman 2012, *PLoS One*](https://pmc.ncbi.nlm.nih.gov/articles/PMC3454417/), on hand posture and perceived tactile distance [Longo 2017, *Sci Rep*](https://pubmed.ncbi.nlm.nih.gov/28851889/), and fMRI decoding [Lee et al. 2025, *Front Neurosci*](https://pubmed.ncbi.nlm.nih.gov/40613086/). If you want to teach crossed-finger effects in lesions, you must flag it as an untested extrapolation.\n\n## Sources\n\n**Kept**\n- van Stralen, van Zandvoort & Dijkerman (2011), *Phil Trans R Soc B* — https://pmc.ncbi.nlm.nih.gov/articles/PMC3172603/ — the single most important source: a review *plus* primary case (GE) dedicated exactly to self-touch in post-stroke somatosensory and body-representation disorders. Source of findings 8, 11, 13, 14, 16.\n- Jenkinson et al. (2020), *Brain Commun* — https://pmc.ncbi.nlm.nih.gov/articles/PMC7425337/ — the only adequately powered (n=26) self- vs other-generated touch test in right-hemisphere stroke; supplies the key null result and callosal VLSM.\n- Cataldo E et al. (2025), *Brain Commun* — https://pmc.ncbi.nlm.nih.gov/articles/PMC12204195/ — large (n=105) modern incidence and lesion-network data on disownership.\n- Salvato et al. (2023), *Neurocase* — https://pubmed.ncbi.nlm.nih.gov/38650434/ — most recent self-touch-in-somatoparaphrenia case, with explicit/implicit dissociation.\n- White & Aimola Davies (2013), *Perception* — https://pubmed.ncbi.nlm.nih.gov/23866560/ — lower-limb self-touch enhancement; practical paradigm for mobility-limited patients.\n- Shahvaroughi-Farahani et al. (2021), *PLoS One* — https://pmc.ncbi.nlm.nih.gov/articles/PMC8177542/ — best-controlled body-size data in paretic stroke, with follow-up.\n- Caggiano et al. (2020) — https://pubmed.ncbi.nlm.nih.gov/33203298/; Mora et al. (2023) — https://pubmed.ncbi.nlm.nih.gov/36863608/ — the contradicting body-size results; essential for the \"contested\" framing.\n- Cataldo A et al. (2021), *Neuropsychologia* — https://pubmed.ncbi.nlm.nih.gov/33346045/; and (2024), *Proc R Soc B* — https://pubmed.ncbi.nlm.nih.gov/38228504/ — the robot self-touch spatial-extent paradigm and the causal restoration result.\n- Kong et al. (2022), *Proc R Soc B* — https://pmc.ncbi.nlm.nih.gov/articles/PMC9727658/ — interhemispheric transfer in bimanual self-touch; the mechanistic hinge for lesion interpretation.\n- Cemeljic/Job/Kilteni (2025) — https://pubmed.ncbi.nlm.nih.gov/39898028/; Job & Kilteni (2023) — https://pubmed.ncbi.nlm.nih.gov/38099521/; D'Onofrio Pacheco & Zimmermann (2026) — https://pubmed.ncbi.nlm.nih.gov/41824129/; Valè et al. (2025) — https://pubmed.ncbi.nlm.nih.gov/40531356/ — the temporal-binding paradigm and its live contradiction.\n- Shergill et al. (2003), *Science* — https://pubmed.ncbi.nlm.nih.gov/12855800/ — the force-matching paradigm's origin; needed to state precisely what was *not* done in stroke.\n- Oh, Rymer & Oh (2026) — https://pubmed.ncbi.nlm.nih.gov/42080035/ — documents that force matching in stroke indexes proprioceptive acuity, not attenuation.\n- Nobusako et al. (2025), *Front Hum Neurosci* — https://pmc.ncbi.nlm.nih.gov/articles/PMC12202472/ — stroke lesion study of sensorimotor integration window vs explicit agency.\n- Fiorio et al. (2014) — https://pmc.ncbi.nlm.nih.gov/articles/PMC3921216/; de Haan et al. (2012) — https://pmc.ncbi.nlm.nih.gov/articles/PMC3454417/ — establish the Aristotle-illusion literature base and its non-lesion scope.\n- Pacella et al. (2019), *eLife* — https://pubmed.ncbi.nlm.nih.gov/31383259/; Moro et al. (2016), *Cortex* — https://pubmed.ncbi.nlm.nih.gov/27494375/; Besharati et al. (2015) — https://pubmed.ncbi.nlm.nih.gov/24958030/ — anosognosia substrate and self-observation effects.\n- Caggiano & Jehkonen (2018) — https://pubmed.ncbi.nlm.nih.gov/30547412/; Cocchini & Beschin (2022) — https://pubmed.ncbi.nlm.nih.gov/32723030/ — personal neglect as a self-touch-to-own-body task; the Fluff test.\n- Kilteni & Ehrsson (2020) — https://pubmed.ncbi.nlm.nih.gov/31811029/; Kilteni, Houborg & Ehrsson (2023) — https://pubmed.ncbi.nlm.nih.gov/37339879/ — cerebellar substrate of attenuation (healthy).\n\n**Dropped**\n- Large numbers of tangential Europe PMC hits (post-stroke fatigue, gait/biomechanics, robotic rehabilitation, neuroimaging methods, sensor technology, COVID/fatigue commentary) — retrieved because broad Boolean terms matched, but irrelevant to self-touch or attribution.\n- Schizophrenia/psychosis, ADHD, autism, anorexia and dissociation self-touch papers — mechanistically informative but not lesion evidence; would dilute the clinical section. (Retained only the general scoping review as a scope statement.)\n- Preprints duplicating published versions (e.g., the bioRxiv divisive-attenuation and Research Square anorexia preprints) — superseded by peer-reviewed versions.\n- Paywalled items for which only abstracts were available and whose abstracts did not yield a distinct citable claim.\n\n## Gaps\n\n1. **Facet 1 is essentially unanswered in the literature, not by me.** No study applies the self-vs-external force-matching (or equivalent) attenuation contrast to hemiplegic/hemisensory stroke patients. I searched ~10 query formulations across Europe PMC; the absence is consistent across them. If a study exists, it is likely titled around \"sense of effort,\" \"force perception,\" or \"agency\" rather than \"sensory attenuation\" — worth a targeted search by author (e.g., the Sirigu/Lafargue sense-of-effort line, or Gandevia/McCloskey lineage) which I could not pursue without a working search engine.\n2. **Position sense as an outcome of self-touch is untested** in hemiplegia. Anyone claiming self-touch improves position sense in stroke is extrapolating from healthy samples and from *detection*/localisation data.\n3. **Aristotle/crossed-finger illusion in unilateral lesions: no published study.** Do not present as established.\n4. **Evidence quality is weak across facets 2–3**: single cases (GE, NG, the Salvato patient), small groups (n=9–39), heterogeneous tasks, one dominant research group/era (1990s–2010s) for self-touch enhancement. Likely publication bias toward positive cases.\n5. **Full texts I could not read** (403/paywall): Salvato 2023 *Neurocase*, White & Aimola Davies 2013, Mora 2023, Caggiano 2020, Moro 2016, Shergill 2003 (abstract + secondary descriptions only). Claims from these rest on abstracts or on van Stralen et al.'s summary; the specific parameters of Valentini et al. and White et al.'s localisation experiment are second-hand via that review and should be checked against the originals before publication.\n6. **Web search was unavailable** (no search API key configured — Tavily/Brave/Exa/Firecrawl/Ollama). I worked around it by querying the Europe PMC REST API and PMC directly, which covers indexed biomedical literature well but misses theses, conference abstracts, non-indexed journals and grey literature. A configured search key would strengthen coverage, particularly for any negative or unpublished stroke force-matching work.\n\n## Tools\n- `web_search` — unavailable (no engine configured); not retried after the initial failure, per protocol.\n- `web_fetch` — used against the Europe PMC REST API (`/search`, `resultType=lite` and `core`) and `pmc.ncbi.nlm.nih.gov` for full text; several endpoints returned HTTP 403/500 (Europe PMC article pages, `fullTextXML`), handled by switching to the PMC HTML route.\n- `web_fetch_pdf`, `pdf_info`, `pdf_extract`, `pdf_search` — not needed; no PDF sources were reached.",
+					"sources": [
+						{
+							"title": "Shergill et al. 2003, *Science* 301:187",
+							"url": "https://pubmed.ncbi.nlm.nih.gov/12855800/"
+						},
+						{
+							"title": "e.g. Rossi et al. 2025, scoping review of sensory attenuation in symptomatic and healthy individuals",
+							"url": "https://pubmed.ncbi.nlm.nih.gov/40625349/"
+						},
+						{
+							"title": "Oh, Rymer & Oh 2026, *Biomed Eng Lett*",
+							"url": "https://pubmed.ncbi.nlm.nih.gov/42080035/"
+						},
+						{
+							"title": "Chow & Stokic 2021, *Exp Brain Res*",
+							"url": "https://pubmed.ncbi.nlm.nih.gov/34213633/"
+						},
+						{
+							"title": "Nobusako et al. 2025, *Front Hum Neurosci*",
+							"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12202472/"
+						},
+						{
+							"title": "Kilteni & Ehrsson 2020, *J Neurosci*",
+							"url": "https://pubmed.ncbi.nlm.nih.gov/31811029/"
+						},
+						{
+							"title": "Kilteni, Houborg & Ehrsson 2023, *J Neurosci*",
+							"url": "https://pubmed.ncbi.nlm.nih.gov/37339879/"
+						},
+						{
+							"title": "Caggiano & Jehkonen 2018, *Neuropsychol Rev*",
+							"url": "https://pubmed.ncbi.nlm.nih.gov/30547412/"
+						},
+						{
+							"title": "Cocchini & Beschin 2022, *Neuropsychol Rehabil*",
+							"url": "https://pubmed.ncbi.nlm.nih.gov/32723030/"
+						},
+						{
+							"title": "Jenkinson et al. 2020, *Brain Commun*",
+							"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7425337/"
+						}
+					]
+				}
+			},
+			"timestamp": 1795380019073
+		},
+		{
+			"role": "assistant",
+			"content": [
+				{
+					"type": "thinking",
+					"thinking": "The brief arrived. Now: I have four data points. He's at chance confidence on all, correct on three (verbal), missed the one that required the delay/mismatch consequence, and rejected formulas explicitly.\n\nDo I have enough? The strand assessments:\n- Efference copy/prediction: recognizes the mainstream claim; cannot derive the delay consequence. Fragile.\n- Proprioception as spatial-position channel: recognizes; but body-map misconception option was available — he chose correct.\n- Multisensory precision weighting: refused/didn't answer; explicitly rejects formulas → the lesson must be verbal.\n- Clinical neglect personal vs extrapersonal vs sensory loss vs somatoparaphrenia: picked correctly, again at 50 confidence — so knows the vocabulary in a multiple-choice frame but likely can't deploy it.\n- Not tested: attribution of self vs world, agency, and whether he can reason mechanistically about a patient.\n\nOne more valuable probe: given his goal is spatial extent, and given his consistent 50-confidence pattern, the most informative remaining question is one where the wrong model is attractive for a smart non-expert. E.g., spatial extent: \"Does the perceived extent of a moved touch depend on the movement, or on the skin stimulated?\" Not testable for him.\n\nAlternatively probe the self-touch detection-enhancement clinical finding direction, where he'd need a prediction — risky.\n\nI think I have enough. Three strands are located; the boundary is \"recognition-level, chance confidence, no derivational grip, refuses formalism.\" The teacher needs to know to build from concrete phenomena with plain language, no equations, and to expect that he can endorse claims while not being able to derive consequences.\n\nHowever, one unreported strand: does he distinguish *agency/attribution* (self vs world) — that's core to self-touch and to the distinction the lesson makes (attenuation ≠ gating by source). He picked the attribution distractor in Q1? No, in Q1 he picked the attention one. In the tickle question, D was attribution. He picked A.\n\nI'll do one last probe that tests derivation from mechanism applied to a clinical scenario — the Weiskrantz-Zhang-type phenomenon, where he must predict. Actually the delay finding (from brief #14) is directly relevant: he already failed the delay consequence once. Re-asking would be redundant.\n\nBetter final probe: the self-extent question, verbal, no math, with genuine competing models, since that's his explicit goal and it's untested:\n\"A robot moves your right index finger across your left forearm with a trajectory: the finger travels 10 cm along the skin\" — hmm.\n\nSimpler: \"In un esperimento, il dito viene mosso su un percorso lungo il braccio, ma la pelle sotto il dito viene anche fatta scorrere in modo che il contatto sulla pelle sia più breve. La persona riferisce l'estensione del movimento o l'estensione del contatto cutaneo?\" Options: mostly the movement (motor-dominant), mostly the skin, both equally, neither. This is from Cataldo 2021 (motor signals dominate perceived tactile extent, but not totally). Correct: biased toward movement amplitude, with touch also biasing movement — i.e., \"prevalentemente il movimento, ma non in modo assoluto\". Hmm the answer needs nuance; as an option it's the correct one and the distractors are the simpler models. But is the finding direction solid? Brief says perceived tactile extent strongly biased by movement amplitude; movement→touch effect stronger for active than passive; not total. OK.\n\nBut this is literature trivia he can't derive — it'd be a guess. It does test a prediction about integration, and a sensible reasoner might reason toward motor dominance (efference copy predicts). Moderately informative.\n\nAlternative final: ask him for his own words on how he thinks about it — free-form. That would give the richest evidence for the teacher. Given all his picks came at 50 confidence with no reasoning, the biggest unknown is: what does he actually think? A free-form ask is the highest-yield. Use ask_user_question with free-form (no options) — allowed.\n\nQuestion: \"Con parole tue, senza formule: quando muovi la mano destra per toccare il braccio sinistro, cosa pensa il cervello di stare facendo? Cosa combina insieme per arrivare a un'unica sensazione di 'mi sto toccando il braccio'?\" Ask for 2-4 sentences, rough is fine.\n\nRisk: he may answer briefly. But it gives the teacher direct evidence of his mental model. I'll do that as the last probe, then probe_done.\n\nLet me ask it."
+				},
+				{
+					"type": "toolCall",
+					"id": "chatcmpl-tool-bae5315478c4fbeb",
+					"name": "ask_user_question",
+					"arguments": {
+						"details": "2–4 frasi, anche grezze e in disordine: mi serve il tuo modello, non la risposta giusta. Nessuna formula.",
+						"question": "Con parole tue: quando muovi la mano destra e tocchi il braccio sinistro, cosa sta facendo il cervello? Quali informazioni mette insieme, e come fa a sapere che il contatto è sul tuo braccio e non su un altro oggetto?"
+					}
+				}
+			],
+			"api": "mistral-conversations",
+			"provider": "mistral",
+			"model": "deepseek-v4-1-flash-1017",
+			"usage": {
+				"input": 5993,
+				"output": 1134,
+				"cacheRead": 23936,
+				"cacheWrite": 0,
+				"totalTokens": 31063,
+				"cost": {
+					"input": 0.0017978999999999998,
+					"output": 0.0013608,
+					"cacheRead": 0.00016755199999999998,
+					"cacheWrite": 0,
+					"total": 0.0033262519999999996,
+					"totalFromProvider": false
+				}
+			},
+			"stopReason": "toolUse",
+			"timestamp": 1795380042997,
+			"responseId": "88d06f4a379a4efc9e8d91ce9bd493f6",
+			"rawStopReason": "tool_calls",
+			"durationMs": 5772,
+			"thinkingLevel": "low",
+			"id": "msg_mwsaxbpf_8bb0868c"
+		},
+		{
+			"id": "msg_mwsayyux_7f85288e",
+			"role": "toolResult",
+			"toolCallId": "chatcmpl-tool-bae5315478c4fbeb",
+			"toolName": "ask_user_question",
+			"content": [
+				{
+					"type": "text",
+					"text": "{\"kind\":\"ask\",\"text\":\"Mano destra controllata da emisfero controlaterale quindi sinistro. Mette insieme le informazioni sul movimento del braccio attraverso meccanocettori che trasmettono info al snc che trasduce\"}"
+				}
+			],
+			"details": {
+				"kind": "ask",
+				"tool": "ask_user_question",
+				"questionText": "Con parole tue: quando muovi la mano destra e tocchi il braccio sinistro, cosa sta facendo il cervello? Quali informazioni mette insieme, e come fa a sapere che il contatto è sul tuo braccio e non su un altro oggetto?",
+				"options": [],
+				"dontKnow": false,
+				"answers": [],
+				"answeredAt": "2026-11-22T20:42:05.418Z",
+				"text": "Mano destra controllata da emisfero controlaterale quindi sinistro. Mette insieme le informazioni sul movimento del braccio attraverso meccanocettori che trasmettono info al snc che trasduce"
+			},
+			"isError": false,
+			"timestamp": 1795380125433
+		},
+		{
+			"role": "assistant",
+			"content": [
+				{
+					"type": "thinking",
+					"thinking": "His model: he describes contralateral motor control, mechanoreceptors transmitting info to the CNS that \"transduces\". So he thinks of it as: motor command from left hemisphere controls right hand; mechanoreceptors pick up movement info. There is no notion of prediction, comparison, or the second hand's tactile event; no mention of the left arm's tactile input, no notion of a common spatial frame, no efference copy. So his model is a \"signal flows in, CNS processes\" one — one-directional bottom-up, no comparator.\n\nFloor/ceiling located: he understands the peripheral/neuroanatomical basics (contralateral control, mechanoreceptors → CNS), no predictive/forward-model machinery — consistent with having missed the delay question — and rejects formulas.\n\nEnough for handoff. Also worth noting: for the lesson, he needs concreteness and plain language, and the anatomy he already holds (contralateral control, mechanoreceptors) can be used as anchors.\n\nShould I probe once more to check whether he knows that attenuation is not about force/attention? Q1 and tickle already covered.\n\nOne thing untested: whether he can reason about clinical *application* (practical use). But probing won't add much; his clinical vocabulary is diagnosis-labels level (he picked the right neglect option). I'll report that as untested-but-likely-label-level.\n\nNow call probe_done with the assessment, in Italian probably? The assessment streams to the learner live. Learner speaks Italian. I'll write the assessment in Italian.\n\nStrands:\n1. Modello del comando motorio e copia dell'efferenza (predizione/confronto)\n2. Attenuazione sensoriale e sue condizioni di rottura (ritardo/discrepanza)\n3. Propriocezione come canale di posizione e sua integrazione spaziale (pesatura per affidabilità)\n4. Rappresentazione dello spazio corporeo / estensione (mappe vs stima costruita; self-touch come sonda)\n5. Clinica: lesione unilaterale destra — neglect personale/extrapersonale, anosognosia, somatoparafrenia, disownership; applicazioni pratiche del self-touch\n6. Preferenza di formato: niente formule\n\nAlso record the \"no formulas ever\" constraint prominently.\n\nThen closing sentence."
+				},
+				{
+					"type": "toolCall",
+					"id": "chatcmpl-tool-b3521fdef2920f9c",
+					"name": "probe_done",
+					"arguments": {
+						"assessment": {
+							"summary": "Obiettivo: capire il **self-touch** — componenti (informazione motoria, tatto, propriocezione), la loro integrazione nella percezione dell'estensione spaziale del corpo, le applicazioni pratiche e gli esiti in pazienti con lesione unilaterale. Dove cominciare: dalle **componenti percettive concrete** (cosa senti, dove lo senti, chi lo ha prodotto) e costruire il pezzo mancante — il comando motorio come *sorgente di previsione*, non solo di movimento. Il suo modello attuale è unidirezionale (recettori → SNC); senza il comparatore, l'intera letteratura sul self-touch resta una lista di fatti non derivabili. Vincolo di formato dichiarato dal learner: **niente formule matematiche** — il materiale va reso verbale, per casi concreti, con l'anatomia di base che già possiede come ancora.",
+							"strands": [
+								{
+									"strand": "Controllo motorio controlaterale e meccanocettori come fonte di informazione",
+									"assessment": "Pavimento solido. Nella sua descrizione spontanea del self-touch parte esattamente da qui: «mano destra controllata dall'emisfero controlaterale sinistro», «meccanocettori che trasmettono info al SNC che trasduce». Questi sono punti di appoggio utilizzabili senza re-insegnamento."
+								},
+								{
+									"strand": "Copia dell'efferenza / forward model: il comando motorio come previsione",
+									"assessment": "Riconosce la formulazione standard quando gliela si mette davanti in parole semplici (solletico: sceglie «il cervello anticipa le conseguenze e ne annulla la parte prevista»), ma a **confidenza 50**, cioè al livello del caso: la riconosce, non la possiede. La sua descrizione spontanea del self-touch non contiene alcun comparatore né copia del comando — solo comando → muscolo e recettori → SNC. Questa è la lacuna centrale da cui dipende tutto il resto. Da testare in insegnamento: se, una volta installato il comparatore, sa derivarne conseguenze."
+								},
+								{
+									"strand": "Condizioni in cui l'attenuazione si rompe (ritardo, traiettoria alterata)",
+									"assessment": "Gap osservato. Alla domanda sul tocco auto-prodotto ritardato crescente ha scelto «diminuisce: cade fuori dalla finestra attentiva» (confidenza 50), cioè un modello di integrazione temporale con la direzione dell'effetto sbagliata, non un errore di distrazione. Non ha tratto la conseguenza che distingue la cancellazione predittiva dal gating per auto-attribuzione: se il tocco è auto-prodotto ma mal previsto, l'attenuazione **fallisce** e l'intensità sale. È il punto diagnostico più informativo emerso: il suo modello non ha un termine di errore di predizione."
+								},
+								{
+									"strand": "Propriocezione come canale di posizione e integrazione tra canali",
+									"assessment": "Riconosce che la propriocezione fornisce la posizione delle parti del corpo in uno spazio comune e che la mappa corporea non è una tabella fissa innata (scelta corretta, confidenza 50); scarta anche l'idea che il comando motorio da solo codifichi la posizione raggiunta. Rifiuta però il formato quantitativo: alla domanda sulla pesatura per affidabilità ha risposto `dontKnow` con «non mi parlare MAI di formule matematiche». Il concetto va quindi testato e insegnato **in forma verbale** (quale canale vince quando uno è sfumato), non come algebra bayesiana."
+								},
+								{
+									"strand": "Estensione spaziale del corpo e self-touch come sonda della rappresentazione corporea",
+									"assessment": "Non testato direttamente. Ha però in mano i prerequisiti riconosciuti (posizione nello spazio comune + mappa non fissa), quindi è il candidato naturale per il salto di difficoltà più alto: estensione percepita come stima costruita, e il self-touch come atto che la mette alla prova. La letteratura qui è forte in sani (robot che disaccoppiano movimento e tatto: l'ampiezza del movimento domina l'estensione tattile percepita, ma non totalmente) e **assente** nei pazienti con lesione per l'illusione di Aristotele — da segnalare come estrapolazione, non come dato."
+								},
+								{
+									"strand": "Clinica della lesione unilaterale: neglect personale vs extrapersonale, perdita sensitiva, somatoparafrenia",
+									"assessment": "Le etichette le ha: alla domanda sul neglect personale ha scelto correttamente il quadro dissociativo (non si tocca la mano sinistra pur raggiungendo oggetti a sinistra), scartando la confusione con la perdita sensitiva e con il disconoscimento dell'arto — ma sempre a confidenza 50, quindi la distinzione è riconosciuta, non maneggiata. Non testata: la sua capacità di prevedere esiti o di usare il self-touch come strumento di valutazione/trattamento. Il terreno clinico va quindi costruito a partire dai tre livelli separati (sensibilità, rappresentazione dello spazio corporeo, senso di appartenenza) e dalle applicazioni pratiche, non dalle etichette nosografiche."
+								}
+							]
+						}
+					}
+				}
+			],
+			"api": "mistral-conversations",
+			"provider": "mistral",
+			"model": "deepseek-v4-1-flash-1017",
+			"usage": {
+				"input": 152,
+				"output": 1818,
+				"cacheRead": 30976,
+				"cacheWrite": 0,
+				"totalTokens": 32946,
+				"cost": {
+					"input": 0.0000456,
+					"output": 0.0021815999999999997,
+					"cacheRead": 0.000216832,
+					"cacheWrite": 0,
+					"total": 0.0024440319999999996,
+					"totalFromProvider": false
+				}
+			},
+			"stopReason": "toolUse",
+			"timestamp": 1795380125463,
+			"responseId": "6bf09010f7fa41a7bdddc5a636b8b481",
+			"rawStopReason": "tool_calls",
+			"durationMs": 7676,
+			"thinkingLevel": "low",
+			"id": "msg_mwsaz5wx_fb454be8"
+		},
+		{
+			"role": "toolResult",
+			"toolCallId": "chatcmpl-tool-b3521fdef2920f9c",
+			"toolName": "probe_done",
+			"content": [
+				{
+					"type": "text",
+					"text": "Assessment recorded — it is shown to the learner now and the teacher plans from it. Say your closing sentence and end your turn; the teaching phase takes over from here."
+				}
+			],
+			"details": {
+				"ok": true
+			},
+			"isError": false,
+			"durationMs": 3,
+			"timestamp": 1795380133144,
+			"id": "msg_mwsaz5wx_f9b2861a"
+		},
+		{
+			"role": "assistant",
+			"content": [
+				{
+					"type": "text",
+					"text": "La mappa è registrata: il pezzo che manca è il comando motorio come *previsione* — e senza formule, per casi concreti. Da lì parte la lezione."
+				}
+			],
+			"api": "mistral-conversations",
+			"provider": "mistral",
+			"model": "deepseek-v4-1-flash-1017",
+			"usage": {
+				"input": 94,
+				"output": 45,
+				"cacheRead": 32896,
+				"cacheWrite": 0,
+				"totalTokens": 33035,
+				"cost": {
+					"input": 0.000028199999999999998,
+					"output": 0.000054,
+					"cacheRead": 0.000230272,
+					"cacheWrite": 0,
+					"total": 0.000312472,
+					"totalFromProvider": false
+				}
+			},
+			"stopReason": "stop",
+			"timestamp": 1795380133147,
+			"responseId": "94b0ca1a6aed4d33b0eb78c6395b1e70",
+			"rawStopReason": "stop",
+			"durationMs": 1428,
+			"thinkingLevel": "low",
+			"id": "msg_mwsaz5wx_03702515"
+		},
+		{
+			"id": "steer_probe_chat_mwsashg3_7cdff9f2",
+			"role": "custom",
+			"customType": "probe-handoff",
+			"content": "Next: plan the full teaching arc from my current understanding to the goal understanding. Apply the teaching methodology in your system prompt, and find the optimal way to teach me this. Find the unconditional truths, plan the motivated derivations/discoveries, so every reasoning step has to land as obviously true. Take your time here and really think this through. When it's genuinely reasoned out, call plan_init and present the plan; I'll accept it or ask for changes.",
+			"display": true,
+			"details": {
+				"chatId": "chat_mwsashg3_7cdff9f2"
+			},
+			"timestamp": 1795380133142
+		},
+		{
+			"role": "assistant",
+			"content": [
+				{
+					"type": "thinking",
+					"thinking": "Let me plan carefully.\n\nLearner: ML-ish background (manifold learning, spectral methods, JEPA, linear algebra sessions) — so he thinks in terms of models, inference, latent variables, prediction error. But explicitly: no mathematical formulas. He wants verbal, concrete, case-based. Confidence always 50 — he recognizes claims but doesn't hold them.\n\nGoal: self-touch — components (motor info, tactile, proprioception), how they integrate for perceiving spatial extension, practical applications, outcomes in unilateral lesion patients.\n\nKey design decision: what are the unconditional truths (Principle i)?\n\nCandidates:\n- \"All the information the brain has about the world and the body arrives as signals from receptors / as consequences of its own commands — nothing else.\" Hmm, that's a bit grand. The atomic-unit form: \"Ogni informazione che il cervello ha sul proprio corpo è un segnale nervoso; nessun segnale porta con sé l'etichetta della sua sorgente.\" That's actually the key root: signals are ambiguous; the brain must infer the source. That's a very strong, clean, always-true statement, and it's the foundation for everything: self vs world, attenuation, location.\n\nIs it truly unconditional? \"No signal carries a label of its source\" — yes, this is a solid root. Sensory receptors don't label themselves \"self-generated\". Good.\n\n- Second root: \"Il cervello non aspetta: emette comandi e, mentre li emette, sa cosa ha comandato.\" — the motor command is itself available as a signal. Actually the cleaner version: \"Quando il cervello comanda un movimento, ha accesso al proprio comando — non solo al risultato.\" Also unconditional, and it's what makes prediction possible. Alternatively frame: the brain is the only thing in the system that knows the causes before they occur (its own commands) — everything else it learns after the fact.\n\n- Third: tactile and proprioceptive signals are not the same channel — touch says \"contact at a point on the skin\", proprioception says \"where that body part is\". Both are needed to place touch in space. Unconditional? It's more of a definition of the two channels: real definitions. \"Il tatto dice che c'è un contatto e su quale punto della pelle; non dice dove si trova quel punto nello spazio. La propriocezione dice dove si trovano le parti del corpo, non che qualcosa le tocca.\" That's a genuine definitional split and nice as a root (precise, no exceptions). Actually it's slightly over-strong: touch does carry some spatial info (somatotopic), and proprioception partly localizes. But as an unconditional truth in the beginner frame it's clean enough... I should phrase it carefully: \"nessuno dei due da solo localizza il contatto nello spazio esterno\".\n\nHmm, \"unconditional truth\" needs to be accepted at face value without nuance. Let me make it: \"Un segnale tattile dice *che* qualcosa tocca la pelle e *dove* sulla pelle; non dice *dove* quella pelle si trova nello spazio.\" That IS unconditional — it's essentially a definition of a somatotopic code. Good. And \"Il tatto è una mappa della pelle, non dello spazio.\"\n\n- Fourth root: the body's spatial layout isn't directly sensed; it's assembled from signals. But that's a derived claim from roots 1 & 3.\n\nAlso a good root from his existing floor (he already asserted it): contralateral control and mechanoreceptors → CNS. Already held, so don't teach it; use it as an anchor. Actually the \"no label\" root subsumes/extends it.\n\nNow the motivated discovery chain:\n\nNodes needed:\n\n1. **segnale-senza-etichetta** (root): every signal is ambiguous about its source. Motivating problem: you feel a tap on your arm — how do you know it was your own finger vs a fly vs someone else? Nothing in the touch signal says. Root.\n\n2. **comando-come-previsione** (root-ish): the brain has access to its own outgoing commands, and those commands (plus body mechanics) determine the sensory consequences. So the brain can compute, before the consequence arrives, what it will feel like. This is the efference copy / forward model — taught as the natural consequence of \"the only cause the brain knows in advance is its own command.\"\n\n3. **confronto / errore**: the brain compares prediction with the actual afferent signal; the part matching = already explained → doesn't reach awareness (attenuation); mismatch = prediction error → reaches awareness. Derivation: within \"signals carry no label\", the only way to assign source is comparison. Explains: can't tickle yourself; the delay experiment (its consequences); the fact it's a match, not a label.\n\n4. **rottura-del-confronto**: the empirical teeth — delay/trajectory perturbation abolishes attenuation, and force-matching (you push harder than you receive: \"two eyes for an eye\"). Here I need prediction → teach → check. The prediction: \"if attenuation is subtraction, what happens when the touch comes 200 ms late?\" He already failed this once — so this node is crucial and must be built slowly. Maybe fold into node 3? Keep separate: node 3 = the mechanism (subtraction), node 4 = the consequences when prediction and reality diverge (delay, altered trajectory, and the force-matching illusion). Actually better to have 3 = comparison/mechanism, 4 = \"the prediction is specific: space+time\" (that's why delay and trajectory matter). Then 5 = force matching/\"two eyes for an eye\" (self vs other asymmetry in force perception) — that's the paradigm that quantifies attenuation and is the hinge to clinic.\n\nHmm, is force-matching needed for his goal? It's a good \"practical measurement\" node and it's the paradigm that was never done in stroke — a nice hook: the gap. Maybe include as a node since \"practical applications\"/measurement is part of his ask.\n\n6. **due-canali-spaziali** (root/definition): touch = map of skin; proprioception = where parts are. Neither places touch in external space alone.\n\n7. **integrazione / pesatura**: brain combines them, weighting by dependability — verbal, no formulas: \"il canale che in quel momento è più affidabile pesa di più; l'altro corregge.\" Derivation from root 1 + root 6. Need it verbal: darkness → proprioception governs; blurry hand → etc. Also the anchor: sight gives a third channel.\n\n8. **estensione-come-stima**: the perceived extent of the body isn't read off a fixed map; it's the outcome of this combination, moment by moment. Consequence: it can be distorted (illusions), and it can be trained/changed. This is exactly his goal (\"percezione dell'estensione spaziale\"). Motivating discovery: crossed fingers → one object feels like two; or a hand feels longer (Pinocchio). Need to be careful with explanations.\n\n9. **self-touch-come-test** : self-touch is the only situation where the brain knows the cause in advance *and* gets the consequence — so it's a natural probe of the body model: I touch my left hand with my right; where do I feel it, and how far does my body reach? Include the robot self-touch finding (movement extent dominates tactile extent). Careful: it's from one lab (Cataldo/Haggard). Present as evidence with appropriate tentativeness.\n\n10. **paziente-lesione-destra**: what breaks. Three separate levels: sensitivity, representation of body space, ownership. Personal neglect = failure to explore own body with intact hand (self-touch as diagnostic task, Fluff test). Somatoparaphrenia. Anosognosia.\n\n11. **self-touch-terapia**: applications — self-touch enhancement of tactile detection in stroke (22/39, mostly right hemisphere; abolished by delay → prediction account, not proprioception!). That's a beautiful payoff: the clinical finding has the same signature as the mechanism taught in node 4. And the null/limits: Jenkinson 2020 — other-administered touch increased ownership, self-touch didn't; callosal damage → failure to benefit. Lower limb via prosthesis (NG). Body-size distortions (Caggiano vs Shahvaroughi — contested).\n\n12. Maybe a node for **agency/self-other** separate from attenuation: the explicit feeling \"I did this\" vs the implicit attenuation. Brief #4: apraxic patients had prolonged integration window but preserved explicit agency. Nice nuance but might be optional. Could be folded into 11 or a separate node \"senso-di-agency\".\n\nLet me count nodes: aim ~12-14. Map:\n\ngraph TD\n\nRoots:\n- nessuna-etichetta (signals carry no source label)\n- comando-in-uscita (brain knows its own commands before consequences)\n- due-mappe (touch = skin map; proprio = body-part positions)\n\nChain:\nnessuna-etichetta --> problema-della-sorgente? Maybe skip; the ambiguity IS the motivation.\n\nLet me structure:\n\n1. segnale-senza-etichetta [Nessun segnale porta l'etichetta della sua fonte]\n2. comando-come-predizione [Il comando motorio come previsione] (requires 1? Actually requires: the brain has its own command available; and 1 to make prediction necessary. Yes requires 1.)\n3. cancellazione [Sottrarre il previsto] requires 2\n4. previsione-specifica [La previsione è specifica: dove e quando] requires 3\n5. forza-percepita [Spingo più forte di quanto ricevo] requires 4 (measurement paradigm)\n6. due-mappe [Tatto = mappa della pelle, propriocezione = posizione delle parti] requires 1 (independent root)\n7. integrazione [Combinare per affidabilità] requires 6 (+3? the weighting uses prediction too? not necessarily). requires 6 and maybe 1.\n8. spazio-del-corpo [Lo spazio del corpo è una stima] requires 7, 3? Let's say requires 7.\n9. estensione [L'estensione percepita] requires 8 → his goal-ish\n10. self-touch-come-sonda [Il self-touch come sonda] requires 4, 9\n11. tre-livelli [Tre livelli che si dissociano: sensibilità, spazio del corpo, appartenenza] requires 8, 10\n12. neglect-personale [Neglect personale: il self-touch come test] requires 11\n13. self-touch-rinforzo [Il self-touch che migliora la detezione] requires 4, 12\n14. limiti-e-applicazioni [Dove funziona e dove no] requires 13, 10\n\nAlso maybe a node on agency separately. Let me add \"agency-esplicita\" as part of 11? The distinction explicit/implicit ownership is nice: 11 covers it.\n\nHmm, 14 nodes might be fine (\"as many as the subject needs\"). But the map is a map of landmarks, one reasoning step per node, compressed. Maybe merge 4 into 3? No — keep, because he failed exactly there; it deserves its own station.\n\nMaybe merge 5 into 4? Force-matching is a distinct \"how it's measured\" landmark, and his ask includes practical applications. Keep.\n\nMerge 8 and 9? \"Lo spazio del corpo è una stima\" and \"l'estensione percepita\" — these are close. His goal is precisely the extension, so keep them distinct: 8 = body space as computed estimate, 9 = extension specifically (crossed fingers, illusions, robot self-touch movement-dominance). Actually maybe 9 = \"movimento vs tatto nel determinare l'estensione\" (the robot experiment) — no, that's the probe experiment (node 10).\n\nLet me restructure the spatial side:\n6. due-mappe (root)\n7. integrazione-per-affidabilità\n8. spazio-corpo-stima (consequence: illusions possible)\n9. estensione-percepita (what determines perceived extent: not the skin, but movement + posture; crossed fingers, and \"movement dominates tactile extent\")\n10. self-touch-sonda (self-touch as the probe; temporal binding; bimanual dependency on callosum? maybe here)\n\nThen clinical:\n11. tre-livelli\n12. neglect-personale\n13. detezione-migliorata\n14. limiti-e-applicazioni (Jenkinson null, callosum, ownership; prosthetic lower limb; body-size heterogeneity; the untested gaps)\n\nThat's 14 nodes, structured: two roots at bottom (1, 6), plus 2 (comando) which depends on 1... Is 2 really dependent on 1? Motivated: knowing your own command is useful only because signals are unlabeled. Fine.\n\nShould I add a root for \"il corpo è l'unico oggetto che il cervello muove\"? That's nice: \"il corpo è l'unica cosa al mondo che il cervello può comandare\" — unconditional and gives self-touch its special status. Could be node 0: corpo-unico-oggetto-comandato. Hmm, is it needed? It motivates why self-touch is special (you are both cause and sensor). It's clean and always true. But is it a \"reasoning step\"? It's a fact he'd accept instantly and it grounds the whole lesson's premise. I like it as a root feeding into 2 and 10. Maybe include as root \"sono-io-la-causa\": \"Il tuo corpo è l'unico oggetto al mondo di cui ricevi sia il comando sia la conseguenza sensoriale.\" Unconditional? You also receive consequences of other things you command (car, tools) — nuance. Better: \"Il tuo corpo è l'unico oggetto che muovi e senti dall'interno\" — hmm.\n\nI'll skip it to keep the tree honest; node 2 carries the idea.\n\nNow, the teaching arc in prose for the learner — but must not restate the map. Present: approach, order, why, grounded in his edge (recognition-level, no comparator, no formulas), and note that I'll go verbal/concrete and that the clinical part has unequal evidence quality which I'll flag.\n\nAlso: strategy — Socratic for the derivations (he can reason: ML intuition for prediction/error), expository for the empirical findings and clinical pictures. But careful: he gave no reasoning in most answers and his floor is recognition-level. So use predictions where the step is derivable, and reveal-based teaching for anatomy/clinical.\n\nOne more consideration: the brief says the key clinical finding (self-touch enhances detection, and delay abolishes it) is directly the mechanism from node 4 — great payoff, mention in plan prose as the payoff.\n\nAlso honesty: at least flag in the plan that some parts are contested/untested. In the plan prose, one sentence.\n\nLet me write plan_init with clean slugs, 14 nodes.\n\nSlugs: no-label, comando-previsione, cancellazione, previsione-specifica, forza-percepita, due-mappe, pesatura, spazio-stima, estensione, sonda, tre-livelli, neglect-personale, detezione, limiti.\n\nCheck: nodeId validation just needs exact match. Write mermaid with quoted labels where needed (avoid special chars; use plain words, accents fine? safer to use accented letters in quoted labels — mermaid handles them). I'll use quoted bracket form everywhere to be safe.\n\nMermaid:\n\ngraph TD\n  no-label[\"Nessun segnale porta l'etichetta della sua fonte\"] --> comando-previsione[\"Il comando motorio come previsione\"]\n  comando-previsione --> cancellazione[\"Confronto: il previsto si cancella\"]\n  cancellazione --> previsione-specifica[\"La previsione è specifica: dove e quando\"]\n  previsione-specifica --> forza-percepita[\"Spingo più forte di quanto ricevo\"]\n  no-label --> due-mappe[\"Tatto: mappa della pelle. Propriocezione: dove sono le parti\"]\n  due-mappe --> pesatura[\"Combinare i canali per affidabilità\"]\n  pesatura --> spazio-stima[\"Lo spazio del corpo è una stima, non una tabella\"]\n  spazio-stima --> estensione[\"L'estensione percepita del corpo\"]\n  previsione-specifica --> sonda[\"Self-touch come sonda\"]\n  estensione --> sonda\n  spazio-stima --> tre-livelli[\"Tre livelli: sensibilità, spazio, appartenenza\"]\n  sonda --> tre-livelli\n  tre-livelli --> neglect-personale[\"Neglect personale: il self-touch come test\"]\n  previsione-specifica --> detezione[\"Self-touch che migliora la detezione\"]\n  neglect-personale --> detezione\n  detezione --> limiti[\"Dove funziona e dove no\"]\n  sonda --> limiti\n\nWait, \"Il motivo per cui le due versioni coincidono\" — careful with accents inside labels; fine.\n\nHmm \"Spingo più forte di quanto ricevo\" as a label for force matching — good, concrete.\n\nNow prose. Should be concise: ~4-6 short paragraphs? \"A few freeform sentences.\" Keep tight but substantive: what we cover, order, why. Mention: starts from the one root that makes everything necessary (no labels → must infer source), builds the comparator, then the spatial channels, then extension, then clinical. Note the no-formula constraint and the evidence-quality flag.\n\nDon't restate the map as an outline.\n\nAlso should I mention how it will run: verbal, concrete cases, one step at a time, with predictions. Yes briefly.\n\nEnd with asking for confirmation."
+				},
+				{
+					"type": "text",
+					"text": "Ho ragionato sull'ordine. Il punto di partenza non è anatomico: è un fatto che rende *necessario* tutto il resto.\n\nNessun segnale nervoso porta scritto da dove viene. Il tatto sul tuo braccio è identico che l'abbia prodotto il tuo dito o una mosca. Se questo è vero — ed è vero senza eccezioni — allora la domanda \"chi ha toccato chi\" non ha risposta dentro il segnale: il cervello deve ricavarla. L'unica cosa che il cervello sa *prima* che la conseguenza arrivi è il comando che ha appena emesso. Da lì discende tutto il resto, e lo costruiremo così, in quest'ordine:\n\n- **prima il comparatore**: comando → previsione → confronto con ciò che arriva davvero. Il solletico impossibile e il tocco ritardato non saranno due curiosità da ricordare, ma due conseguenze della stessa macchina;\n- **poi i due canali spaziali**, tenuti separati finché non è chiaro che cosa ciascuno sa e cosa non sa: il tatto è una mappa della pelle, la propriocezione una mappa di dove stanno le parti. Nessuno dei due, da solo, sa dove finisce il tuo corpo nello spazio — e da lì nasce la pesatura tra i canali;\n- **poi l'estensione**, che è il tuo obiettivo: il fatto che lo spazio del corpo sia una stima ricalcolata e non una tabella, e che il self-touch sia la sola situazione in cui il cervello è insieme causa e sensore — la sonda naturale per misurare quella stima;\n- **infine la clinica**, in ordine di solidità e non di appeal: prima i tre livelli che si dissociano nel paziente con lesione destra (sensibilità, spazio del corpo, appartenenza), poi il neglect personale — dove \"toccarsi con la mano buona\" *è* il test diagnostico — e poi il dato più bello della letteratura: il self-touch che recupera la detezione tattile nell'arto colpito, e che **si annulla col ritardo**. È la stessa firma della macchina costruita nei primi nodi, in un paziente.\n\nDue avvertenze che fanno parte del contenuto. Niente formule: tutto per casi concreti e in parole, come hai chiesto — il ragionamento è quello che conta, non l'algebra. E la parte clinica non è tutta solida allo stesso modo: alcuni risultati sono su singoli pazienti, uno dei più controllati è un **risultato nullo**, e su un paio di punti (self-touch e senso di posizione, illusione delle dita incrociate nei pazienti) la letteratura semplicemente non c'è. Te li segnalerò quando arriviamo, invece di spianarli.\n\nIl metodo: dove puoi arrivarci da solo ti lascio provare prima, dove serve la conoscenza te la racconto io, e ogni gradino viene verificato prima di costruirci sopra — perché il tuo punto di partenza, come mostrano le tue risposte, è \"riconosco l'affermazione giusta se me la metti davanti\", non ancora \"so ricavarla\". È esattamente quel divario che la lezione deve chiudere.\n\n"
+				},
+				{
+					"type": "toolCall",
+					"id": "chatcmpl-tool-81b2061adc1fdf3c",
+					"name": "plan_init",
+					"arguments": {
+						"mermaid": "graph TD\n  no-label[\"Nessun segnale porta l'etichetta della sua fonte\"] --> comando-previsione[\"Il comando motorio è una previsione\"]\n  comando-previsione --> cancellazione[\"Confronto: il previsto non emerge\"]\n  cancellazione --> previsione-specifica[\"La previsione è specifica: dove e quando\"]\n  previsione-specifica --> forza-percepita[\"Spingo più forte di quanto ricevo\"]\n  no-label --> due-mappe[\"Tatto: mappa della pelle. Propriocezione: dove sono le parti\"]\n  due-mappe --> pesatura[\"Combinare i canali per affidabilità\"]\n  pesatura --> spazio-stima[\"Lo spazio del corpo è una stima\"]\n  spazio-stima --> estensione[\"L'estensione percepita del corpo\"]\n  previsione-specifica --> sonda[\"Il self-touch come sonda\"]\n  estensione --> sonda\n  spazio-stima --> tre-livelli[\"Tre livelli: sensibilità, spazio, appartenenza\"]\n  sonda --> tre-livelli\n  tre-livelli --> neglect-personale[\"Neglect personale: toccarsi è il test\"]\n  previsione-specifica --> detezione[\"Self-touch che recupera la detezione\"]\n  neglect-personale --> detezione\n  detezione --> limiti[\"Dove funziona, dove no, cosa manca\"]\n  sonda --> limiti"
+					}
+				}
+			],
+			"api": "mistral-conversations",
+			"provider": "mistral",
+			"model": "deepseek-v4-1-flash-1017",
+			"usage": {
+				"input": 39246,
+				"output": 5008,
+				"cacheRead": 0,
+				"cacheWrite": 0,
+				"totalTokens": 44254,
+				"cost": {
+					"input": 0.0117738,
+					"output": 0.0060095999999999995,
+					"cacheRead": 0,
+					"cacheWrite": 0,
+					"total": 0.017783399999999998,
+					"totalFromProvider": false
+				}
+			},
+			"stopReason": "toolUse",
+			"timestamp": 1795380135535,
+			"responseId": "d3eea88f20004fcdbc8d0a51755723b0",
+			"rawStopReason": "tool_calls",
+			"durationMs": 17935,
+			"thinkingLevel": "low",
+			"id": "msg_mwsazmnw_c325692d"
+		},
+		{
+			"role": "toolResult",
+			"toolCallId": "chatcmpl-tool-81b2061adc1fdf3c",
+			"toolName": "plan_init",
+			"content": [
+				{
+					"type": "text",
+					"text": "{\"ok\":true,\"nodeIds\":[\"no-label\",\"comando-previsione\",\"cancellazione\",\"previsione-specifica\",\"forza-percepita\",\"due-mappe\",\"pesatura\",\"spazio-stima\",\"estensione\",\"sonda\",\"tre-livelli\",\"neglect-personale\",\"detezione\",\"limiti\"],\"reminder\":\"These are the plan's node ids — the only valid nodeId values for every quiz and explain call from here on. Reference them exactly.\"}"
+				}
+			],
+			"details": {
+				"ok": true,
+				"tree": {
+					"nodes": [
+						{
+							"id": "no-label",
+							"title": "Nessun segnale porta l'etichetta della sua fonte"
+						},
+						{
+							"id": "comando-previsione",
+							"title": "Il comando motorio è una previsione"
+						},
+						{
+							"id": "cancellazione",
+							"title": "Confronto: il previsto non emerge"
+						},
+						{
+							"id": "previsione-specifica",
+							"title": "La previsione è specifica: dove e quando"
+						},
+						{
+							"id": "forza-percepita",
+							"title": "Spingo più forte di quanto ricevo"
+						},
+						{
+							"id": "due-mappe",
+							"title": "Tatto: mappa della pelle. Propriocezione: dove sono le parti"
+						},
+						{
+							"id": "pesatura",
+							"title": "Combinare i canali per affidabilità"
+						},
+						{
+							"id": "spazio-stima",
+							"title": "Lo spazio del corpo è una stima"
+						},
+						{
+							"id": "estensione",
+							"title": "L'estensione percepita del corpo"
+						},
+						{
+							"id": "sonda",
+							"title": "Il self-touch come sonda"
+						},
+						{
+							"id": "tre-livelli",
+							"title": "Tre livelli: sensibilità, spazio, appartenenza"
+						},
+						{
+							"id": "neglect-personale",
+							"title": "Neglect personale: toccarsi è il test"
+						},
+						{
+							"id": "detezione",
+							"title": "Self-touch che recupera la detezione"
+						},
+						{
+							"id": "limiti",
+							"title": "Dove funziona, dove no, cosa manca"
+						}
+					],
+					"edges": [
+						{
+							"from": "no-label",
+							"to": "comando-previsione"
+						},
+						{
+							"from": "comando-previsione",
+							"to": "cancellazione"
+						},
+						{
+							"from": "cancellazione",
+							"to": "previsione-specifica"
+						},
+						{
+							"from": "previsione-specifica",
+							"to": "forza-percepita"
+						},
+						{
+							"from": "no-label",
+							"to": "due-mappe"
+						},
+						{
+							"from": "due-mappe",
+							"to": "pesatura"
+						},
+						{
+							"from": "pesatura",
+							"to": "spazio-stima"
+						},
+						{
+							"from": "spazio-stima",
+							"to": "estensione"
+						},
+						{
+							"from": "previsione-specifica",
+							"to": "sonda"
+						},
+						{
+							"from": "estensione",
+							"to": "sonda"
+						},
+						{
+							"from": "spazio-stima",
+							"to": "tre-livelli"
+						},
+						{
+							"from": "sonda",
+							"to": "tre-livelli"
+						},
+						{
+							"from": "tre-livelli",
+							"to": "neglect-personale"
+						},
+						{
+							"from": "previsione-specifica",
+							"to": "detezione"
+						},
+						{
+							"from": "neglect-personale",
+							"to": "detezione"
+						},
+						{
+							"from": "detezione",
+							"to": "limiti"
+						},
+						{
+							"from": "sonda",
+							"to": "limiti"
+						}
+					],
+					"version": 1
+				}
+			},
+			"isError": false,
+			"durationMs": 33,
+			"timestamp": 1795380153505,
+			"id": "msg_mwsazmnw_d1e5b15a"
+		},
+		{
+			"role": "assistant",
+			"content": [
+				{
+					"type": "text",
+					"text": "La mappa è accanto a questo messaggio. Dimmi se la struttura ti convince — se manca qualcosa che ti interessa, o se qualche passaggio ti sembra un salto — e poi cominciamo dal fondo: l'unico fatto da cui tutto il resto è costretto a seguire."
+				}
+			],
+			"api": "mistral-conversations",
+			"provider": "mistral",
+			"model": "deepseek-v4-1-flash-1017",
+			"usage": {
+				"input": 591,
+				"output": 67,
+				"cacheRead": 43776,
+				"cacheWrite": 0,
+				"totalTokens": 44434,
+				"cost": {
+					"input": 0.0001773,
+					"output": 0.0000804,
+					"cacheRead": 0.000306432,
+					"cacheWrite": 0,
+					"total": 0.000564132,
+					"totalFromProvider": false
+				}
+			},
+			"stopReason": "stop",
+			"timestamp": 1795380153511,
+			"responseId": "154dfc8a85a34a39a7bc43a9a1df932f",
+			"rawStopReason": "stop",
+			"durationMs": 2771,
+			"thinkingLevel": "low",
+			"id": "msg_mwsazmnw_c432c457"
+		},
+		{
+			"id": "pb_mwsazmnw_75b1e910",
+			"role": "custom",
+			"customType": "plan-block",
+			"content": "",
+			"display": true,
+			"details": {
+				"planCallId": "chatcmpl-tool-81b2061adc1fdf3c",
+				"block": {
+					"kind": "full",
+					"at": "2026-11-22T20:42:36.284Z",
+					"current": null,
+					"nodes": [
+						{
+							"id": "no-label",
+							"title": "Nessun segnale porta l'etichetta della sua fonte",
+							"status": "upcoming"
+						},
+						{
+							"id": "comando-previsione",
+							"title": "Il comando motorio è una previsione",
+							"status": "upcoming"
+						},
+						{
+							"id": "cancellazione",
+							"title": "Confronto: il previsto non emerge",
+							"status": "upcoming"
+						},
+						{
+							"id": "previsione-specifica",
+							"title": "La previsione è specifica: dove e quando",
+							"status": "upcoming"
+						},
+						{
+							"id": "forza-percepita",
+							"title": "Spingo più forte di quanto ricevo",
+							"status": "upcoming"
+						},
+						{
+							"id": "due-mappe",
+							"title": "Tatto: mappa della pelle. Propriocezione: dove sono le parti",
+							"status": "upcoming"
+						},
+						{
+							"id": "pesatura",
+							"title": "Combinare i canali per affidabilità",
+							"status": "upcoming"
+						},
+						{
+							"id": "spazio-stima",
+							"title": "Lo spazio del corpo è una stima",
+							"status": "upcoming"
+						},
+						{
+							"id": "estensione",
+							"title": "L'estensione percepita del corpo",
+							"status": "upcoming"
+						},
+						{
+							"id": "sonda",
+							"title": "Il self-touch come sonda",
+							"status": "upcoming"
+						},
+						{
+							"id": "tre-livelli",
+							"title": "Tre livelli: sensibilità, spazio, appartenenza",
+							"status": "upcoming"
+						},
+						{
+							"id": "neglect-personale",
+							"title": "Neglect personale: toccarsi è il test",
+							"status": "upcoming"
+						},
+						{
+							"id": "detezione",
+							"title": "Self-touch che recupera la detezione",
+							"status": "upcoming"
+						},
+						{
+							"id": "limiti",
+							"title": "Dove funziona, dove no, cosa manca",
+							"status": "upcoming"
+						}
+					],
+					"edges": [
+						{
+							"from": "no-label",
+							"to": "comando-previsione"
+						},
+						{
+							"from": "comando-previsione",
+							"to": "cancellazione"
+						},
+						{
+							"from": "cancellazione",
+							"to": "previsione-specifica"
+						},
+						{
+							"from": "previsione-specifica",
+							"to": "forza-percepita"
+						},
+						{
+							"from": "no-label",
+							"to": "due-mappe"
+						},
+						{
+							"from": "due-mappe",
+							"to": "pesatura"
+						},
+						{
+							"from": "pesatura",
+							"to": "spazio-stima"
+						},
+						{
+							"from": "spazio-stima",
+							"to": "estensione"
+						},
+						{
+							"from": "previsione-specifica",
+							"to": "sonda"
+						},
+						{
+							"from": "estensione",
+							"to": "sonda"
+						},
+						{
+							"from": "spazio-stima",
+							"to": "tre-livelli"
+						},
+						{
+							"from": "sonda",
+							"to": "tre-livelli"
+						},
+						{
+							"from": "tre-livelli",
+							"to": "neglect-personale"
+						},
+						{
+							"from": "previsione-specifica",
+							"to": "detezione"
+						},
+						{
+							"from": "neglect-personale",
+							"to": "detezione"
+						},
+						{
+							"from": "detezione",
+							"to": "limiti"
+						},
+						{
+							"from": "sonda",
+							"to": "limiti"
+						}
+					]
+				}
+			},
+			"timestamp": 1795380156284
+		}
+	],
+	"version": 2,
+	"settings": {
+		"model": {
+			"provider": "mistral",
+			"id": "deepseek-v4-1-flash-1017"
+		},
+		"thinkingLevel": "low"
+	},
+	"turns": [
+		{
+			"id": "6aad5a7e-152b-4ffd-836a-88050ff36cbe",
+			"messageId": "msg_mwsasj5p_7be35e31",
+			"at": "2026-11-22T20:37:05.168Z",
+			"model": "mistral:deepseek-v4-1-flash-1017",
+			"steps": [
+				{
+					"inputTokens": 99,
+					"outputTokens": 539,
+					"cacheReadTokens": 6912,
+					"cacheWriteTokens": 0,
+					"cacheWrite1hTokens": 0,
+					"reasoningTokens": 0
+				}
+			]
+		},
+		{
+			"id": "c33db6ab-7d42-412f-a4b7-6305db78f4d3",
+			"messageId": "msg_mwsatvzc_119e1a85",
+			"at": "2026-11-22T20:38:08.430Z",
+			"model": "mistral:deepseek-v4-1-flash-1017",
+			"steps": [
+				{
+					"inputTokens": 493,
+					"outputTokens": 4953,
+					"cacheReadTokens": 7424,
+					"cacheWriteTokens": 0,
+					"cacheWrite1hTokens": 0,
+					"reasoningTokens": 0
+				}
+			]
+		},
+		{
+			"id": "ba6e6506-305b-4d62-97f6-20d502bb866e",
+			"messageId": "msg_mwsavct3_f2337d2e",
+			"at": "2026-11-22T20:39:16.901Z",
+			"model": "mistral:deepseek-v4-1-flash-1017",
+			"steps": [
+				{
+					"inputTokens": 222,
+					"outputTokens": 5344,
+					"cacheReadTokens": 12800,
+					"cacheWriteTokens": 0,
+					"cacheWrite1hTokens": 0,
+					"reasoningTokens": 0
+				}
+			]
+		},
+		{
+			"id": "e9994a54-abd5-42f4-8129-6cb4b8ba8bd5",
+			"messageId": "msg_mwsavuxy_4c50ed6e",
+			"at": "2026-11-22T20:39:40.405Z",
+			"model": "mistral:deepseek-v4-1-flash-1017",
+			"steps": [
+				{
+					"inputTokens": 2167,
+					"outputTokens": 1397,
+					"cacheReadTokens": 16256,
+					"cacheWriteTokens": 0,
+					"cacheWrite1hTokens": 0,
+					"reasoningTokens": 0
+				}
+			]
+		},
+		{
+			"id": "19266c3a-099a-4a00-b3eb-6ec43e0f8a44",
+			"messageId": "msg_mwsaweys_5fa8168c",
+			"at": "2026-11-22T20:40:06.355Z",
+			"model": "mistral:deepseek-v4-1-flash-1017",
+			"steps": [
+				{
+					"inputTokens": 188,
+					"outputTokens": 1573,
+					"cacheReadTokens": 19712,
+					"cacheWriteTokens": 0,
+					"cacheWrite1hTokens": 0,
+					"reasoningTokens": 0
+				}
+			]
+		},
+		{
+			"id": "03aa9684-1d5d-40fb-8321-b0aa54aaae0b",
+			"messageId": "msg_mwsaws8q_6b076b21",
+			"at": "2026-11-22T20:40:23.561Z",
+			"model": "mistral:deepseek-v4-1-flash-1017",
+			"steps": [
+				{
+					"inputTokens": 173,
+					"outputTokens": 2485,
+					"cacheReadTokens": 21376,
+					"cacheWriteTokens": 0,
+					"cacheWrite1hTokens": 0,
+					"reasoningTokens": 0
+				}
+			]
+		},
+		{
+			"id": "5e709116-5cb8-4f2b-818e-fc90dcd284e7",
+			"messageId": "msg_mwsaxbpf_8bb0868c",
+			"at": "2026-11-22T20:40:48.810Z",
+			"model": "mistral:deepseek-v4-1-flash-1017",
+			"steps": [
+				{
+					"inputTokens": 5993,
+					"outputTokens": 1134,
+					"cacheReadTokens": 23936,
+					"cacheWriteTokens": 0,
+					"cacheWrite1hTokens": 0,
+					"reasoningTokens": 0
+				}
+			]
+		},
+		{
+			"id": "3c75cc78-474d-4d5c-a7cd-804bb4ffc335",
+			"messageId": "msg_mwsaz5wx_fb454be8",
+			"at": "2026-11-22T20:42:14.594Z",
+			"model": "mistral:deepseek-v4-1-flash-1017",
+			"steps": [
+				{
+					"inputTokens": 152,
+					"outputTokens": 1818,
+					"cacheReadTokens": 30976,
+					"cacheWriteTokens": 0,
+					"cacheWrite1hTokens": 0,
+					"reasoningTokens": 0
+				},
+				{
+					"inputTokens": 94,
+					"outputTokens": 45,
+					"cacheReadTokens": 32896,
+					"cacheWriteTokens": 0,
+					"cacheWrite1hTokens": 0,
+					"reasoningTokens": 0
+				}
+			]
+		},
+		{
+			"id": "45a913d4-688c-44d2-8d19-e1499888faae",
+			"messageId": "msg_mwsazmnw_c325692d",
+			"at": "2026-11-22T20:42:36.295Z",
+			"model": "mistral:deepseek-v4-1-flash-1017",
+			"steps": [
+				{
+					"inputTokens": 39246,
+					"outputTokens": 5008,
+					"cacheReadTokens": 0,
+					"cacheWriteTokens": 0,
+					"cacheWrite1hTokens": 0,
+					"reasoningTokens": 0
+				},
+				{
+					"inputTokens": 591,
+					"outputTokens": 67,
+					"cacheReadTokens": 43776,
+					"cacheWriteTokens": 0,
+					"cacheWrite1hTokens": 0,
+					"reasoningTokens": 0
+				}
+			]
+		}
+	],
+	"tree": {
+		"nodes": [
+			{
+				"id": "no-label",
+				"title": "Nessun segnale porta l'etichetta della sua fonte"
+			},
+			{
+				"id": "comando-previsione",
+				"title": "Il comando motorio è una previsione"
+			},
+			{
+				"id": "cancellazione",
+				"title": "Confronto: il previsto non emerge"
+			},
+			{
+				"id": "previsione-specifica",
+				"title": "La previsione è specifica: dove e quando"
+			},
+			{
+				"id": "forza-percepita",
+				"title": "Spingo più forte di quanto ricevo"
+			},
+			{
+				"id": "due-mappe",
+				"title": "Tatto: mappa della pelle. Propriocezione: dove sono le parti"
+			},
+			{
+				"id": "pesatura",
+				"title": "Combinare i canali per affidabilità"
+			},
+			{
+				"id": "spazio-stima",
+				"title": "Lo spazio del corpo è una stima"
+			},
+			{
+				"id": "estensione",
+				"title": "L'estensione percepita del corpo"
+			},
+			{
+				"id": "sonda",
+				"title": "Il self-touch come sonda"
+			},
+			{
+				"id": "tre-livelli",
+				"title": "Tre livelli: sensibilità, spazio, appartenenza"
+			},
+			{
+				"id": "neglect-personale",
+				"title": "Neglect personale: toccarsi è il test"
+			},
+			{
+				"id": "detezione",
+				"title": "Self-touch che recupera la detezione"
+			},
+			{
+				"id": "limiti",
+				"title": "Dove funziona, dove no, cosa manca"
+			}
+		],
+		"edges": [
+			{
+				"from": "no-label",
+				"to": "comando-previsione"
+			},
+			{
+				"from": "comando-previsione",
+				"to": "cancellazione"
+			},
+			{
+				"from": "cancellazione",
+				"to": "previsione-specifica"
+			},
+			{
+				"from": "previsione-specifica",
+				"to": "forza-percepita"
+			},
+			{
+				"from": "no-label",
+				"to": "due-mappe"
+			},
+			{
+				"from": "due-mappe",
+				"to": "pesatura"
+			},
+			{
+				"from": "pesatura",
+				"to": "spazio-stima"
+			},
+			{
+				"from": "spazio-stima",
+				"to": "estensione"
+			},
+			{
+				"from": "previsione-specifica",
+				"to": "sonda"
+			},
+			{
+				"from": "estensione",
+				"to": "sonda"
+			},
+			{
+				"from": "spazio-stima",
+				"to": "tre-livelli"
+			},
+			{
+				"from": "sonda",
+				"to": "tre-livelli"
+			},
+			{
+				"from": "tre-livelli",
+				"to": "neglect-personale"
+			},
+			{
+				"from": "previsione-specifica",
+				"to": "detezione"
+			},
+			{
+				"from": "neglect-personale",
+				"to": "detezione"
+			},
+			{
+				"from": "detezione",
+				"to": "limiti"
+			},
+			{
+				"from": "sonda",
+				"to": "limiti"
+			}
+		],
+		"version": 1
+	}
+}

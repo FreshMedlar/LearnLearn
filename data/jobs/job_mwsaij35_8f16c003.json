@@ -1,0 +1,163 @@
+{
+	"id": "job_mwsaij35_8f16c003",
+	"kind": "research",
+	"chatId": "chat_mwsa84xk_88519d1c",
+	"toolCallId": "chatcmpl-tool-853768b66455b867",
+	"input": {
+		"question": "Quali sono i risultati chiave di Nitsche & Paulus (2000) sugli effetti della tDCS sull'eccitabilità corticale misurata con MEP, e quali sono i limiti di sicurezza oggi accettati per intensità di corrente, densità di corrente e durata della stimolazione?",
+		"context": "Devo spiegare il capitolo tDCS di un corso di neuroimaging clinico: meccanismo (neuromodulazione vs neurostimolazione), polarità anodo/catodo, parametri di stimolazione e sicurezza. Verifico i numeri prima di insegnarli."
+	},
+	"status": "done",
+	"activity": "finished",
+	"createdAt": "2026-11-22T20:29:18.497Z",
+	"updatedAt": "2026-11-22T20:33:04.286Z",
+	"usage": {
+		"model": "mistral:deepseek-v4-1-flash-1017",
+		"inputTokens": 77085,
+		"outputTokens": 16579,
+		"cacheReadTokens": 485248,
+		"cacheWriteTokens": 0,
+		"cacheWrite1hTokens": 0,
+		"steps": 14,
+		"calls": [
+			{
+				"inputTokens": 222,
+				"outputTokens": 176,
+				"cacheReadTokens": 1408,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 121,
+				"outputTokens": 591,
+				"cacheReadTokens": 1792,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 13640,
+				"outputTokens": 329,
+				"cacheReadTokens": 0,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 109,
+				"outputTokens": 581,
+				"cacheReadTokens": 13952,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 9998,
+				"outputTokens": 937,
+				"cacheReadTokens": 14592,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 497,
+				"outputTokens": 219,
+				"cacheReadTokens": 25472,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 10881,
+				"outputTokens": 1442,
+				"cacheReadTokens": 26112,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 981,
+				"outputTokens": 159,
+				"cacheReadTokens": 38400,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 17593,
+				"outputTokens": 1230,
+				"cacheReadTokens": 39424,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 208,
+				"outputTokens": 2072,
+				"cacheReadTokens": 58240,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 3432,
+				"outputTokens": 510,
+				"cacheReadTokens": 60416,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 1309,
+				"outputTokens": 147,
+				"cacheReadTokens": 64256,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 8823,
+				"outputTokens": 1155,
+				"cacheReadTokens": 65664,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 9271,
+				"outputTokens": 7031,
+				"cacheReadTokens": 75520,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			}
+		],
+		"lastStep": {
+			"inputTokens": 9271,
+			"outputTokens": 7031,
+			"cacheReadTokens": 75520,
+			"cacheWriteTokens": 0,
+			"cacheWrite1hTokens": 0
+		}
+	},
+	"result": {
+		"brief": "## Summary\nNitsche & Paulus (2000) hanno dimostrato per la prima volta nell'uomo che 1 mA di corrente continua applicata con elettrodi da 35 cm² sul motocortex (contro il fronte controlaterale) modula l'eccitabilità corticale misurata con MEP: +≈20% durante e +≈40% subito dopo stimolazione anodale, −≈20/−30% con catodale, con after-effect di pochi minuti e dipendenti da intensità e durata (soglie: ≥3 min a 1 mA oppure ≥0.6 mA per 5 min). Oggi la sicurezza è definita per convenzione come \"bassa intensità\" ≤4 mA, ≤60 min/die, elettrodi 1–100 cm² (≤7.2 C), con la pratica clinica che resta su 1–2 mA per 10–30 min e densità di corrente all'elettrodo di ~0.03–0.08 mA/cm²; oltre 300.000 sessioni non hanno prodotto eventi avversi gravi, e le soglie lesionali animali sono 10–45 volte sopra le dosi convenzionali. Attenzione: 4 mA e 60 min non sono \"limiti di sicurezza\" formalizzati ma convenzioni basate sui dati disponibili.\n\n## Findings\n\n1. **Disegno dello studio del 2000 — parametri esatti** — Elettrodi spugna imbevuti di soluzione salina da **35 cm²**; stimolatore con **output massimo 1 mA**; elettrodo attivo sull'hotspot TMS del **muscolo abductor digiti minimi destro**, riferimento \"sopra l'orbita controlaterale\" (fronte). Solo questo montaggio produceva cambiamenti riproducibili: altri posizionamenti (pre/post-motori, occipitale, fronte ipsilaterale) erano inefficaci. Intensità testate 0.2–1.0 mA, durate 4 s – 5 min; MEP basali ~2 mV; 10–19 soggetti sani per esperimento. [Nitsche & Paulus 2000, J Physiol 527:633-639](https://pmc.ncbi.nlm.nih.gov/articles/PMC2270099/)\n\n2. **Effetto \"online\" (durante la corrente)** — Con 1 mA e stimolazione di soli 4 s, i MEP registrati 50 ms prima dello spegnimento aumentavano di **≈20% con l'anodo** e diminuivano di **≈20% con il catodo** rispetto alle condizioni senza corrente. [Nitsche & Paulus 2000](https://pmc.ncbi.nlm.nih.gov/articles/PMC2270099/)\n\n3. **After-effect dopo 5 min a 1 mA (il dato più citato)** — Dopo l'anodo: aumento iniziale di **≈40%** dell'ampiezza MEP, con decadimento quasi lineare nei minuti successivi; dopo il catodo: riduzione iniziale di **≈30%**. Ritorno ai valori basali entro pochi minuti (la figura mostra il ritorno entro ~5 min; il testo riporta valori di controllo basali 10 min dopo la fine). [Nitsche & Paulus 2000](https://pmc.ncbi.nlm.nih.gov/articles/PMC2270099/)\n\n4. **Soglie di dose: i numeri da verificare prima di insegnarli** — Per indurre un after-effect serviva **almeno 3 min a 1 mA** oppure **almeno 0.6 mA per 5 min**; aumentando intensità o durata crescevano sia l'ampiezza sia la durata dell'effetto (ANOVA: effetti significativi di durata F=5.295, p=0.0011 e intensità F=6.011, p=0.004). Le esposizioni di 4 s modificano l'eccitabilità solo \"durante\" e non lasciano after-effect. [Nitsche & Paulus 2000](https://pmc.ncbi.nlm.nih.gov/articles/PMC2270099/)\n\n5. **Meccanismo proposto: polarizzazione di membrana, non \"scarica\" neuronale** — Gli autori attribuiscono l'effetto durante la corrente a uno spostamento del potenziale di membrana a riposo (depolarizzazione anodica / iperpolarizzazione catodica) e gli after-effect a processi simili a post-tetanic potentiation / short-term potentiation (anodo) e a inibizione post-eccitatoria centrale (catodo); **nessuna evidenza di LTP/LTD** con quelle dosi. Questo è il punto chiave per la distinzione neuromodulazione vs neurostimolazione. [Nitsche & Paulus 2000](https://pmc.ncbi.nlm.nih.gov/articles/PMC2270099/) — La formulazione didattica moderna: la tDCS è \"neuromodulatoria\", non induce potenziali d'azione ma cambia la soglia di scarica, e i suoi effetti dipendono dallo stato del network. [Woods et al. 2016, Clin Neurophysiol 127:1031-1048](https://pmc.ncbi.nlm.nih.gov/articles/PMC4747791/)\n\n6. **Estensione dose–durata (2001 e successivi) — utile per la progressione didattica** — 5 e 7 min producono after-effect fino a ~10 min; **9 min sotto il catodo e 13 min sotto l'anodo** producono after-effect di **~1 ora** (elettrodi 5×7 cm, M1-contro sopraorbitario). [Woods et al. 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC4747791/)\n\n7. **Limite di intensità: 2 mA nella pratica, 4 mA nell'evidenza** — Le linee guida definiscono \"bassa intensità\" ≤**4 mA** (per l'AC ≤4 mA picco-picco), e i trial clinici convenzionali includono 0.1–4 mA con la maggioranza a 1 e 2 mA; la soglia \"prudenziale\" comunemente insegnata per l'uso umano è **2 mA** (con 4 mA già testati, es. nell'ictus). [Bikson et al. 2016, Brain Stimul 9:641-661](https://pmc.ncbi.nlm.nih.gov/articles/PMC5007190/) [Antal et al. 2017, Clin Neurophysiol 128:1774-1809](https://pmc.ncbi.nlm.nih.gov/articles/PMC5985830/) [Thair et al. 2017, Front Neurosci 11:641](https://pmc.ncbi.nlm.nih.gov/articles/PMC5702643/)\n\n8. **Densità di corrente: i valori reali (e perché non esiste un \"tetto\" formale)** — Con elettrodi 25–35 cm²: 1 mA/35 cm² = **0.029 mA/cm²**, 2 mA/35 cm² = **0.057 mA/cm²**, 2 mA/25 cm² = **0.08 mA/cm²**; la review di consenso indica un range complessivo di **0.03–2 mA/cm²** a seconda della dimensione dell'elettrodo (le HD-tDCS con elettrodi piccoli stanno in alto, con più sensazioni cutanee). Nel cervello, un montaggio bifrontale 5×5 cm produce ~**0.22 A/m² per 1 mA**. [Antal et al. 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5985830/) [Antal et al. 2026 (update 2017–2025), Clin Neurophysiol](https://pmc.ncbi.nlm.nih.gov/articles/PMC7618810/)\n\n9. **Margine di sicurezza rispetto alle soglie lesionali** — Lesioni istologiche nei roditori compaiono a densità di corrente cerebrale di **6.3–13 A/m²** (Bikson 2016) o, secondo la stima più conservativa usata nell'update, **20 A/m²** in anodale (142.9 A/m² in catodale); le dosi convenzionali stanno **oltre un ordine di grandezza** sotto. Quantitativamente: 2 mA per 30 min con elettrodi 5×5 danno 0.44 A/m² e 79.2 mC/cm², cioè **45× e 68× sotto** le soglie; anche 6 mA per 120 min restano 15× e 5.5× sotto. [Bikson et al. 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC5007190/) [Antal et al. 2026](https://pmc.ncbi.nlm.nih.gov/articles/PMC7618810/)\n\n10. **Durata e carica totale** — Protocolli convenzionali: **≤40 min, ≤4 mA, ≤7.2 C** per sessione (Bikson 2016); la definizione di \"low intensity tES\" aggiornata: **fino a 60 min per sessione/die**, **1–5 sessioni al giorno**, intervallo inter-sessione da giorni a 10–20 min, elettrodi 1–100 cm². Durate tipiche d'uso: 10–30 min. La soglia classica di carica \"zero lesione\" è **5240 mC/cm²** (Liebetanz 2009), contro ~79–144 mC/cm² dei protocolli convenzionali. [Bikson et al. 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC5007190/) [Antal et al. 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5985830/) [Antal et al. 2026](https://pmc.ncbi.nlm.nih.gov/articles/PMC7618810/)\n\n11. **Il punto più importante da correggere in aula: la relazione dose–effetto non è lineare** — Oltre ~26 min di anodale l'effetto può invertirsi in inibizione; 2 mA catodali per 20 min possono produrre facilitazione. Quindi \"più corrente/più tempo = più effetto\" è falso, e anche \"anodo = eccita / catodo = inibisce\" va presentato come regola di default, non come legge: la direzione dell'effetto dipende da stato cerebrale, dose e montaggio (e il piegamento corticale può invertire localmente la polarità del campo). [Thair et al. 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5702643/) [Woods et al. 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC4747791/) [Bikson et al. 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC5007190/)\n\n12. **Profilo di eventi avversi e controindicazioni pratiche** — Nessun evento avverso grave riportato: 33.200 sessioni/1.000 soggetti (2016), 18.000 sessioni (2017), **oltre 300.000 sessioni** nell'update 2017–2025, senza SAE e con profilo simile in popolazioni vulnerabili (bambini, anziani, gravidanza). Eventi lievi comuni: formicolio, prurito, cefalea, affaticamento (anche con sham). Eventi moderati rari: **ustioni cutanee**, quasi sempre legate a preparazione inadeguata dell'elettrodo (spugne secche, acqua di rubinetto invece di salina, gel troppo sottile); rari casi di mania/ipomania in pazienti depressi (11 documentati). Nessuna crisi epilettica riportata con tDCS. Precauzioni: non stimolare su difetti/forami ossei (densità di corrente locale aumentata), metallo in testa, dispositivi impiantati attivi. [Antal et al. 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5985830/) [Antal et al. 2026](https://pmc.ncbi.nlm.nih.gov/articles/PMC7618810/) [Bikson et al. 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC5007190/)\n\n13. **Cosa diceva la sicurezza *nel* 2000** — Nel paper originale la sicurezza era giustificata per riferimento ai limiti di Agnew & McCreery (1987), con esclusione di soggetti con impianti metallici/dispositivi elettrici, e con verifica sperimentale che la **temperatura cutanea non cambiava** durante 5 min a 1 mA. Utile per mostrare agli studenti come il quadro di sicurezza si sia costruito in 25 anni. [Nitsche & Paulus 2000](https://pmc.ncbi.nlm.nih.gov/articles/PMC2270099/)\n\n## Sources\n- **Kept:** Nitsche MA & Paulus W (2000), *Excitability changes induced in the human motor cortex by weak transcranial direct current stimulation*, J Physiol 527:633-639 (https://pmc.ncbi.nlm.nih.gov/articles/PMC2270099/) — fonte primaria, testo integrale: tutti i numeri su MEP, polarità, soglie di durata/intensità.\n- **Kept:** Bikson M et al. (2016), *Safety of tDCS: Evidence Based Update 2016*, Brain Stimul 9:641-661 (https://pmc.ncbi.nlm.nih.gov/articles/PMC5007190/) — riferimento canonico per ≤40 min/≤4 mA/≤7.2 C, soglie lesionali 6.3–13 A/m², conteggio sessioni.\n- **Kept:** Antal A et al. (2017), *Low intensity tES: Safety, ethical, legal regulatory and application guidelines*, Clin Neurophysiol 128:1774-1809 (https://pmc.ncbi.nlm.nih.gov/articles/PMC5985830/) — definizione <4 mA/60 min/1–100 cm², range 0.03–2 mA/cm², eventi avversi, 5240 mC/cm².\n- **Kept:** Antal A et al. (2026, online 2025), *…guidelines (2017–2025: An update)*, Clin Neurophysiol (https://pmc.ncbi.nlm.nih.gov/articles/PMC7618810/) — dati più recenti (>300.000 sessioni), conteggi espliciti dei margini 45×/68×, chiarimento che 4 mA/60 min sono convenzioni e non limiti formali.\n- **Kept:** Woods AJ et al. (2016), *A technical guide to tDCS…*, Clin Neurophysiol 127:1031-1048 (https://pmc.ncbi.nlm.nih.gov/articles/PMC4747791/) — neuromodulazione vs neurostimolazione, giorni/protocolli 5–13 min, sicurezza vs tollerabilità.\n- **Kept:** Thair H et al. (2017), *tDCS: A Beginner's Guide for Design and Implementation*, Front Neurosci 11:641 (https://pmc.ncbi.nlm.nih.gov/articles/PMC5702643/) — soglia pratica 2 mA vs 4 mA testati, elettrodi 25–35 cm², non linearità della dose.\n- **Dropped:** Godinho et al. (2017) lettera/commento su Bikson 2016 — polemica su metodologia, nessun dato numerico utile.\n- **Dropped:** varie meta-analisi cliniche 2024-2025 emerse dalla ricerca Europe PMC (ADHD, depressione, dolore) — pertinenti all'efficacia, non alla fisiologia MEP né ai limiti di sicurezza.\n- **Limite operativo:** la ricerca web (search engine) non era configurata; ho lavorato con URL primari noti + API Europe PMC/PMC. Vedi Gaps.\n\n## Gaps\n- **Nessun \"tetto\" numerico formale per la densità di corrente all'elettrodo:** le linee guida (2017, 2026) rifiutano esplicitamente metriche-soglia rigide e parlano di convenzioni; il valore \"0,057 mA/cm²\" che circola nei manuali è semplicemente 2 mA su 35 cm², non un limite regolatorio. Se in aula serve un numero, conviene presentarlo come \"valore tipico\", non come limite.\n- **Non ho potuto leggere integralmente** le sezioni su pelle/elettrochimica di Bikson 2016, Woods 2016 e Antal 2017 (le pagine PMC sono state troncate a 40.000 caratteri): i dettagli su densità di corrente cutanea e ustioni (soglie, ruolo della salina, HD-tDCS) sono quindi solo parzialmente coperti.\n- **Differenza tra stime di soglia lesionale** (6.3–13 A/m² nel 2016 vs 20 A/m² nel 2026, da Jackson 2017): da spiegare come variabilità di modello animale, non come contraddizione; se vuoi essere precisissimo in aula, cita il range e il principio del \"margine >10×\".\n- **Non verificato** il testo integrale di Nitsche & Paulus 2001 (Neurology) e di Nitsche et al. 2003 (safety criteria): i dati su after-effect ~1 h (9/13 min) sono citati tramite Woods 2016, non dalla fonte primaria.\n- **Next step suggerito:** se serve un riferimento in italiano per la lezione, cercare la traduzione/consensus SITN o rassegne italiane su tDCS (non coperte qui perché la ricerca web era indisponibile); e verificare sul PDF originale di Nitsche & Paulus 2000 la Fig. 2 per l'esatto tempo di ritorno al baseline (5 vs 10 min), che nel testo è ambiguo.\n\n## Tools\n- `web_search`: **non disponibile** (nessun motore configurato: manca una API key Tavily/Brave/Exa/Firecrawl/Ollama nelle impostazioni). Segnalato come limite; non ho inventato risultati.\n- `web_fetch`: usato su Europe PMC REST API (metadati/DOI/PMID), PMC full text (PMC2270099, PMC5007190, PMC4747791, PMC5702643, PMC5985830, PMC7618810) e Semantic Scholar API.\n- `web_fetch_pdf` / `pdf_*`: tentati su Wiley, Europe PMC (`?pdf=render`) e PMC — tutti HTTP 403 o \"not a readable PDF\"; nessun PDF leggibile ottenuto, quindi lavoro svolto su HTML.",
+		"sources": [
+			{
+				"title": "Nitsche & Paulus 2000, J Physiol 527:633-639",
+				"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2270099/"
+			},
+			{
+				"title": "Woods et al. 2016, Clin Neurophysiol 127:1031-1048",
+				"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4747791/"
+			},
+			{
+				"title": "Bikson et al. 2016, Brain Stimul 9:641-661",
+				"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5007190/"
+			},
+			{
+				"title": "Antal et al. 2017, Clin Neurophysiol 128:1774-1809",
+				"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5985830/"
+			},
+			{
+				"title": "Thair et al. 2017, Front Neurosci 11:641",
+				"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5702643/"
+			},
+			{
+				"title": "Antal et al. 2026 (update 2017–2025), Clin Neurophysiol",
+				"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7618810/"
+			}
+		]
+	},
+	"delivery": {
+		"kind": "result",
+		"status": "delivered"
+	}
+}

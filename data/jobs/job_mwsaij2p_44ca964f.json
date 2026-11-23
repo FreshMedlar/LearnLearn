@@ -1,0 +1,158 @@
+{
+	"id": "job_mwsaij2p_44ca964f",
+	"kind": "research",
+	"chatId": "chat_mwsa84xk_88519d1c",
+	"toolCallId": "chatcmpl-tool-9a964bed2a0c0072",
+	"input": {
+		"question": "Quali sono le differenze precise tra lo spazio stereotassico di Talairach e lo spazio MNI (origine e costruzione del template, numero e tipo di soggetti, riferimento AC-PC, ampiezza del cervello risultante), e come si convertono le coordinate dall'uno all'altro?",
+		"context": "Devo insegnare a uno studente di neuropsicologia clinica il metodo lesionale moderno: il suo esame orale chiederà la differenza Talairach vs MNI e perché le coordinate non coincidono. Mi serve la versione corretta prima di spiegarla."
+	},
+	"status": "done",
+	"activity": "finished",
+	"createdAt": "2026-11-22T20:29:18.481Z",
+	"updatedAt": "2026-11-22T20:30:41.134Z",
+	"usage": {
+		"model": "mistral:deepseek-v4-1-flash-1017",
+		"inputTokens": 75044,
+		"outputTokens": 14133,
+		"cacheReadTokens": 419200,
+		"cacheWriteTokens": 0,
+		"cacheWrite1hTokens": 0,
+		"steps": 11,
+		"calls": [
+			{
+				"inputTokens": 1628,
+				"outputTokens": 1046,
+				"cacheReadTokens": 0,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 325,
+				"outputTokens": 410,
+				"cacheReadTokens": 2560,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 18030,
+				"outputTokens": 744,
+				"cacheReadTokens": 0,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 18559,
+				"outputTokens": 241,
+				"cacheReadTokens": 18688,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 196,
+				"outputTokens": 78,
+				"cacheReadTokens": 37376,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 5452,
+				"outputTokens": 1215,
+				"cacheReadTokens": 37632,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 12321,
+				"outputTokens": 1386,
+				"cacheReadTokens": 44288,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 12132,
+				"outputTokens": 138,
+				"cacheReadTokens": 57984,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 3372,
+				"outputTokens": 705,
+				"cacheReadTokens": 70144,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 1489,
+				"outputTokens": 851,
+				"cacheReadTokens": 74112,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 1540,
+				"outputTokens": 7319,
+				"cacheReadTokens": 76416,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			}
+		],
+		"lastStep": {
+			"inputTokens": 1540,
+			"outputTokens": 7319,
+			"cacheReadTokens": 76416,
+			"cacheWriteTokens": 0,
+			"cacheWrite1hTokens": 0
+		}
+	},
+	"result": {
+		"brief": "## Summary\nTalairach e MNI sono due spazi stereotassici diversi per **origine, costruzione e scala**: lo spazio di Talairach deriva da **un singolo cervello post-mortem** (atlante 1988), quello MNI da **medie di molte MRI di soggetti normali** (MNI305, poi ICBM-152). Entrambi usano un riferimento AC–PC, ma nel template MNI l'AC **non è esattamente nell'origine** (sta ~3–4 mm sotto z = 0) e il cervello MNI è **~24% più voluminoso** (144×180×132 mm vs 136×172×118 mm), oltre che più \"naso in giù\" di ~4–6°. Le conversioni sono quindi **approssimazioni**: i disaccordi vanno da ~0 mm in profondità a **>1 cm** in aree anteriori/superiori, e il metodo di conversione (Brett vs Lancaster vs non lineare) cambia il risultato di millimetri.\n\n## Findings\n\n1. **Origine storica e definizione del sistema Talairach.** Il sistema nasce dalla stereotassia di Talairach: nel 1952 propone AC e PC come riferimenti (identificabili in ventricolografia), poi sviluppa la griglia proporzionale (12 sotto-volumi) e pubblica atlanti nel 1957, 1967 e 1988. [Mazoyer 2008, obituary](https://pmc.ncbi.nlm.nih.gov/articles/PMC6870828/). Nello spazio \"Talairach-compliant\" l'asse y è la linea AC–PC, l'**origine è l'AC** e le dimensioni standard sono **x = 136, y = 172, z = 118 mm**. [Laird et al. 2010](https://pmc.ncbi.nlm.nih.gov/articles/PMC2856713/)\n\n2. **Il template Talairach è un singolo cervello, non una media.** L'atlante 1988 deriva da un'unica dissezione post-mortem; il dettaglio anatomico è documentato essenzialmente per **un solo emisfero** e le aree di Brodmann sono \"trasferite\" a stima (gli autori stessi avvertono che il cervello non fu sottoposto a studio istologico). [Brett, MRC-CBU](https://imaging.mrc-cbu.cam.ac.uk/imaging/MniTalairach), [Laird et al. 2010](https://pmc.ncbi.nlm.nih.gov/articles/PMC2856713/). Conseguenza pratica: anche solo come \"immagine\" l'atlante è **27 sezioni assiali, da z = +65 a z = −40 mm** — non esiste una MRI 3D del cervello Talairach. [Lacadie et al. 2008](https://pmc.ncbi.nlm.nih.gov/articles/PMC2603575/)\n\n3. **Costruzione del template MNI: due stadi.** (a) 250 MRI normali allineate manualmente a landmark (linea simile all'AC–PC e bordi cerebrali) → \"atlante 250\" (raramente usato); (b) +55 MRI registrate automaticamente (Collins) e mediate con le 250 → **MNI305**, composto da **305 soggetti tutti destrimani, 239 M / 66 F, età media 23,4 ± 4,1 anni**. [Brett, MRC-CBU](https://imaging.mrc-cbu.mrc-cbu.cam.ac.uk/imaging/MniTalairach) → correggo il link: [Brett, MRC-CBU](https://imaging.mrc-cbu.cam.ac.uk/imaging/MniTalairach)\n\n4. **Da MNI305 a ICBM-152 (e alle versioni non lineari).** ICBM-152 = media di **152 MRI** registrate a MNI305 con trasformazione affine a **9 parametri**; è il template standard di SPM99 e successivi. [Brett, MRC-CBU](https://imaging.mrc-cbu.cam.ac.uk/imaging/MniTalairach). Le versioni moderne (ICBM 152 Nonlinear 2009) sono **medie non lineari non distorte (\"unbiased\")** ottenute per iterazioni successive, con varianti **simmetrica/asimmetrica** e **lineare/non lineare** — usarle intercambiabilmente è già una fonte di errore. [BIC-MNI, ICBM 152 NLin 2009](https://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009)\n\n5. **Differenza di ampiezza del cervello risultante.** Dimensioni del bounding box cerebrale: **Talairach 136 × 172 × 118 mm** (volume 1.000) vs **ICBM-152 144 × 180 × 132 mm** (rapporto di volume **1.240**, cioè +24%); MNI305 ≈ 142 × 181 × 132. La differenza più marcata è la dimensione **superiore–inferiore (+12%)**. [Lancaster et al. 2007, Table I](http://brainmap.org/pubs/LancasterHBM07.pdf). I cervelli normalizzati in MNI sono più grandi anche dei cervelli individuali non normalizzati (~+24%), fatto che contraddice l'idea che MNI sia \"più rappresentativo\" in senso dimensionale. [Laird et al. 2010](https://pmc.ncbi.nlm.nih.gov/articles/PMC2856713/)\n\n6. **Riferimento AC–PC: uguale in teoria, diverso nei fatti.** Talairach definisce l'origine come l'intersezione dei margini posteriore e superiore dell'AC (Lancaster usa il centro dell'AC, più riproducibile in MRI), con z = 0 sulla linea AC–PC [Lancaster et al. 2007, p. 1196](http://brainmap.org/pubs/LancasterHBM07.pdf). Nel cervello MNI l'AC **non è nell'origine ma ~4 mm sotto** z = 0 [Brett, MRC-CBU](https://imaging.mrc-cbu.cam.ac.uk/imaging/MniTalairach); quantitativamente, la trasformazione best-fit MNI→TAL sposta l'origine di **≈1 mm in y e +3,2 mm in z** (FSL) o **+4,1 mm** (SPM2): Lancaster conclude che le due origini distano \"quasi mezzo centimetro\". [Lancaster et al. 2007, pp. 1199–1200](http://brainmap.org/pubs/LancasterHBM07.pdf)\n\n7. **Differenza di orientamento (rotazione).** I cervelli fittati al template MNI risultano ruotati **\"naso in giù\" di ~3,9° (FSL) e ~5,7° (SPM2)** rispetto all'allineamento Talairach; gli altri due assi differiscono di ≤1°. [Lancaster et al. 2007, Table II–III](http://brainmap.org/pubs/LancasterHBM07.pdf)\n\n8. **Differenza di scala (il fattore dominante è z).** Fattori di scala MNI→TAL = **x 0,946 / y 0,948 / z 0,901** (FSL) e **0,925 / 0,936 / 0,897** (SPM2): le coordinate MNI vanno \"compresse\" del 5–10%, soprattutto in altezza. [Lancaster et al. 2007, Table III](http://brainmap.org/pubs/LancasterHBM07.pdf)\n\n9. **Non è solo questione di dimensione: la forma è diversa.** Il template MNI è più alto, più lungo e con **lobi temporali ~10 mm più profondi**; esempi: (32, −4, −50) è ancora cervelletto/temporale in MNI ma sotto l'ultima slice dell'atlante Talairach (−40), e (−8, −76, −8) è corteccia occipitale in MNI ma **CSF** nell'atlante Talairach. [Brett, MRC-CBU](https://imaging.mrc-cbu.cam.ac.uk/imaging/MniTalairach). La mappa non lineare Talairach↔MNI stima differenze locali di volume **fino al 35%, massime nei lobi temporali**; e con mappature lineari punti sulla superficie cerebrale in MNI finiscono **fuori dal cervello** in Talairach. [Lacadie et al. 2008](https://pmc.ncbi.nlm.nih.gov/articles/PMC2603575/)\n\n10. **Quanto si sbaglia, in millimetri (numeri da esame).** La disparità MNI/Talairach è **zero in un punto profondo dell'emisfero sinistro** e **>1 cm in alcune aree anteriori** [Lancaster et al. 2007, abstract](http://brainmap.org/pubs/LancasterHBM07.pdf). Su dati reali (stessi contrasti normalizzati nei due spazi) la distanza media tra coppie di coordinate è **6,7–8,6 mm**; convertirle con Lancaster la riduce a **6,28 mm** in media, con Brett la **peggiora** (8,45 mm), senza conversione 7,78 mm. [Laird et al. 2010](https://pmc.ncbi.nlm.nih.gov/articles/PMC2856713/)\n\n11. **Metodo 1 — Brett \"mni2tal\" (trasformazione a pezzi, 2 matrici affini).** Versione semplice (Meyer-Lindenberg, derivata da SPM95→SPM96): x' = 0,88x − 0,8; y' = 0,97y − 3,32; z' = 0,05y + 0,88z − 0,44. Versione \"migliore\" (Brett, con correzione di pitch): sopra l'AC x' = 0,99x, y' = 0,9688y + 0,046z, z' = −0,0485y + 0,9189z; **sotto l'AC** z' = −0,0485y + **0,8390**z (zoom z minore per i lobi temporali). Esempio: MNI (10, 12, 14) → Talairach (9,9; 12,3; 12,3). [Brett, MRC-CBU](https://imaging.mrc-cbu.cam.ac.uk/imaging/MniTalairach)\n\n12. **Metodo 2 — Lancaster \"icbm2tal\" (affine best-fit, oggi raccomandato).** Derivato da 100 cervelli ICBM con registrazioni SPM2, FSL e Talairach manuale (matrice MTT = TAL × MNI⁻¹, stimata ai minimi quadrati). Esistono versioni **separate per software**: `icbm_spm2tal`, `icbm_fsl2tal`, `icbm_other2tal` (+ inverse `tal2icbm_*`) — applicare quella sbagliata reintroduce bias. Riduce la disparità media da 5–13 mm a **1–2 mm** nei test su landmark. [Lancaster et al. 2007](http://brainmap.org/pubs/LancasterHBM07.pdf), [brainmap.org/icbm2tal](https://www.brainmap.org/icbm2tal/), [Laird et al. 2010](https://pmc.ncbi.nlm.nih.gov/articles/PMC2856713/)\n\n13. **Metodo 3 — trasformazione non lineare (Lacadie/BioImage Suite).** Atlante Talairach digitalizzato (27 slices, thin-plate spline per correggere le distorsioni, + rotazione di 2°) e registrato non linearmente (robust point matching, ~3000 gradi di libertà) al Colin27/MNI: differenze rispetto alle mappature lineari **4–5 mm in corteccia, ~0 in aree sottocorticali**; lookup table disponibile in BioImage Suite e come applet online. [Lacadie et al. 2008](https://pmc.ncbi.nlm.nih.gov/articles/PMC2603575/), [applet MNI↔TAL](https://bioimagesuiteweb.github.io/webapp/mni2tal.html)\n\n14. **Perché le coordinate non coincidono — la spiegazione \"da esame\".** Non solo scala: il template MNI è stato **volutamente** registrato solo approssimativamente all'atlante Talairach perché il cervello dell'atlante ha una forma \"anomala\" difficilmente raggiungibile con un'affine; quindi restano differenze di origine (mm), rotazione (~4–6°), scala (5–10%, soprattutto z) e **forma regionale**. [Brett, MRC-CBU](https://imaging.mrc-cbu.cam.ac.uk/imaging/MniTalairach), [Lancaster et al. 2007](http://brainmap.org/pubs/LancasterHBM07.pdf)\n\n15. **Trappole pratiche da insegnare (metodo lesionale).** (i) Molti autori SPM riportano \"coordinate Talairach\" che sono in realtà **MNI** — ambiguità endemica: nel 2009 BrainMap conteneva 43,7% studi Talairach, 47,9% MNI e 8,3% convertiti con Brett. [Laird et al. 2010](https://pmc.ncbi.nlm.nih.gov/articles/PMC2856713/); (ii) \"Talairach-compliant\" (sistema di coordinate) ≠ \"atlante Talairach\" (etichette Brodmann): un cervello MNI può essere reso Talairach-compliant con uno shift lineare. [Laird et al. 2010](https://pmc.ncbi.nlm.nih.gov/articles/PMC2856713/); (iii) `mni2tal` **non è invertibile** vicino al piano AC (due punti MNI possono mappare sullo stesso punto Talairach) e la versione z<0/z≥0 è discontinua. [Lacadie et al. 2008](https://pmc.ncbi.nlm.nih.gov/articles/PMC2603575/); (iv) nello stesso template MNI esistono varianti lin/non-lin, sym/asym, e in più MNI305 vs ICBM-152 differscono di ~3–4° di rotazione e ~10% di volume z. [Lancaster et al. 2007, p. 1200](http://brainmap.org/pubs/LancasterHBM07.pdf), [BIC-MNI](https://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009); (v) convenzione dei segni: nel 1967 il sinistro era positivo, **nel 1988 il sinistro è negativo**. [Wikipedia, Talairach coordinates](https://en.wikipedia.org/wiki/Talairach_coordinates)\n\n16. **Regola operativa.** Scegliere **uno** spazio per tutta l'analisi e la tabella, dichiararlo (template + algoritmo di normalizzazione) e, se si converte, dichiarare **quale** trasformazione (Brett vs `icbm_spm2tal`/`icbm_fsl2tal`, lineare vs non lineare). Per meta-analisi coordinate-based e confronti con letteratura storica la scelta raccomandata è **icbm2tal (Lancaster)**; per il lavoro clinico lesionale è più sicuro normalizzare e refertare in MNI (con atlanti probabilistici) piuttosto che \"tradurre\" a posteriori, perché 5–10 mm possono cambiare l'etichetta anatomica di un punto di lesione. [Laird et al. 2010](https://pmc.ncbi.nlm.nih.gov/articles/PMC2856713/), [brainmap.org/icbm2tal](https://www.brainmap.org/icbm2tal/)\n\n## Sources\n- **Kept:** Brett, *The MNI brain and the Talairach atlas* (https://imaging.mrc-cbu.cam.ac.uk/imaging/MniTalairach) — fonte di riferimento sulla costruzione di MNI305/ICBM152, sulle differenze di forma/ampiezza e sulle formule `mni2tal`/`tal2mni`.\n- **Kept:** Lancaster et al. 2007, *Bias Between MNI and Talairach Coordinates…* (http://brainmap.org/pubs/LancasterHBM07.pdf) — dati quantitativi primari: dimensioni dei template, volume +24%, rotazione, scala, matrici MTT, disparità fino a >1 cm.\n- **Kept:** Laird et al. 2010 (https://pmc.ncbi.nlm.nih.gov/articles/PMC2856713/) — definizione formale degli spazi, validazione comparativa Brett vs Lancaster, entità degli errori in mm, stato della letteratura.\n- **Kept:** Lacadie et al. 2008 (https://pmc.ncbi.nlm.nih.gov/articles/PMC2603575/) — trasformazione non lineare, limiti di quella lineare, non-invertibilità di mni2tal, copertura dell'atlante (27 slices).\n- **Kept:** BrainMap `icbm2tal` (https://www.brainmap.org/icbm2tal/) — quale variante usare secondo software di normalizzazione; avvertenze sulle versioni non validate.\n- **Kept:** BIC-MNI ICBM 152 NLin 2009 (https://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009) — costruzione delle medie non lineari unbiased e varianti del template.\n- **Kept:** BioImage Suite MNI↔TAL applet (https://bioimagesuiteweb.github.io/webapp/mni2tal.html) — strumento di conversione non lineare usabile in classe/demo.\n- **Kept:** Mazoyer 2008, obituary di Jean Talairach (https://pmc.ncbi.nlm.nih.gov/articles/PMC6870828/) — storia del riferimento AC–PC (1952) e della griglia proporzionale.\n- **Kept (con cautela):** Wikipedia, *Talairach coordinates* (https://en.wikipedia.org/wiki/Talairach_coordinates) — solo per dettagli storici/convenzione dei segni, non per numeri tecnici.\n- **Dropped:** Radiopaedia (bloccato da anti-bot), talairach.org (solo software), Wikipedia *Posterior commissure* (nessun dato stereotassico), un articolo PMC recuperato per ID errato (creatina etil estere — irrilevante).\n\n## Gaps\n- **Web search non disponibile** (nessun motore/API key configurato: serve una key Tavily/Brave/Exa/Firecrawl/Ollama nelle impostazioni). Ho lavorato solo con URL noti e fetch diretti: questo limita la copertura, in particolare per la letteratura primaria francese/atlante originale.\n- **Provenienza del cervello dell'atlante:** la formulazione \"singolo cervello post-mortem, dettaglio essenzialmente di un emisfero\" è ben documentata; la versione spesso citata a lezione (\"donna di 60 anni\", emisferi da due cadaveri diversi) **non l'ho potuta verificare** su fonte accessibile in questa sessione. Consiglio di verificare su Talairach & Tournoux 1988 (pag. introduttive) o su Devlin & Poldrack 2007 prima di asserirla all'esame.\n- **Distanza AC–PC numerica nei due spazi** (es. ~23–24 mm nell'atlante vs valore maggiore in MNI152): non verificata su fonte primaria; nella lezione userei i dati solidi che ho (dimensioni del bounding box, +12% S-I, offset dell'origine, scala z 0,90).\n- Passo successivo suggerito: recuperare Devlin & Poldrack (2007, *NeuroImage*) e Collins et al. (1994) per i dettagli di costruzione di MNI305, e testare in classe `mni2tal` vs `icbm_fsl2tal` su 2–3 coordinate reali (es. 10, 12, 14 e un punto temporale) per mostrare che l'ordine di grandezza del disaccordo cambia con la regione.\n\n## Tools\nHo usato `web_fetch` (pagine HTML) e `web_fetch_pdf` + `pdf_extract` (Lancaster et al. 2007, 12 pagine, estratte pp. 1–7). `web_search` ha ripetutamente risposto \"search is not available: no search engine is configured\" — non ho inventato risultati e mi sono limitato a URL noti e verificabili.",
+		"sources": [
+			{
+				"title": "Mazoyer 2008, obituary",
+				"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6870828/"
+			},
+			{
+				"title": "Laird et al. 2010",
+				"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2856713/"
+			},
+			{
+				"title": "Brett, MRC-CBU",
+				"url": "https://imaging.mrc-cbu.cam.ac.uk/imaging/MniTalairach"
+			},
+			{
+				"title": "Lacadie et al. 2008",
+				"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2603575/"
+			},
+			{
+				"title": "Brett, MRC-CBU",
+				"url": "https://imaging.mrc-cbu.mrc-cbu.cam.ac.uk/imaging/MniTalairach"
+			},
+			{
+				"title": "BIC-MNI, ICBM 152 NLin 2009",
+				"url": "https://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009"
+			},
+			{
+				"title": "Lancaster et al. 2007, Table I",
+				"url": "http://brainmap.org/pubs/LancasterHBM07.pdf"
+			},
+			{
+				"title": "brainmap.org/icbm2tal",
+				"url": "https://www.brainmap.org/icbm2tal/"
+			},
+			{
+				"title": "applet MNI↔TAL",
+				"url": "https://bioimagesuiteweb.github.io/webapp/mni2tal.html"
+			},
+			{
+				"title": "Wikipedia, Talairach coordinates",
+				"url": "https://en.wikipedia.org/wiki/Talairach_coordinates"
+			}
+		]
+	},
+	"delivery": {
+		"kind": "result",
+		"status": "delivered"
+	}
+}

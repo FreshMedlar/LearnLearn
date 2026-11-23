@@ -1,0 +1,141 @@
+{
+	"id": "job_mwsa86ll_379660fa",
+	"kind": "pdf",
+	"chatId": "chat_mwsa84xk_88519d1c",
+	"toolCallId": "chatcmpl-tool-91ee5cd87ea26507",
+	"input": {
+		"path": "/home/medlar/Downloads/Neuroimaging.pdf",
+		"question": "Fornisci una mappa completa del contenuto: elenco degli argomenti/capitoli con numeri di pagina, i concetti chiave di ciascuno, il livello tecnico (matematica/fisica coinvolta), e se ci sono esercizi, formule, o domande d'esame. Indica anche il tipo di corso (es. neuroscienze, ingegneria biomedica, medicina) e il livello di profondità su fisica dei segnali, imaging (fMRI, PET, EEG, MEG, DTI, ecc.), analisi dati e statistica."
+	},
+	"status": "done",
+	"activity": "finished",
+	"createdAt": "2026-11-22T20:21:15.753Z",
+	"updatedAt": "2026-11-22T20:21:57.020Z",
+	"usage": {
+		"model": "mistral:zai-glm-5-3-flash",
+		"inputTokens": 19199,
+		"outputTokens": 1307,
+		"cacheReadTokens": 17280,
+		"cacheWriteTokens": 0,
+		"cacheWrite1hTokens": 0,
+		"steps": 6,
+		"calls": [
+			{
+				"inputTokens": 1162,
+				"outputTokens": 6,
+				"cacheReadTokens": 0,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 1952,
+				"outputTokens": 59,
+				"cacheReadTokens": 0,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 5462,
+				"outputTokens": 88,
+				"cacheReadTokens": 0,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 5258,
+				"outputTokens": 54,
+				"cacheReadTokens": 3456,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 1895,
+				"outputTokens": 109,
+				"cacheReadTokens": 6912,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 3470,
+				"outputTokens": 991,
+				"cacheReadTokens": 6912,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			}
+		],
+		"lastStep": {
+			"inputTokens": 3470,
+			"outputTokens": 991,
+			"cacheReadTokens": 6912,
+			"cacheWriteTokens": 0,
+			"cacheWrite1hTokens": 0
+		}
+	},
+	"result": {
+		"path": "/home/medlar/Downloads/Neuroimaging.pdf",
+		"question": "Fornisci una mappa completa del contenuto: elenco degli argomenti/capitoli con numeri di pagina, i concetti chiave di ciascuno, il livello tecnico (matematica/fisica coinvolta), e se ci sono esercizi, formule, o domande d'esame. Indica anche il tipo di corso (es. neuroscienze, ingegneria biomedica, medicina) e il livello di profondità su fisica dei segnali, imaging (fMRI, PET, EEG, MEG, DTI, ecc.), analisi dati e statistica.",
+		"brief": "## Brief: \"Neuroimaging\" — mappa del contenuto (47 pagg., Appunti di lezione)\n\n**Tipo di corso:** Appunti di lezione di un corso di **Neuropsicologia / Neuroimaging clinico** (ambito neuropsicologia clinica / scienze cognitive, con taglio medico-riabilitativo), in italiano. Forte orientamento al **metodo lesionale** (lesion-symptom mapping) e alla stimolazione cerebrale non invasiva (tDCS).\n\n**Struttura e argomenti (con pagine):**\n- **pp. 1–2 — Bibliografia e introduzione:** metodo di correlazione anatomo-clinica, origini (Broca 1861), limiti del metodo lesionale classico (diaschisi, plasticità, casi singoli).\n- **pp. 3–6 — TAC:** principi di funzionamento (raggi X, voxel, coefficiente di attenuazione, unità Hounsfield), visualizzazione di lesioni emorragiche vs ischemiche.\n- **pp. 7–18 — Metodo lesionale moderno:** mapping delle lesioni su template (Damasio), spazi stereotassici Talairach e MNI, procedure standard (X/Y plotting, X/Y plotting approach), sistemi di coordinate e assi AP/LR, coordinate Z (p. 22), confronto Talairach vs MNI (pp. 19–24).\n- **pp. 25–34 — Analisi statistiche di gruppo:** voxelwise lesion-symptom mapping, correzioni per confronti multipli (Bonferroni), concetti di potenza del test ed errori di tipo I/II (p. 34, 37).\n- **pp. 35–37 — Futuro del metodo lesionale:** complementarità con PET, SPECT, fMRI; teorie della localizzazione.\n- **pp. 38–47 — Neurostimolazione non invasiva (NIBS/tDCS):** cenni storici (Galvani, Volta, Aldini), meccanismi (neuromodulazione vs neurostimolazione, effetti su MEPs — Nitsche & Paulus 2000), metodologia pratica (elettrodi, montaggi anodico/catodico/sham, sistema EEG 10-20, parametri: intensità <2.5 mA/cm², durata 10–30 min, after-effects), applicazioni alla riabilitazione post-ictus (deficit motori, neglect, anosognosia; MRS, glutammato/NMDA).\n\n**Concetti chiave per sezione:** TAC (pp. 3–6); template di Damasio e procedure standardizzate (pp. 12–17); spazi stereotassici Talairach/MNI (pp. 19–24); fMRI introduttiva e tecniche funzionali (pp. 10, 37, 41, solo cenno); tDCS completa (pp. 38–46, cuore finale del documento).\n\n**Livello tecnico:** Basso-medio. Statistica presente ma concettuale (errore I/II, potenza, Bonferroni — p. 34, 37), nessuna formula matematica complessa; fisica trattata qualitativamente (attenuazione raggi X, campi elettrici, impedenza — p. 43), senza equazioni. Nessun esercizio né domande d'esame esplicite; l'unica traccia è la prima pagina (\"Bibliografia per esame\").\n\n**Profondità per modality:** TAC = dettagliata (pp. 3–6); fMRI = solo citata/introduttiva (pp. 10, 37, 41); PET/SPECT = solo menzionate come complementari (p. 37); EEG = solo sistema 10-20 per posizionamento elettrodi (p. 44); **MEG e DTI assenti**; IRM strutturale trattata implicitamente; tDCS = trattata a fondo (la parte più approfondita del documento).\n\nPages consulted: 1-6, 37-40 (estrazione), con struttura verificata tramite ricerca su tutte le 47 pagine.",
+		"pagesRead": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			37,
+			38,
+			39,
+			40,
+			43,
+			44,
+			45,
+			46
+		],
+		"pagesConsulted": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			22,
+			23,
+			24,
+			25,
+			26,
+			27,
+			28,
+			29,
+			32,
+			34,
+			35,
+			37,
+			38,
+			39,
+			40,
+			41,
+			42,
+			43,
+			44,
+			45,
+			46
+		]
+	},
+	"delivery": {
+		"kind": "result",
+		"status": "delivered"
+	}
+}

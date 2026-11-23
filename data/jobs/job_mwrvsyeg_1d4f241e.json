@@ -1,0 +1,74 @@
+{
+	"id": "job_mwrvsyeg_1d4f241e",
+	"kind": "visual",
+	"chatId": "chat_mwp78naq_74d46dd7",
+	"toolCallId": "chatcmpl-tool-aaf03c0d4373082a",
+	"input": {
+		"brief": "Two-panel figure explaining what a manifold is, with four elements.\n\nPANEL A (left, larger): the unit circle in the plane, centre at origin, radius 1, drawn as a grey thick curve. Two overlapping CHART ARCS drawn in different colours on top of it:\n- Chart 1 in blue: the arc from angle -135° to +135° (i.e. the circle minus the top-left..top-right gap), drawn slightly offset outward from the circle so it reads as a separate stroke.\n- Chart 2 in red: the arc from angle 45° to 315° going the other way (the circle minus a gap at the top), also offset slightly inward so both arcs remain visible where they overlap.\nShade the two overlap regions (around angle -45° and +135°) with a light hatch or tint, and label one of them \"overlap\".\nLabel the arcs \"chart 1: θ ∈ (-3π/4, 3π/4)\" and \"chart 2\" respectively, in their colours.\nMark a point P on the circle at angle 30° with a filled dot, labelled \"P\". Draw the TANGENT LINE at P as a dashed black line, and label it \"tangent at P — a 1-plane\". Draw the radius from origin to P as a thin dotted line.\nAdd a short caption under the panel: \"every point has an arc as a neighbourhood; the tangent line rotates as you go around\".\n\nPANEL B (right, smaller): the union of the two coordinate axes in the plane, drawn as thick grey lines. Circle a small disk around the origin with a red dashed outline, and inside that disk draw the four branches clearly meeting at the origin. Label the circled region \"at the origin: no arc can cover a neighbourhood\". Add a second small marker at a point on the positive x-axis, labelled \"elsewhere: an arc works\".\nCaption under panel B: \"xy = 0 — not a 1-manifold\".\n\nOverall: clean white background, restrained palette (grey curve, one blue, one red, black dashed tangent), axes with tick marks and labels x and y on both panels, equal aspect ratio in both so the circle is round. A single title at the top: \"A 1-manifold: locally an interval, globally curved\". Legible labels, no overlap."
+	},
+	"status": "done",
+	"activity": "finished",
+	"createdAt": "2026-11-22T13:37:30.664Z",
+	"updatedAt": "2026-11-22T13:40:27.173Z",
+	"usage": {
+		"model": "mistral:zai-glm-5-3-flash",
+		"inputTokens": 16423,
+		"outputTokens": 6733,
+		"cacheReadTokens": 19584,
+		"cacheWriteTokens": 0,
+		"cacheWrite1hTokens": 0,
+		"steps": 5,
+		"calls": [
+			{
+				"inputTokens": 1497,
+				"outputTokens": 5911,
+				"cacheReadTokens": 0,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 7427,
+				"outputTokens": 6,
+				"cacheReadTokens": 0,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 2544,
+				"outputTokens": 626,
+				"cacheReadTokens": 5760,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 2039,
+				"outputTokens": 6,
+				"cacheReadTokens": 6912,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			},
+			{
+				"inputTokens": 2916,
+				"outputTokens": 184,
+				"cacheReadTokens": 6912,
+				"cacheWriteTokens": 0,
+				"cacheWrite1hTokens": 0
+			}
+		],
+		"lastStep": {
+			"inputTokens": 2916,
+			"outputTokens": 184,
+			"cacheReadTokens": 6912,
+			"cacheWriteTokens": 0,
+			"cacheWrite1hTokens": 0
+		}
+	},
+	"result": {
+		"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1000\" height=\"640\" viewBox=\"0 0 1000 640\">\n  <rect width=\"1000\" height=\"640\" fill=\"white\"/>\n  <text x=\"500\" y=\"42\" font-family=\"sans-serif\" font-size=\"24\" text-anchor=\"middle\" fill=\"#111\">A 1-manifold: locally an interval, globally curved</text>\n\n  <!-- ================= PANEL A ================= -->\n  <!-- light axes -->\n  <line x1=\"95\" y1=\"300\" x2=\"405\" y2=\"300\" stroke=\"#bbb\" stroke-width=\"1.5\"/>\n  <line x1=\"250\" y1=\"175\" x2=\"250\" y2=\"425\" stroke=\"#bbb\" stroke-width=\"1.5\"/>\n  <line x1=\"140\" y1=\"295\" x2=\"140\" y2=\"305\" stroke=\"#888\" stroke-width=\"1.5\"/>\n  <line x1=\"360\" y1=\"295\" x2=\"360\" y2=\"305\" stroke=\"#888\" stroke-width=\"1.5\"/>\n  <line x1=\"245\" y1=\"190\" x2=\"255\" y2=\"190\" stroke=\"#888\" stroke-width=\"1.5\"/>\n  <line x1=\"245\" y1=\"410\" x2=\"255\" y2=\"410\" stroke=\"#888\" stroke-width=\"1.5\"/>\n  <text x=\"412\" y=\"292\" font-family=\"sans-serif\" font-size=\"16\" font-style=\"italic\" fill=\"#555\">x</text>\n  <text x=\"236\" y=\"166\" font-family=\"sans-serif\" font-size=\"16\" font-style=\"italic\" fill=\"#555\">y</text>\n\n  <!-- overlap tint bands -->\n  <path d=\"M 327.8 222.2 A 110 110 0 0 0 172.2 222.2\" fill=\"none\" stroke=\"#e69138\" stroke-width=\"14\" opacity=\"0.35\"/>\n  <path d=\"M 172.2 377.8 A 110 110 0 0 0 327.8 377.8\" fill=\"none\" stroke=\"#e69138\" stroke-width=\"14\" opacity=\"0.35\"/>\n\n  <!-- unit circle -->\n  <circle cx=\"250\" cy=\"300\" r=\"110\" fill=\"none\" stroke=\"#999\" stroke-width=\"6\"/>\n\n  <!-- chart 1 (blue, outward offset) -->\n  <path d=\"M 165.1 384.9 A 120 120 0 1 0 165.1 215.1\" fill=\"none\" stroke=\"#1a5fb4\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n  <!-- chart 2 (red, inward offset) -->\n  <path d=\"M 320.7 229.3 A 100 100 0 1 0 320.7 370.7\" fill=\"none\" stroke=\"#c01c28\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n\n  <text x=\"318\" y=\"448\" font-family=\"sans-serif\" font-size=\"17\" fill=\"#1a5fb4\" text-anchor=\"middle\">chart 1: θ ∈ (−3π/4, 3π/4)</text>\n  <text x=\"42\" y=\"252\" font-family=\"sans-serif\" font-size=\"17\" fill=\"#c01c28\">chart 2</text>\n  <text x=\"250\" y=\"238\" font-family=\"sans-serif\" font-size=\"15\" fill=\"#b45f06\" text-anchor=\"middle\">overlap</text>\n\n  <!-- radius (dotted) -->\n  <line x1=\"250\" y1=\"300\" x2=\"345.3\" y2=\"245\" stroke=\"#333\" stroke-width=\"1.5\" stroke-dasharray=\"2 5\"/>\n  <!-- tangent at P (dashed) -->\n  <line x1=\"300.3\" y1=\"322.9\" x2=\"390.3\" y2=\"167.1\" stroke=\"#000\" stroke-width=\"2\" stroke-dasharray=\"7 6\"/>\n  <text x=\"415\" y=\"142\" font-family=\"sans-serif\" font-size=\"16\" fill=\"#111\" text-anchor=\"middle\">tangent at P — a 1-plane</text>\n\n  <!-- point P -->\n  <circle cx=\"345.3\" cy=\"245\" r=\"5.5\" fill=\"#000\"/>\n  <text x=\"358\" y=\"262\" font-family=\"sans-serif\" font-size=\"17\" font-weight=\"bold\" fill=\"#111\">P</text>\n\n  <text x=\"250\" y=\"478\" font-family=\"sans-serif\" font-size=\"15.5\" fill=\"#333\" text-anchor=\"middle\">every point has an arc as a neighbourhood;</text>\n  <text x=\"250\" y=\"500\" font-family=\"sans-serif\" font-size=\"15.5\" fill=\"#333\" text-anchor=\"middle\">the tangent line rotates as you go around</text>\n\n  <!-- ================= PANEL B ================= -->\n  <!-- thick grey axes -->\n  <line x1=\"600\" y1=\"280\" x2=\"940\" y2=\"280\" stroke=\"#999\" stroke-width=\"5\"/>\n  <line x1=\"760\" y1=\"160\" x2=\"760\" y2=\"420\" stroke=\"#999\" stroke-width=\"5\"/>\n  <!-- ticks -->\n  <line x1=\"700\" y1=\"274\" x2=\"700\" y2=\"286\" stroke=\"#555\" stroke-width=\"1.5\"/>\n  <line x1=\"820\" y1=\"274\" x2=\"820\" y2=\"286\" stroke=\"#555\" stroke-width=\"1.5\"/>\n  <line x1=\"754\" y1=\"220\" x2=\"766\" y2=\"220\" stroke=\"#555\" stroke-width=\"1.5\"/>\n  <line x1=\"754\" y1=\"340\" x2=\"766\" y2=\"340\" stroke=\"#555\" stroke-width=\"1.5\"/>\n  <text x=\"948\" y=\"300\" font-family=\"sans-serif\" font-size=\"16\" font-style=\"italic\" fill=\"#555\">x</text>\n  <text x=\"772\" y=\"170\" font-family=\"sans-serif\" font-size=\"16\" font-style=\"italic\" fill=\"#555\">y</text>\n\n  <!-- red dashed disk around origin -->\n  <circle cx=\"760\" cy=\"280\" r=\"45\" fill=\"none\" stroke=\"#c01c28\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/>\n  <!-- four branches meeting at origin -->\n  <line x1=\"716\" y1=\"280\" x2=\"804\" y2=\"280\" stroke=\"#666\" stroke-width=\"5\"/>\n  <line x1=\"760\" y1=\"236\" x2=\"760\" y2=\"324\" stroke=\"#666\" stroke-width=\"5\"/>\n\n  <text x=\"816\" y=\"340\" font-family=\"sans-serif\" font-size=\"14.5\" fill=\"#c01c28\">at the origin: no arc</text>\n  <text x=\"816\" y=\"358\" font-family=\"sans-serif\" font-size=\"14.5\" fill=\"#c01c28\">can cover a neighbourhood</text>\n\n  <!-- marker elsewhere -->\n  <circle cx=\"872\" cy=\"280\" r=\"5.5\" fill=\"#000\"/>\n  <text x=\"872\" y=\"235\" font-family=\"sans-serif\" font-size=\"14.5\" fill=\"#333\" text-anchor=\"middle\">elsewhere:</text>\n  <text x=\"872\" y=\"253\" font-family=\"sans-serif\" font-size=\"14.5\" fill=\"#333\" text-anchor=\"middle\">an arc works</text>\n\n  <text x=\"760\" y=\"478\" font-family=\"sans-serif\" font-size=\"15.5\" fill=\"#333\" text-anchor=\"middle\">xy = 0 — not a 1-manifold</text>\n</svg>",
+		"notes": "The figure is correct and clean. Notes: Panel A shows the unit circle with the blue chart θ ∈ (−3π/4, 3π/4) offset outward and the red complementary chart offset inward, tinted overlap arcs at θ ∈ [45°,135°] and [225°,315°] (labelled \"overlap\" on the upper one), point P at 30° with its dotted radius, dashed tangent line, and both captions. Panel B shows the cross xy = 0 with a dashed disk at the origin, darker branch segments meeting there, an \"elsewhere\" marker on the positive x-axis, and the caption — so the contrast \"arc works everywhere on the circle vs. fails at the origin\" reads at a glance."
+	},
+	"delivery": {
+		"kind": "result",
+		"status": "delivered"
+	}
+}
